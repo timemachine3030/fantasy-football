@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --inspect src/scraper.js"
+    "scraper": "mocha --inspect src/scraper.js",
+    "parser": "mocha --inspect src/parser.js",
+    "defense-Scraper": "mocha --inspect src/defense-Scraper.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timemachine3030/fantasy-football.git"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +23,7 @@
     "axios": "^0.20.0",
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.3",
+    "leaky-bucket": "^3.0.4",
     "mocha": "^8.1.3"
   }
 }
