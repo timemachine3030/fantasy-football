@@ -1,0 +1,3004 @@
+[
+    [
+        {
+            "id": "401127961",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128124",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127929",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128016",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127960",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128126",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127940",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128035",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127948",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128049",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127870",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128022",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401127869",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128108",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401127903",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127954",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128061",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127953",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128018",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128011",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401128105",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127985",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127899",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401127934",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128047",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128012",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128027",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127963",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401128106",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401127915",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127866",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128014",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127942",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128037",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128076",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127939",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128077",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401127872",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128017",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127923",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128054",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127962",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128026",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401127932",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128096",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128050",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401128078",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127944",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128049",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401127922",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128032",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127869",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128024",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127906",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127913",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128120",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128003",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401128093",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "david-montgomery",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127982",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128039",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128082",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127911",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401128133",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127914",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128015",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127871",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128031",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401127943",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127995",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128066",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401127915",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128109",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127958",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128105",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401127945",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127912",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127934",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "joe-mixon",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127918",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401128057",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127867",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401127955",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401127910",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127928",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128127",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401128125",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128018",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401128062",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401128111",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127895",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128088",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401127939",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128044",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127919",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128107",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127867",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128094",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127904",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128007",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128115",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127921",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128102",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128029",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128130",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127987",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128091",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128041",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128052",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127957",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128017",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401127871",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128103",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127938",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        }
+    ],
+    [
+        {
+            "id": "royce-freeman",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128120",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401127925",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128097",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128019",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128129",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127902",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128051",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128088",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128081",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401127872",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128104",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401127920",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128056",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401127893",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127999",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128072",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401127959",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128023",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128132",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401127947",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128042",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "jd-mckissic",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127911",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128052",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127996",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401128015",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401127926",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128028",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127893",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127913",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128098",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401127925",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401127863",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128029",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128132",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "aaron-jones",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128073",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128090",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401127944",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128004",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128021",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128101",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127970",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128026",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127960",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128119",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401127951",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "carlos-hyde",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127936",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128047",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401127865",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127972",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128114",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127929",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "marlon-mack",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128053",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401127951",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128051",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128083",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127986",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128075",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127865",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128058",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401127994",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128117",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401127906",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127931",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128101",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401127859",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128097",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401127932",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128116",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401127945",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128045",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127936",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128075",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128000",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128063",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127997",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "leonard-fournette",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127903",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127931",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "lesean-mccoy",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401127953",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401128023",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401128053",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128119",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401127902",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128073",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128079",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401127981",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128134",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128025",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128118",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401127956",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128030",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128001",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401127949",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128043",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128085",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127907",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128092",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127924",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401128067",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128005",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128099",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127896",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127972",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128072",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127970",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128055",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128019",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401128131",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127979",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128039",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128090",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "melvin-gordon-iii",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128134",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128104",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401127997",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128113",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "melvin-gordon-iii",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127923",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128122",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128125",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128069",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127927",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128128",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401127940",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401127912",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127989",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401128133",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128012",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401128100",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128009",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128103",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127900",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127954",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401127862",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401127921",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128055",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128121",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127942",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128074",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401128080",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127986",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128077",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401127919",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128070",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127969",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401128060",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401127910",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127961",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128098",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "dalvin-cook",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128093",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401127971",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128123",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127947",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127905",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401128079",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        },
+        {
+            "id": "401128041",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128081",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127860",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127862",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401127861",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127866",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401127864",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127917",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401127894",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127895",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401127899",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401127897",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127957",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127967",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128021",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        },
+        {
+            "id": "401128122",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127993",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128102",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127965",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128116",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127982",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128046",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127948",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128084",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127922",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128022",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128007",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128106",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401127966",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128059",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401127971",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401127917",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401127974",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128042",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401128091",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127952",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127914",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128095",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128013",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128060",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401127937",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127963",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128127",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401127861",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128006",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128130",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401127894",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128045",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128080",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401127952",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128086",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "leveon-bell",
+            "opp": {
+                "id": "id",
+                "shortid": "_"
+            }
+        },
+        {
+            "id": "401128057",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127969",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128020",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401127933",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127968",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401128124",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401127959",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127863",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128006",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401128123",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401127987",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128037",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128082",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401127897",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128008",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128070",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127860",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128110",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127998",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401128109",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128011",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401128131",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128074",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401128083",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401127989",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128044",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401127918",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128107",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128002",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128065",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401127933",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128010",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128066",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401127998",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401128062",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128128",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127977",
+            "opp": {
+                "id": "washington",
+                "shortid": "wsh"
+            }
+        },
+        {
+            "id": "401128050",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127908",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127992",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401128089",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127995",
+            "opp": {
+                "id": "cincinnati-bengals",
+                "shortid": "cin"
+            }
+        },
+        {
+            "id": "401128110",
+            "opp": {
+                "id": "pittsburgh-steelers",
+                "shortid": "pit"
+            }
+        },
+        {
+            "id": "401127993",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128064",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401127927",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401128111",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401127985",
+            "opp": {
+                "id": "baltimore-ravens",
+                "shortid": "bal"
+            }
+        },
+        {
+            "id": "401128035",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128087",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401127992",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401128008",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401128010",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401128054",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127966",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401128069",
+            "opp": {
+                "id": "los-angeles-rams",
+                "shortid": "lar"
+            }
+        },
+        {
+            "id": "401127965",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401128096",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401128048",
+            "opp": {
+                "id": "tennessee-titans",
+                "shortid": "ten"
+            }
+        },
+        {
+            "id": "401128087",
+            "opp": {
+                "id": "seattle-seahawks",
+                "shortid": "sea"
+            }
+        },
+        {
+            "id": "401127976",
+            "opp": {
+                "id": "arizona-cardinals",
+                "shortid": "ari"
+            }
+        },
+        {
+            "id": "401128084",
+            "opp": {
+                "id": "new-orleans-saints",
+                "shortid": "no"
+            }
+        },
+        {
+            "id": "401127870",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128063",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401127994",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401128028",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401127901",
+            "opp": {
+                "id": "houston-texans",
+                "shortid": "hou"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127928",
+            "opp": {
+                "id": "cleveland-browns",
+                "shortid": "cle"
+            }
+        },
+        {
+            "id": "401128114",
+            "opp": {
+                "id": "indianapolis-colts",
+                "shortid": "ind"
+            }
+        },
+        {
+            "id": "401127859",
+            "opp": {
+                "id": "jacksonville-jaguars",
+                "shortid": "jax"
+            }
+        },
+        {
+            "id": "401128016",
+            "opp": {
+                "id": "atlanta-falcons",
+                "shortid": "atl"
+            }
+        },
+        {
+            "id": "401128014",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128129",
+            "opp": {
+                "id": "denver-broncos",
+                "shortid": "den"
+            }
+        },
+        {
+            "id": "401127979",
+            "opp": {
+                "id": "los-angeles-chargers",
+                "shortid": "lac"
+            }
+        },
+        {
+            "id": "401128048",
+            "opp": {
+                "id": "tampa-bay-buccaneers",
+                "shortid": "tb"
+            }
+        },
+        {
+            "id": "401128078",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127981",
+            "opp": {
+                "id": "kansas-city-chiefs",
+                "shortid": "kc"
+            }
+        }
+    ],
+    [
+        {
+            "id": "401127968",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401128115",
+            "opp": {
+                "id": "dallas-cowboys",
+                "shortid": "dal"
+            }
+        },
+        {
+            "id": "401128003",
+            "opp": {
+                "id": "chicago-bears",
+                "shortid": "chi"
+            }
+        },
+        {
+            "id": "401128059",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        },
+        {
+            "id": "401127864",
+            "opp": {
+                "id": "new-england-patriots",
+                "shortid": "ne"
+            }
+        },
+        {
+            "id": "401128121",
+            "opp": {
+                "id": "miami-dolphins",
+                "shortid": "mia"
+            }
+        },
+        {
+            "id": "401127977",
+            "opp": {
+                "id": "san-francisco-49ers",
+                "shortid": "sf"
+            }
+        },
+        {
+            "id": "401127905",
+            "opp": {
+                "id": "minnesota-vikings",
+                "shortid": "min"
+            }
+        },
+        {
+            "id": "401128076",
+            "opp": {
+                "id": "buffalo-bills",
+                "shortid": "buf"
+            }
+        },
+        {
+            "id": "401128086",
+            "opp": {
+                "id": "new-york-jets",
+                "shortid": "nyj"
+            }
+        },
+        {
+            "id": "401127996",
+            "opp": {
+                "id": "detroit-lions",
+                "shortid": "det"
+            }
+        },
+        {
+            "id": "401128032",
+            "opp": {
+                "id": "carolina-panthers",
+                "shortid": "car"
+            }
+        },
+        {
+            "id": "401127916",
+            "opp": {
+                "id": "green-bay-packers",
+                "shortid": "gb"
+            }
+        },
+        {
+            "id": "401128071",
+            "opp": {
+                "id": "philadelphia-eagles",
+                "shortid": "phi"
+            }
+        },
+        {
+            "id": "401127937",
+            "opp": {
+                "id": "new-york-giants",
+                "shortid": "nyg"
+            }
+        }
+    ]
+]

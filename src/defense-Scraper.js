@@ -51,17 +51,42 @@ async function getPlayerIds(year = 2019) {
     const teams = $(teamCellSelector).map((i, row) => {
         const id = linkToTeamId($(row).find('a').first().attr('href'));
         const name = $(row).find('a').first().text().trim();
-        
+
         const team = { id, name };
 
         return team;
-        
+
     });
-    
+
     return teams;
 
 }
-
+async function getTeamShortID(year){
+    const url = buildUrl(TEAM_SEASON, {shortid: 'ari', year});
+    const response = await axios({
+        method: 'GET',
+        url
+    });
+    const $ = cheerio.load(response.data);
+    const options = '#fittPageContainer > div.StickyContainer > div.page-container.cf > div > div.layout__column.layout__column--1 > section > div > section > div.flex.justify-between.mt3.mb3.items-center > div > select:nth-child(2) option'
+    const teams = []
+    $(options).each((i, team)=> {
+        let shortid = $(team).data('param-value');
+        if (shortid){
+            teams.push(shortid)
+        }
+    })
+    return teams;
+}
+async function getAllTeamsSchedules(year){
+    const teams = await getTeamShortID(year);
+    const schedules = []
+    for (let t=0; t < teams.length; t+=1){
+        let schedule = await getTeamSchedules(teams[t], year);
+        schedules.push(schedule);
+    }
+    return schedules;
+}
 async function getTeamSchedules(shortid, year) {
     const url = buildUrl(TEAM_SEASON, { shortid, year });
     const response = await axios({
@@ -80,41 +105,44 @@ async function getTeamSchedules(shortid, year) {
     try {
 
         // Skip header rows and preseason
-        for(let i = 0; i < 18; i += 1) {
+        for (let i = 0; i < 18; i += 1) {
             const row = $(opps).get(i);
             let wk = $(row).find('td:nth-child(1)').text().trim();
+            if (season === 'Regular Season' && wk == 'WK') {
+                skip = false;
+                continue;
+            }
             if (skip) {
                 if (wk === 'Regular Season') {
                     season = wk;
                 }
                 continue;
             }
-            if (season === 'Regular Season' && wk == 'WK') {
-                skip = false;
-                continue;
-            }
             if (wk === 'Preseason') {
                 skip = true;
                 continue;
             }
-            
+
             // ok found the opponents
             const opponent = $(row).find('.opponent-logo a').attr('href');
             const rowLinks = $(row).find('a');
-            const oppHref = $(rowLinks).get(2).attr('href');
-            const gameOpp = {
-                shortid: oppHref.split('/').slice(-1),
-                id: oppHref.split('/').slice(-2, 1),
+            const oppHref = $($(rowLinks).get(1)).attr('href');
+            if (oppHref === undefined){
+                continue;
             }
-            const href = $(rowLinks)[4].attr('href');
-            const gameId = href.split('/').slice(-1); // http://www.espn.com/nfl/game/_/gameId/401131043
-            
+            const gameOpp = {
+                id: oppHref.split('/')[6],
+                shortid: oppHref.split('/')[5],
+            }
+            const href = $($(rowLinks).get(2)).attr('href');
+            const gameId = href.split('/').slice(-1)[0]; // http://www.espn.com/nfl/game/_/gameId/401131043
+
             games.push({
                 id: gameId,
                 opp: gameOpp
             });
         }
-    } catch (err) {
+    } catch (error) {
         throw error;
     }
 
@@ -156,13 +184,13 @@ const getYearStatSummary = async function (playerId, year) {
 
     getTotalTeamDefense()
 
-    const url = buildUrl(PLAYER_STAT_PAGE, {playerId, year});
- 
+    const url = buildUrl(PLAYER_STAT_PAGE, { playerId, year });
+
     //  const response = await axios({
     //      method: 'GET',
     //      url
     //  });
- 
+
     //  const $ = cheerio.load(response.data);
     //  const tblHeading = [
     //      'date',
@@ -185,19 +213,19 @@ const getYearStatSummary = async function (playerId, year) {
     //      'rushing_touchdowns',
     //      'longest_rush'
     //  ];
- 
+
     //  const nameSelector = '#fittPageContainer > div.StickyContainer > div.ResponsiveWrapper > div > div > div.PlayerHeader__Left.flex.items-center.justify-start.overflow-hidden.brdr-clr-gray-09 > div.PlayerHeader__Main.flex.items-center > div.PlayerHeader__Main_Aside.min-w-0.flex-grow.flex-basis-0 > h1 > span:nth-child(2)'
     //  const selector = '#fittPageContainer > div.StickyContainer > div:nth-child(5) > div > div.PageLayout__Main > div.ResponsiveWrapper > div > div > div > div > div > div > div > div.Table__Scroller > table > tbody';            
     //  const tables = $(selector);
     //  const playerName = $(nameSelector).text().trim();
- 
+
     //  let data = {
     //      playerId,
     //      year,
     //      stats: [],
     //      playerName,
     //  };
- 
+
     //  $(tables[tables.length - 1]).each((idx, table) => {
     //      $(table).find('tr').each((j, tr) => {
     //          let statLine = {};
@@ -210,7 +238,7 @@ const getYearStatSummary = async function (playerId, year) {
     //          data.stats.push(statLine);
     //      })
     //  });
-     
+
     //  return data; 
 }
 
@@ -220,6 +248,21 @@ import chai from 'chai';
 const expect = chai.expect;
 
 describe('Defense Scraper', () => {
+    describe('write all team schedules', () => {
+        it('2019', async () => {
+            const schedules = await getAllTeamsSchedules(2019);
+            const text = JSON.stringify(schedules);
+            fs.writeFileSync('./schedules-data.JSON', text);
+        })
+    })
+    describe('getTeamsShortID', () => {
+        it('getsTeams', async () => {
+            const teams = await getTeamShortID(2019)
+            expect(teams[0]).to.eql("atl")
+            expect(teams[teams.length - 1]).to.eql("wsh")
+            
+        });
+    });
     describe('pathToTeamId', () => {
         it('returns the last part', () => {
             expect(linkToTeamId('nfl/team/_/name/ne/new-england-patriots')).to.eql('new-england-patriots');
@@ -235,21 +278,25 @@ describe('Defense Scraper', () => {
         });
     });
     describe.skip('getPlayerIds', async () => {
-        const teams = await getPlayerIds(2019);
-        const stillers = teams.find((t) => {
-            return t.id === 'pittsburgh-steelers';
+        it("", async () => {
+            const teams = await getPlayerIds(2019);
+            const stillers = teams.find((t) => {
+                return t.id === 'pittsburgh-steelers';
+            });
+
+            expect(stillers).to.be.ok;
+            expect(stillers.name).to.eql('Pittsburgh Steelers');
         });
-        
-        expect(stillers).to.be.ok;
-        expect(stillers.name).to.eql('Pittsburgh Steelers');
     });
     describe('getTeamSchedules', async () => {
-        const games = await getTeamSchedules('ari', 2019);
-        const game = games[0];
-        expect(game.id).to.eql('401131043');
-        expect(game.opp.id).to.eql('hou');
+        it("", async () => {
+            const games = await getTeamSchedules('ari', 2019);
+            const game = games[0];
+            expect(game.id).to.eql('401127999');
+            expect(game.opp.shortid).to.eql('det');
+        });
     });
-    
+
     describe.skip('getYearStatSummary', () => {
         it('find Lamar reg season', async () => {
             const result = await getYearStatSummary('3916387', '2019');
@@ -317,6 +364,6 @@ describe('Defense Scraper', () => {
             });
         })
     });
-    
+
 });
 
