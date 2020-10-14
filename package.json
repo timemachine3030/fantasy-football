@@ -6,7 +6,7 @@
   "scripts": {
     "scraper": "mocha --inspect src/scraper.js",
     "parser": "mocha --inspect src/parser.js",
-    "defense-Scraper": "mocha --inspect src/defense-Scraper.js"
+    "defense-Scraper": "DEBUG=* mocha --inspect src/defense-Scraper.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "axios": "^0.20.0",
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.2.0",
     "leaky-bucket": "^3.0.4",
     "mocha": "^8.1.3"
   }

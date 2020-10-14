@@ -1,7 +1,15 @@
+/*
+Produce a JSON object
+year -> [teamid -> gameid:{
+    opponent:
+    defensive stats:
+}] 
+*/
 import axios from 'axios';
 import cheerio from 'cheerio';
 import URL from 'url';
 import fs from 'fs';
+import LeakyBucket from 'leaky-bucket'
 
 
 console.log('Here');
@@ -21,6 +29,9 @@ const TEAM_SEASON = 'https://www.espn.com/nfl/team/schedule/_/name/{shortid}/sea
 const TOTAL_TEAM_DEFENSE = 'https://www.espn.com/nfl/stats/team/_/view/defense/season/{year}/seasontype/2/table/passing/sort/netYardsPerGame/dir/asc';
 const PASSING_DEFENSE = 'https://www.espn.com/nfl/stats/team/_/view/defense/stat/passing/season/{year}/seasontype/2/table/passing/sort/sacks/dir/desc';
 const TURNOVER_STATS = 'https://www.espn.com/nfl/stats/team/_/view/turnovers/season/{year}/seasontype/2/table/miscellaneous/sort/turnOverDifferential/dir/desc';
+const GAME_BOX_SCORE = 'https://www.espn.com/nfl/boxscore?gameId={gameID}'
+
+let limiter = new LeakyBucket(1, 1.3);
 
 const buildUrl = function (url, replacements) {
     const reFind = /\{([^\}]+)\}/g
@@ -30,6 +41,64 @@ const buildUrl = function (url, replacements) {
 
 
     });
+}
+const buildDataModel = async function  (season){
+    let scores = {}
+    for (let i=0; i < season.length; i++){
+        let id = season[i].id
+        if (!scores[id]){
+            await limiter.throttle()
+ //           setTimeout(() => {
+   //             scores[id] = season[i]
+     //           scores[id].score = await getGameScore(id) 
+       //     }, 50)
+        }
+    }
+    // TO DO: plug in away team scores
+    return scores;
+};
+const getGameScore = async function (gameID) {
+    const gameScore = buildUrl(GAME_BOX_SCORE, { gameID })
+    const response = await axios({
+        method: 'GET',
+        url: gameScore,
+    });
+    const $ = cheerio.load(response.data)
+    const basicStatSelector = '#gamepackage-{type} > div > .gamepackage-{otherTeam}-wrap > div > div > table > tbody > tr.highlight > td.{collumn}'
+    let statSelector = buildUrl(basicStatSelector, {
+        type: 'passing',
+        otherTeam: 'away',
+        collumn: 'yds',
+
+    });
+    const awayPassingyards = $(statSelector).text()
+    statSelector = buildUrl(basicStatSelector, {
+        type: 'rushing',
+        otherTeam: 'away',
+        collumn: 'yds',
+
+    })
+    const awayRushingingyards = $(statSelector).text()
+
+    statSelector = buildUrl(basicStatSelector, {
+        type: 'passing',
+        otherTeam: 'home',
+        collumn: 'yds',
+
+    })
+    const homePassingyards = $(statSelector).text()
+    statSelector = buildUrl(basicStatSelector, {
+        type: 'rushing',
+        otherTeam: 'home',
+        collumn: 'yds',
+
+    })
+    const homeRushingingyards = $(statSelector).text()
+    const defensiveStats = {
+        homeTeam: parseInt(awayPassingyards, 10) + parseInt(awayRushingingyards, 10),
+        awayTeam: parseInt(homePassingyards, 10) + parseInt(homeRushingingyards, 10),
+    }
+    return defensiveStats;
 }
 
 function linkToTeamId(url) {
@@ -61,8 +130,8 @@ async function getPlayerIds(year = 2019) {
     return teams;
 
 }
-async function getTeamShortID(year){
-    const url = buildUrl(TEAM_SEASON, {shortid: 'ari', year});
+async function getTeamShortID(year) {
+    const url = buildUrl(TEAM_SEASON, { shortid: 'ari', year });
     const response = await axios({
         method: 'GET',
         url
@@ -70,20 +139,20 @@ async function getTeamShortID(year){
     const $ = cheerio.load(response.data);
     const options = '#fittPageContainer > div.StickyContainer > div.page-container.cf > div > div.layout__column.layout__column--1 > section > div > section > div.flex.justify-between.mt3.mb3.items-center > div > select:nth-child(2) option'
     const teams = []
-    $(options).each((i, team)=> {
+    $(options).each((i, team) => {
         let shortid = $(team).data('param-value');
-        if (shortid){
+        if (shortid) {
             teams.push(shortid)
         }
     })
     return teams;
 }
-async function getAllTeamsSchedules(year){
+async function getAllTeamsSchedules(year) {
     const teams = await getTeamShortID(year);
-    const schedules = []
-    for (let t=0; t < teams.length; t+=1){
+    let schedules = []
+    for (let t = 0; t < teams.length; t += 1) {
         let schedule = await getTeamSchedules(teams[t], year);
-        schedules.push(schedule);
+        schedules = schedules.concat(schedule);
     }
     return schedules;
 }
@@ -127,7 +196,7 @@ async function getTeamSchedules(shortid, year) {
             const opponent = $(row).find('.opponent-logo a').attr('href');
             const rowLinks = $(row).find('a');
             const oppHref = $($(rowLinks).get(1)).attr('href');
-            if (oppHref === undefined){
+            if (oppHref === undefined) {
                 continue;
             }
             const gameOpp = {
@@ -136,10 +205,17 @@ async function getTeamSchedules(shortid, year) {
             }
             const href = $($(rowLinks).get(2)).attr('href');
             const gameId = href.split('/').slice(-1)[0]; // http://www.espn.com/nfl/game/_/gameId/401131043
-
+            const location = $(row).find('.opponent-logo .pr2:nth-child(1)').text();
+            let homeTeam = gameOpp.shortid;
+            let awayTeam = shortid;
+            if (location === "vs") {
+                homeTeam = shortid;
+                awayTeam = gameOpp.shortid;
+            }
             games.push({
                 id: gameId,
-                opp: gameOpp
+                homeTeam, awayTeam
+
             });
         }
     } catch (error) {
@@ -248,7 +324,20 @@ import chai from 'chai';
 const expect = chai.expect;
 
 describe('Defense Scraper', () => {
-    describe('write all team schedules', () => {
+    describe('Get Game Score ', () => {
+        it('get score', async () => {
+            const score = await getGameScore('401127999')
+            expect(score.homeTeam).to.eql(477)
+            expect(score.awayTeam).to.eql(387)
+        })
+        it('For whole team', async () => {
+            const text = fs.readFileSync('./schedules-data.JSON', 'utf-8')
+            const season = JSON.parse(text)
+            const scores = await buildDataModel(season)
+            console.log(scores);
+        })
+    })
+    describe.skip('write all team schedules', () => {
         it('2019', async () => {
             const schedules = await getAllTeamsSchedules(2019);
             const text = JSON.stringify(schedules);
@@ -260,7 +349,7 @@ describe('Defense Scraper', () => {
             const teams = await getTeamShortID(2019)
             expect(teams[0]).to.eql("atl")
             expect(teams[teams.length - 1]).to.eql("wsh")
-            
+
         });
     });
     describe('pathToTeamId', () => {
@@ -293,7 +382,8 @@ describe('Defense Scraper', () => {
             const games = await getTeamSchedules('ari', 2019);
             const game = games[0];
             expect(game.id).to.eql('401127999');
-            expect(game.opp.shortid).to.eql('det');
+            expect(game.homeTeam).to.eql('ari');
+            expect(game.awayTeam).to.eql('det');
         });
     });
 
