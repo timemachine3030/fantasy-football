@@ -5,15 +5,16 @@ year -> [teamid -> gameid:{
     defensive stats:
 }] 
 */
-import axios from 'axios';
+
+import createRequire from 'module';
+import http from 'axios';
 import cheerio from 'cheerio';
-import URL from 'url';
 import fs from 'fs';
-import LeakyBucket from 'leaky-bucket'
+import rateLimit from 'axios-rate-limit';
 
-
-console.log('Here');
-
+const axios = rateLimit(http.create(), {
+    maxRPS: 4
+});
 
 //const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 //const SEASON_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/season/{year}/seasontype/2/table/passing/sort/passingYards/dir/desc';
@@ -31,8 +32,6 @@ const PASSING_DEFENSE = 'https://www.espn.com/nfl/stats/team/_/view/defense/stat
 const TURNOVER_STATS = 'https://www.espn.com/nfl/stats/team/_/view/turnovers/season/{year}/seasontype/2/table/miscellaneous/sort/turnOverDifferential/dir/desc';
 const GAME_BOX_SCORE = 'https://www.espn.com/nfl/boxscore?gameId={gameID}'
 
-let limiter = new LeakyBucket(1, 1.3);
-
 const buildUrl = function (url, replacements) {
     const reFind = /\{([^\}]+)\}/g
 
@@ -42,16 +41,19 @@ const buildUrl = function (url, replacements) {
 
     });
 }
-const buildDataModel = async function  (season){
+const buildDataModel = async function (season) {
     let scores = {}
     for (let i=0; i < season.length; i++){
+        if (i % 64 === 0) {
+            process.stdout.write('\n');
+        }
         let id = season[i].id
         if (!scores[id]){
-            await limiter.throttle()
- //           setTimeout(() => {
-   //             scores[id] = season[i]
-     //           scores[id].score = await getGameScore(id) 
-       //     }, 50)
+            scores[id] = season[i]
+            scores[id].score = await getGameScore(id) 
+            process.stdout.write('f');
+        } else {
+            process.stdout.write('c');
         }
     }
     // TO DO: plug in away team scores
@@ -262,60 +264,6 @@ const getYearStatSummary = async function (playerId, year) {
 
     const url = buildUrl(PLAYER_STAT_PAGE, { playerId, year });
 
-    //  const response = await axios({
-    //      method: 'GET',
-    //      url
-    //  });
-
-    //  const $ = cheerio.load(response.data);
-    //  const tblHeading = [
-    //      'date',
-    //      'opponent',
-    //      'game_result',
-    //      'passing_completions',
-    //      'passing_attempts',
-    //      'passing_yards',
-    //      'passing_completion_percent',
-    //      'passing_avg_yards',
-    //      'passing_touchdowns',
-    //      'passing_interceptions',
-    //      'passing_longest',
-    //      'total_sacks',
-    //      'rating',
-    //      'adjusted_rating',
-    //      'rushing_attempts',
-    //      'rushing_yards',
-    //      'rushing_avg_yards',
-    //      'rushing_touchdowns',
-    //      'longest_rush'
-    //  ];
-
-    //  const nameSelector = '#fittPageContainer > div.StickyContainer > div.ResponsiveWrapper > div > div > div.PlayerHeader__Left.flex.items-center.justify-start.overflow-hidden.brdr-clr-gray-09 > div.PlayerHeader__Main.flex.items-center > div.PlayerHeader__Main_Aside.min-w-0.flex-grow.flex-basis-0 > h1 > span:nth-child(2)'
-    //  const selector = '#fittPageContainer > div.StickyContainer > div:nth-child(5) > div > div.PageLayout__Main > div.ResponsiveWrapper > div > div > div > div > div > div > div > div.Table__Scroller > table > tbody';            
-    //  const tables = $(selector);
-    //  const playerName = $(nameSelector).text().trim();
-
-    //  let data = {
-    //      playerId,
-    //      year,
-    //      stats: [],
-    //      playerName,
-    //  };
-
-    //  $(tables[tables.length - 1]).each((idx, table) => {
-    //      $(table).find('tr').each((j, tr) => {
-    //          let statLine = {};
-    //          if ($(tr).hasClass('totals_row')) {
-    //              return;
-    //          }
-    //          $(tr).find("td").each((i, d) => {
-    //              statLine[tblHeading[i]] = $(d).text();
-    //          });
-    //          data.stats.push(statLine);
-    //      })
-    //  });
-
-    //  return data; 
 }
 
 
@@ -334,7 +282,8 @@ describe('Defense Scraper', () => {
             const text = fs.readFileSync('./schedules-data.JSON', 'utf-8')
             const season = JSON.parse(text)
             const scores = await buildDataModel(season)
-            console.log(scores);
+            const json = JSON.stringify(scores);
+            fs.writeFileSync('./season-defense.json', json);
         })
     })
     describe.skip('write all team schedules', () => {
