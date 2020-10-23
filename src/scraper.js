@@ -58,7 +58,7 @@ const getYearStatSummary = async function (playerId, year) {
         'passing_attempts',
         'passing_yards',
         'passing_completion_percent',
-        'passing_avg_yards',
+        'seasonAvgPassYardsPG',
         'passing_touchdowns',
         'passing_interceptions',
         'passing_longest',
@@ -82,6 +82,7 @@ const getYearStatSummary = async function (playerId, year) {
         year,
         stats: [],
         playerName,
+        seasonAvgPassYardsPG: 0,
     };
 
     $(tables[tables.length - 1]).each((idx, table) => {
@@ -96,6 +97,13 @@ const getYearStatSummary = async function (playerId, year) {
             data.stats.push(statLine);
         })
     });
+
+    let totalYards = data.stats.reduce((total, game) => {
+        total += parseInt(game.passing_yards, 10);
+        return total;
+    }, 0);
+
+    data.seasonAvgPassYardsPG = totalYards / data.stats.length;
     
     return data;
 }
@@ -131,7 +139,7 @@ describe('Scraper', () => {
             expect(a).to.eql("https://1000/something/2023")
         });
     });
-    describe.skip('All Players', () => {
+    describe('All Players', () => {
         it('get all the data', async () => {
             const ids = await getPayerIds(2019);
 

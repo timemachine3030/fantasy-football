@@ -9,8 +9,11 @@ year -> [teamid -> gameid:{
 import createRequire from 'module';
 import http from 'axios';
 import cheerio from 'cheerio';
-import fs from 'fs';
+import fs, { writevSync } from 'fs';
 import rateLimit from 'axios-rate-limit';
+import asciichart from 'asciichart';
+
+const plot = asciichart.plot;
 
 const axios = rateLimit(http.create(), {
     maxRPS: 4
@@ -97,8 +100,8 @@ const getGameScore = async function (gameID) {
     })
     const homeRushingingyards = $(statSelector).text()
     const defensiveStats = {
-        homeTeam: parseInt(awayPassingyards, 10) + parseInt(awayRushingingyards, 10),
-        awayTeam: parseInt(homePassingyards, 10) + parseInt(homeRushingingyards, 10),
+        homeTeam: parseInt(awayPassingyards, 10), // + parseInt(awayRushingingyards, 10),
+        awayTeam: parseInt(homePassingyards, 10),  // + parseInt(homeRushingingyards, 10),
     }
     return defensiveStats;
 }
@@ -266,12 +269,103 @@ const getYearStatSummary = async function (playerId, year) {
 
 }
 
+function getDefAvg(shortid) {
+
+    const defBuf = fs.readFileSync('./season-defense.json', 'utf-8');
+    const season = JSON.parse(defBuf);
+    let games = Object.values(season);
+    const teamGames = games.filter((game) => {
+        if (game.homeTeam === shortid || game.awayTeam === shortid) {
+            return true;
+        }
+    });
+
+    const totalDefYrds = teamGames.reduce((total, game) => {
+        if (game.awayTeam === shortid) {
+            total += game.score.awayTeam;
+        }
+        if (game.homeTeam === shortid) {
+            total += game.score.homeTeam;
+        }
+        return total;
+    }, 0);
+    
+    const avgDefYrdsAgainst = totalDefYrds / teamGames.length;
+    
+    return {avgDefYrdsAgainst, games: teamGames};
+}
+
+function getQbAvg(name) {
+    const qbBuf = fs.readFileSync('./qb-data.json', 'utf-8');
+        const qbdata = JSON.parse(qbBuf);
+        const qb = qbdata.find((q) => q.playerName === name);
+        return qb;
+}
 
 // Test
 import chai from 'chai';
 const expect = chai.expect;
+/*
+Possible changes:
+Factor in time of possession
+Factor in standard deviation(yards)
+Factor in defense type
+Weather
+Score
+TOP
+*/
+//Total yards is an erlang distribution with k plays and theta mathematical yards per play
 
-describe('Defense Scraper', () => {
+describe('Compare QB and Defense', () => {
+    it('Defense avg yards per game', () => {
+        // Defense avg yds / game
+        let shortid = 'ind';
+        
+        const picks = [
+            ['Rivers', 333],
+            ['Mariota', 154]
+        ]
+        let def = getDefAvg(shortid).avgDefYrdsAgainst;
+        picks.forEach(([name, guess]) => {
+            let qb = getQbAvg(name);
+            let predi = (qb.seasonAvgPassYardsPG + def) / 2;
+            let error  = (predi - guess);
+            console.log({
+                guess,
+                predi,
+                error, 
+            }, 'Heads Up Stats');
+        });
+    });
+    it('Pats Print Passing / Game', () => {
+        const tom = getQbAvg('Brady');
+        let yds = tom.stats.map((g) => {
+            return parseInt(g.passing_yards, 10)
+        });
+        console.log('Tom Brady');
+        console.log(tom.seasonAvgPassYardsPG);
+        console.log(plot(yds, {height: 10}));
+
+
+        let shortid = 'mia';
+        const mia = getDefAvg('mia');
+        let def = mia.games.map((game) => {
+            let passingAgainst;
+            if (game.awayTeam === shortid) {
+                passingAgainst = game.score.awayTeam;
+            }
+            if (game.homeTeam === shortid) {
+                passingAgainst = game.score.homeTeam;
+            }
+            return passingAgainst;
+        });
+        console.log('mia');
+        console.log(mia.avgDefYrdsAgainst);
+        console.log(plot(def, {height: 10}));
+    });
+});
+
+describe.skip('Defense Scraper', () => {
     describe('Get Game Score ', () => {
         it('get score', async () => {
             const score = await getGameScore('401127999')
