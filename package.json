@@ -7,7 +7,7 @@
     "scraper": "mocha --inspect src/scraper.js",
     "parser": "mocha --inspect src/parser.js",
     "defense-Scraper": "mocha --inspect --no-timeout src/defense-Scraper.js"
-    "test-distribution": "mocha --inspect src/test-distribution.js"
+   // "test-distribution": "mocha --inspect src/test-distribution.js"
   },
   "repository": {
     "type": "git",
