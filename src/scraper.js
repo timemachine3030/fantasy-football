@@ -107,13 +107,27 @@ const getYearStatSummary = async function (playerId, year) {
     
     return data;
 }
-
+const predictStats = async function(playerId, year){
+    const previousYear = (year-1).toString();
+    const previousYearStats = await getYearStatSummary(playerId, previousYear)
+    const predictedSeasonAvPassYPG = previousYearStats.seasonAvgPassYardsPG;
+    return predictedSeasonAvPassYPG;
+}
 
 // Test
 import chai from 'chai';
 const expect = chai.expect;
 
 describe('Scraper', () => {
+    describe('predict 2020 stats', () => {
+        it('get Wilson stats 2020', async () =>{
+            const wilsonNow = await predictStats('14881', 2020)
+            expect(wilsonNow).to.eql(256.875)
+
+        })
+
+
+    })
     describe('getYearStatSummary', () => {
         it('find Lamar reg season', async () => {
             const result = await getYearStatSummary('3916387', '2019');

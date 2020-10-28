@@ -1,1 +1,2189 @@
-{"401127859":{"id":"401127859","homeTeam":"jax","awayTeam":"ten","score":{"homeTeam":249,"awayTeam":204}},"401127860":{"id":"401127860","homeTeam":"ne","awayTeam":"pit","score":{"homeTeam":276,"awayTeam":366}},"401127861":{"id":"401127861","homeTeam":"ne","awayTeam":"nyj","score":{"homeTeam":69,"awayTeam":313}},"401127862":{"id":"401127862","homeTeam":"mia","awayTeam":"ne","score":{"homeTeam":255,"awayTeam":142}},"401127863":{"id":"401127863","homeTeam":"gb","awayTeam":"phi","score":{"homeTeam":160,"awayTeam":414}},"401127864":{"id":"401127864","homeTeam":"wsh","awayTeam":"ne","score":{"homeTeam":312,"awayTeam":78}},"401127865":{"id":"401127865","homeTeam":"hou","awayTeam":"ind","score":{"homeTeam":121,"awayTeam":297}},"401127866":{"id":"401127866","homeTeam":"buf","awayTeam":"ne","score":{"homeTeam":150,"awayTeam":240}},"401127867":{"id":"401127867","homeTeam":"cle","awayTeam":"cin","score":{"homeTeam":272,"awayTeam":187}},"401127869":{"id":"401127869","homeTeam":"atl","awayTeam":"car","score":{"homeTeam":245,"awayTeam":302}},"401127870":{"id":"401127870","homeTeam":"atl","awayTeam":"tb","score":{"homeTeam":313,"awayTeam":280}},"401127871":{"id":"401127871","homeTeam":"chi","awayTeam":"dal","score":{"homeTeam":326,"awayTeam":231}},"401127872":{"id":"401127872","homeTeam":"buf","awayTeam":"den","score":{"homeTeam":49,"awayTeam":180}},"401127893":{"id":"401127893","homeTeam":"den","awayTeam":"det","score":{"homeTeam":95,"awayTeam":198}},"401127894":{"id":"401127894","homeTeam":"nyj","awayTeam":"ne","score":{"homeTeam":249,"awayTeam":73}},"401127895":{"id":"401127895","homeTeam":"ne","awayTeam":"cle","score":{"homeTeam":151,"awayTeam":239}},"401127896":{"id":"401127896","homeTeam":"lac","awayTeam":"lv","score":{"homeTeam":267,"awayTeam":265}},"401127897":{"id":"401127897","homeTeam":"phi","awayTeam":"ne","score":{"homeTeam":224,"awayTeam":174}},"401127899":{"id":"401127899","homeTeam":"bal","awayTeam":"ne","score":{"homeTeam":268,"awayTeam":162}},"401127900":{"id":"401127900","homeTeam":"sf","awayTeam":"lar","score":{"homeTeam":323,"awayTeam":215}},"401127901":{"id":"401127901","homeTeam":"tb","awayTeam":"hou","score":{"homeTeam":161,"awayTeam":329}},"401127902":{"id":"401127902","homeTeam":"den","awayTeam":"kc","score":{"homeTeam":191,"awayTeam":134}},"401127903":{"id":"401127903","homeTeam":"atl","awayTeam":"jax","score":{"homeTeam":173,"awayTeam":383}},"401127904":{"id":"401127904","homeTeam":"cle","awayTeam":"bal","score":{"homeTeam":238,"awayTeam":184}},"401127905":{"id":"401127905","homeTeam":"min","awayTeam":"wsh","score":{"homeTeam":131,"awayTeam":273}},"401127906":{"id":"401127906","homeTeam":"ind","awayTeam":"car","score":{"homeTeam":199,"awayTeam":106}},"401127907":{"id":"401127907","homeTeam":"lv","awayTeam":"lac","score":{"homeTeam":169,"awayTeam":200}},"401127908":{"id":"401127908","homeTeam":"ari","awayTeam":"sf","score":{"homeTeam":310,"awayTeam":204}},"401127910":{"id":"401127910","homeTeam":"mia","awayTeam":"cin","score":{"homeTeam":371,"awayTeam":406}},"401127911":{"id":"401127911","homeTeam":"chi","awayTeam":"det","score":{"homeTeam":259,"awayTeam":145}},"401127912":{"id":"401127912","homeTeam":"cin","awayTeam":"lar","score":{"homeTeam":297,"awayTeam":372}},"401127913":{"id":"401127913","homeTeam":"chi","awayTeam":"gb","score":{"homeTeam":166,"awayTeam":208}},"401127914":{"id":"401127914","homeTeam":"chi","awayTeam":"nyg","score":{"homeTeam":134,"awayTeam":270}},"401127915":{"id":"401127915","homeTeam":"buf","awayTeam":"cin","score":{"homeTeam":240,"awayTeam":241}},"401127916":{"id":"401127916","homeTeam":"gb","awayTeam":"wsh","score":{"homeTeam":141,"awayTeam":167}},"401127917":{"id":"401127917","homeTeam":"ne","awayTeam":"nyg","score":{"homeTeam":161,"awayTeam":313}},"401127918":{"id":"401127918","homeTeam":"cin","awayTeam":"pit","score":{"homeTeam":179,"awayTeam":158}},"401127919":{"id":"401127919","homeTeam":"cle","awayTeam":"mia","score":{"homeTeam":192,"awayTeam":320}},"401127920":{"id":"401127920","homeTeam":"hou","awayTeam":"den","score":{"homeTeam":301,"awayTeam":280}},"401127921":{"id":"401127921","homeTeam":"dal","awayTeam":"mia","score":{"homeTeam":211,"awayTeam":241}},"401127922":{"id":"401127922","homeTeam":"no","awayTeam":"car","score":{"homeTeam":230,"awayTeam":300}},"401127923":{"id":"401127923","homeTeam":"car","awayTeam":"lar","score":{"homeTeam":183,"awayTeam":216}},"401127924":{"id":"401127924","homeTeam":"nyj","awayTeam":"lv","score":{"homeTeam":140,"awayTeam":313}},"401127925":{"id":"401127925","homeTeam":"gb","awayTeam":"den","score":{"homeTeam":161,"awayTeam":235}},"401127926":{"id":"401127926","homeTeam":"min","awayTeam":"det","score":{"homeTeam":161,"awayTeam":234}},"401127927":{"id":"401127927","homeTeam":"sea","awayTeam":"lar","score":{"homeTeam":395,"awayTeam":262}},"401127928":{"id":"401127928","homeTeam":"cle","awayTeam":"ten","score":{"homeTeam":216,"awayTeam":244}},"401127929":{"id":"401127929","homeTeam":"ind","awayTeam":"atl","score":{"homeTeam":304,"awayTeam":300}},"401127931":{"id":"401127931","homeTeam":"jax","awayTeam":"kc","score":{"homeTeam":378,"awayTeam":347}},"401127932":{"id":"401127932","homeTeam":"car","awayTeam":"jax","score":{"homeTeam":358,"awayTeam":160}},"401127933":{"id":"401127933","homeTeam":"nyj","awayTeam":"pit","score":{"homeTeam":185,"awayTeam":174}},"401127934":{"id":"401127934","homeTeam":"cin","awayTeam":"bal","score":{"homeTeam":243,"awayTeam":150}},"401127936":{"id":"401127936","homeTeam":"hou","awayTeam":"jax","score":{"homeTeam":194,"awayTeam":282}},"401127937":{"id":"401127937","homeTeam":"wsh","awayTeam":"nyg","score":{"homeTeam":346,"awayTeam":281}},"401127938":{"id":"401127938","homeTeam":"phi","awayTeam":"dal","score":{"homeTeam":257,"awayTeam":313}},"401127939":{"id":"401127939","homeTeam":"cle","awayTeam":"buf","score":{"homeTeam":260,"awayTeam":221}},"401127940":{"id":"401127940","homeTeam":"atl","awayTeam":"lar","score":{"homeTeam":291,"awayTeam":186}},"401127942":{"id":"401127942","homeTeam":"buf","awayTeam":"mia","score":{"homeTeam":272,"awayTeam":188}},"401127943":{"id":"401127943","homeTeam":"chi","awayTeam":"kc","score":{"homeTeam":244,"awayTeam":133}},"401127944":{"id":"401127944","homeTeam":"gb","awayTeam":"car","score":{"homeTeam":281,"awayTeam":225}},"401127945":{"id":"401127945","homeTeam":"cin","awayTeam":"jax","score":{"homeTeam":244,"awayTeam":258}},"401127947":{"id":"401127947","homeTeam":"det","awayTeam":"min","score":{"homeTeam":338,"awayTeam":352}},"401127948":{"id":"401127948","homeTeam":"no","awayTeam":"atl","score":{"homeTeam":174,"awayTeam":258}},"401127949":{"id":"401127949","homeTeam":"gb","awayTeam":"lv","score":{"homeTeam":329,"awayTeam":421}},"401127951":{"id":"401127951","homeTeam":"ind","awayTeam":"hou","score":{"homeTeam":291,"awayTeam":321}},"401127952":{"id":"401127952","homeTeam":"nyj","awayTeam":"nyg","score":{"homeTeam":258,"awayTeam":218}},"401127953":{"id":"401127953","homeTeam":"kc","awayTeam":"bal","score":{"homeTeam":249,"awayTeam":363}},"401127954":{"id":"401127954","homeTeam":"mia","awayTeam":"bal","score":{"homeTeam":378,"awayTeam":179}},"401127955":{"id":"401127955","homeTeam":"cin","awayTeam":"ne","score":{"homeTeam":116,"awayTeam":151}},"401127956":{"id":"401127956","homeTeam":"min","awayTeam":"lv","score":{"homeTeam":214,"awayTeam":174}},"401127957":{"id":"401127957","homeTeam":"ne","awayTeam":"dal","score":{"homeTeam":212,"awayTeam":181}},"401127958":{"id":"401127958","homeTeam":"cin","awayTeam":"ari","score":{"homeTeam":248,"awayTeam":262}},"401127959":{"id":"401127959","homeTeam":"phi","awayTeam":"det","score":{"homeTeam":201,"awayTeam":246}},"401127960":{"id":"401127960","homeTeam":"hou","awayTeam":"atl","score":{"homeTeam":316,"awayTeam":426}},"401127961":{"id":"401127961","homeTeam":"min","awayTeam":"atl","score":{"homeTeam":272,"awayTeam":97}},"401127962":{"id":"401127962","homeTeam":"ari","awayTeam":"car","score":{"homeTeam":240,"awayTeam":127}},"401127963":{"id":"401127963","homeTeam":"nyj","awayTeam":"buf","score":{"homeTeam":242,"awayTeam":155}},"401127965":{"id":"401127965","homeTeam":"no","awayTeam":"tb","score":{"homeTeam":158,"awayTeam":345}},"401127966":{"id":"401127966","homeTeam":"tb","awayTeam":"nyg","score":{"homeTeam":312,"awayTeam":355}},"401127967":{"id":"401127967","homeTeam":"hou","awayTeam":"ne","score":{"homeTeam":303,"awayTeam":224}},"401127968":{"id":"401127968","homeTeam":"phi","awayTeam":"wsh","score":{"homeTeam":370,"awayTeam":313}},"401127969":{"id":"401127969","homeTeam":"nyj","awayTeam":"mia","score":{"homeTeam":240,"awayTeam":262}},"401127970":{"id":"401127970","homeTeam":"lac","awayTeam":"hou","score":{"homeTeam":337,"awayTeam":293}},"401127971":{"id":"401127971","homeTeam":"nyg","awayTeam":"min","score":{"homeTeam":279,"awayTeam":147}},"401127972":{"id":"401127972","homeTeam":"lac","awayTeam":"ind","score":{"homeTeam":173,"awayTeam":310}},"401127974":{"id":"401127974","homeTeam":"nyg","awayTeam":"ari","score":{"homeTeam":89,"awayTeam":156}},"401127976":{"id":"401127976","homeTeam":"tb","awayTeam":"ari","score":{"homeTeam":342,"awayTeam":339}},"401127977":{"id":"401127977","homeTeam":"wsh","awayTeam":"sf","score":{"homeTeam":146,"awayTeam":50}},"401127979":{"id":"401127979","homeTeam":"ten","awayTeam":"lac","score":{"homeTeam":326,"awayTeam":306}},"401127981":{"id":"401127981","homeTeam":"ten","awayTeam":"kc","score":{"homeTeam":433,"awayTeam":146}},"401127982":{"id":"401127982","homeTeam":"chi","awayTeam":"no","score":{"homeTeam":273,"awayTeam":235}},"401127985":{"id":"401127985","homeTeam":"sea","awayTeam":"bal","score":{"homeTeam":141,"awayTeam":241}},"401127986":{"id":"401127986","homeTeam":"ind","awayTeam":"mia","score":{"homeTeam":159,"awayTeam":191}},"401127987":{"id":"401127987","homeTeam":"dal","awayTeam":"phi","score":{"homeTeam":168,"awayTeam":213}},"401127989":{"id":"401127989","homeTeam":"pit","awayTeam":"lar","score":{"homeTeam":218,"awayTeam":231}},"401127992":{"id":"401127992","homeTeam":"sf","awayTeam":"sea","score":{"homeTeam":189,"awayTeam":215}},"401127993":{"id":"401127993","homeTeam":"sea","awayTeam":"no","score":{"homeTeam":177,"awayTeam":406}},"401127994":{"id":"401127994","homeTeam":"tb","awayTeam":"ind","score":{"homeTeam":243,"awayTeam":467}},"401127995":{"id":"401127995","homeTeam":"sea","awayTeam":"cin","score":{"homeTeam":395,"awayTeam":160}},"401127996":{"id":"401127996","homeTeam":"wsh","awayTeam":"det","score":{"homeTeam":189,"awayTeam":144}},"401127997":{"id":"401127997","homeTeam":"jax","awayTeam":"lac","score":{"homeTeam":330,"awayTeam":164}},"401127998":{"id":"401127998","homeTeam":"sf","awayTeam":"pit","score":{"homeTeam":160,"awayTeam":268}},"401127999":{"id":"401127999","homeTeam":"ari","awayTeam":"det","score":{"homeTeam":361,"awayTeam":275}},"401128000":{"id":"401128000","homeTeam":"ten","awayTeam":"jax","score":{"homeTeam":252,"awayTeam":252}},"401128001":{"id":"401128001","homeTeam":"lv","awayTeam":"chi","score":{"homeTeam":194,"awayTeam":229}},"401128002":{"id":"401128002","homeTeam":"ari","awayTeam":"pit","score":{"homeTeam":135,"awayTeam":165}},"401128003":{"id":"401128003","homeTeam":"wsh","awayTeam":"chi","score":{"homeTeam":208,"awayTeam":287}},"401128004":{"id":"401128004","homeTeam":"sf","awayTeam":"gb","score":{"homeTeam":81,"awayTeam":227}},"401128005":{"id":"401128005","homeTeam":"lv","awayTeam":"ten","score":{"homeTeam":391,"awayTeam":258}},"401128006":{"id":"401128006","homeTeam":"phi","awayTeam":"nyj","score":{"homeTeam":61,"awayTeam":181}},"401128007":{"id":"401128007","homeTeam":"dal","awayTeam":"nyg","score":{"homeTeam":319,"awayTeam":405}},"401128008":{"id":"401128008","homeTeam":"phi","awayTeam":"sea","score":{"homeTeam":174,"awayTeam":238}},"401128009":{"id":"401128009","homeTeam":"lar","awayTeam":"sea","score":{"homeTeam":202,"awayTeam":293}},"401128010":{"id":"401128010","homeTeam":"tb","awayTeam":"sf","score":{"homeTeam":158,"awayTeam":174}},"401128011":{"id":"401128011","homeTeam":"pit","awayTeam":"bal","score":{"homeTeam":139,"awayTeam":192}},"401128012":{"id":"401128012","homeTeam":"lar","awayTeam":"bal","score":{"homeTeam":195,"awayTeam":199}},"401128013":{"id":"401128013","homeTeam":"phi","awayTeam":"nyg","score":{"homeTeam":182,"awayTeam":300}},"401128014":{"id":"401128014","homeTeam":"ten","awayTeam":"buf","score":{"homeTeam":204,"awayTeam":150}},"401128015":{"id":"401128015","homeTeam":"det","awayTeam":"chi","score":{"homeTeam":331,"awayTeam":259}},"401128016":{"id":"401128016","homeTeam":"atl","awayTeam":"ten","score":{"homeTeam":227,"awayTeam":364}},"401128017":{"id":"401128017","homeTeam":"dal","awayTeam":"buf","score":{"homeTeam":232,"awayTeam":323}},"401128018":{"id":"401128018","homeTeam":"bal","awayTeam":"cle","score":{"homeTeam":337,"awayTeam":222}},"401128019":{"id":"401128019","homeTeam":"lac","awayTeam":"den","score":{"homeTeam":159,"awayTeam":211}},"401128020":{"id":"401128020","homeTeam":"bal","awayTeam":"nyj","score":{"homeTeam":207,"awayTeam":212}},"401128021":{"id":"401128021","homeTeam":"no","awayTeam":"hou","score":{"homeTeam":234,"awayTeam":362}},"401128022":{"id":"401128022","homeTeam":"atl","awayTeam":"no","score":{"homeTeam":184,"awayTeam":259}},"401128023":{"id":"401128023","homeTeam":"det","awayTeam":"kc","score":{"homeTeam":315,"awayTeam":261}},"401128024":{"id":"401128024","homeTeam":"car","awayTeam":"sea","score":{"homeTeam":274,"awayTeam":269}},"401128025":{"id":"401128025","homeTeam":"lv","awayTeam":"den","score":{"homeTeam":249,"awayTeam":259}},"401128026":{"id":"401128026","homeTeam":"hou","awayTeam":"car","score":{"homeTeam":203,"awayTeam":128}},"401128027":{"id":"401128027","homeTeam":"bal","awayTeam":"sf","score":{"homeTeam":157,"awayTeam":105}},"401128028":{"id":"401128028","homeTeam":"det","awayTeam":"tb","score":{"homeTeam":446,"awayTeam":250}},"401128029":{"id":"401128029","homeTeam":"dal","awayTeam":"gb","score":{"homeTeam":215,"awayTeam":441}},"401128030":{"id":"401128030","homeTeam":"ind","awayTeam":"lv","score":{"homeTeam":189,"awayTeam":265}},"401128031":{"id":"401128031","homeTeam":"gb","awayTeam":"chi","score":{"homeTeam":319,"awayTeam":192}},"401128032":{"id":"401128032","homeTeam":"car","awayTeam":"wsh","score":{"homeTeam":114,"awayTeam":213}},"401128035":{"id":"401128035","homeTeam":"atl","awayTeam":"sea","score":{"homeTeam":171,"awayTeam":441}},"401128037":{"id":"401128037","homeTeam":"buf","awayTeam":"phi","score":{"homeTeam":153,"awayTeam":155}},"401128039":{"id":"401128039","homeTeam":"chi","awayTeam":"lac","score":{"homeTeam":195,"awayTeam":226}},"401128041":{"id":"401128041","homeTeam":"dal","awayTeam":"min","score":{"homeTeam":211,"awayTeam":393}},"401128042":{"id":"401128042","homeTeam":"det","awayTeam":"nyg","score":{"homeTeam":290,"awayTeam":316}},"401128043":{"id":"401128043","homeTeam":"hou","awayTeam":"lv","score":{"homeTeam":285,"awayTeam":258}},"401128044":{"id":"401128044","homeTeam":"cle","awayTeam":"pit","score":{"homeTeam":178,"awayTeam":189}},"401128045":{"id":"401128045","homeTeam":"jax","awayTeam":"nyj","score":{"homeTeam":167,"awayTeam":278}},"401128046":{"id":"401128046","homeTeam":"no","awayTeam":"ari","score":{"homeTeam":197,"awayTeam":373}},"401128047":{"id":"401128047","homeTeam":"bal","awayTeam":"hou","score":{"homeTeam":110,"awayTeam":235}},"401128048":{"id":"401128048","homeTeam":"ten","awayTeam":"tb","score":{"homeTeam":283,"awayTeam":174}},"401128049":{"id":"401128049","homeTeam":"car","awayTeam":"atl","score":{"homeTeam":295,"awayTeam":270}},"401128050":{"id":"401128050","homeTeam":"sf","awayTeam":"car","score":{"homeTeam":100,"awayTeam":156}},"401128051":{"id":"401128051","homeTeam":"ind","awayTeam":"den","score":{"homeTeam":166,"awayTeam":191}},"401128052":{"id":"401128052","homeTeam":"det","awayTeam":"dal","score":{"homeTeam":434,"awayTeam":191}},"401128053":{"id":"401128053","homeTeam":"kc","awayTeam":"ind","score":{"homeTeam":151,"awayTeam":288}},"401128054":{"id":"401128054","homeTeam":"car","awayTeam":"tb","score":{"homeTeam":189,"awayTeam":313}},"401128055":{"id":"401128055","homeTeam":"mia","awayTeam":"lac","score":{"homeTeam":311,"awayTeam":161}},"401128056":{"id":"401128056","homeTeam":"kc","awayTeam":"den","score":{"homeTeam":199,"awayTeam":327}},"401128057":{"id":"401128057","homeTeam":"cin","awayTeam":"nyj","score":{"homeTeam":209,"awayTeam":233}},"401128058":{"id":"401128058","homeTeam":"ind","awayTeam":"ten","score":{"homeTeam":138,"awayTeam":309}},"401128059":{"id":"401128059","homeTeam":"nyg","awayTeam":"wsh","score":{"homeTeam":121,"awayTeam":225}},"401128060":{"id":"401128060","homeTeam":"nyg","awayTeam":"mia","score":{"homeTeam":262,"awayTeam":274}},"401128061":{"id":"401128061","homeTeam":"bal","awayTeam":"ari","score":{"homeTeam":329,"awayTeam":258}},"401128062":{"id":"401128062","homeTeam":"sf","awayTeam":"cle","score":{"homeTeam":78,"awayTeam":171}},"401128063":{"id":"401128063","homeTeam":"jax","awayTeam":"tb","score":{"homeTeam":241,"awayTeam":193}},"401128064":{"id":"401128064","homeTeam":"ari","awayTeam":"sea","score":{"homeTeam":225,"awayTeam":206}},"401128065":{"id":"401128065","homeTeam":"pit","awayTeam":"buf","score":{"homeTeam":131,"awayTeam":178}},"401128066":{"id":"401128066","homeTeam":"cin","awayTeam":"sf","score":{"homeTeam":312,"awayTeam":291}},"401128067":{"id":"401128067","homeTeam":"kc","awayTeam":"lv","score":{"homeTeam":210,"awayTeam":163}},"401128069":{"id":"401128069","homeTeam":"lar","awayTeam":"tb","score":{"homeTeam":376,"awayTeam":490}},"401128070":{"id":"401128070","homeTeam":"mia","awayTeam":"phi","score":{"homeTeam":294,"awayTeam":351}},"401128071":{"id":"401128071","homeTeam":"wsh","awayTeam":"phi","score":{"homeTeam":258,"awayTeam":251}},"401128072":{"id":"401128072","homeTeam":"det","awayTeam":"lac","score":{"homeTeam":287,"awayTeam":245}},"401128073":{"id":"401128073","homeTeam":"kc","awayTeam":"gb","score":{"homeTeam":256,"awayTeam":249}},"401128074":{"id":"401128074","homeTeam":"pit","awayTeam":"mia","score":{"homeTeam":170,"awayTeam":236}},"401128075":{"id":"401128075","homeTeam":"ind","awayTeam":"jax","score":{"homeTeam":279,"awayTeam":125}},"401128076":{"id":"401128076","homeTeam":"buf","awayTeam":"wsh","score":{"homeTeam":116,"awayTeam":146}},"401128077":{"id":"401128077","homeTeam":"mia","awayTeam":"buf","score":{"homeTeam":256,"awayTeam":280}},"401128078":{"id":"401128078","homeTeam":"car","awayTeam":"ten","score":{"homeTeam":310,"awayTeam":214}},"401128079":{"id":"401128079","homeTeam":"kc","awayTeam":"min","score":{"homeTeam":212,"awayTeam":230}},"401128080":{"id":"401128080","homeTeam":"mia","awayTeam":"nyj","score":{"homeTeam":238,"awayTeam":266}},"401128081":{"id":"401128081","homeTeam":"min","awayTeam":"den","score":{"homeTeam":270,"awayTeam":284}},"401128082":{"id":"401128082","homeTeam":"phi","awayTeam":"chi","score":{"homeTeam":102,"awayTeam":227}},"401128083":{"id":"401128083","homeTeam":"pit","awayTeam":"ind","score":{"homeTeam":189,"awayTeam":183}},"401128084":{"id":"401128084","homeTeam":"tb","awayTeam":"no","score":{"homeTeam":219,"awayTeam":298}},"401128085":{"id":"401128085","homeTeam":"lv","awayTeam":"det","score":{"homeTeam":383,"awayTeam":279}},"401128086":{"id":"401128086","homeTeam":"wsh","awayTeam":"nyj","score":{"homeTeam":285,"awayTeam":171}},"401128087":{"id":"401128087","homeTeam":"sea","awayTeam":"tb","score":{"homeTeam":319,"awayTeam":347}},"401128088":{"id":"401128088","homeTeam":"den","awayTeam":"cle","score":{"homeTeam":261,"awayTeam":175}},"401128089":{"id":"401128089","homeTeam":"sf","awayTeam":"ari","score":{"homeTeam":131,"awayTeam":408}},"401128090":{"id":"401128090","homeTeam":"lac","awayTeam":"gb","score":{"homeTeam":139,"awayTeam":283}},"401128091":{"id":"401128091","homeTeam":"nyg","awayTeam":"dal","score":{"homeTeam":257,"awayTeam":171}},"401128092":{"id":"401128092","homeTeam":"lv","awayTeam":"cin","score":{"homeTeam":73,"awayTeam":273}},"401128093":{"id":"401128093","homeTeam":"chi","awayTeam":"min","score":{"homeTeam":182,"awayTeam":197}},"401128094":{"id":"401128094","homeTeam":"ari","awayTeam":"cle","score":{"homeTeam":241,"awayTeam":219}},"401128095":{"id":"401128095","homeTeam":"nyg","awayTeam":"gb","score":{"homeTeam":243,"awayTeam":240}},"401128096":{"id":"401128096","homeTeam":"car","awayTeam":"tb","score":{"homeTeam":209,"awayTeam":365}},"401128097":{"id":"401128097","homeTeam":"den","awayTeam":"jax","score":{"homeTeam":186,"awayTeam":303}},"401128098":{"id":"401128098","homeTeam":"gb","awayTeam":"min","score":{"homeTeam":223,"awayTeam":191}},"401128099":{"id":"401128099","homeTeam":"lv","awayTeam":"jax","score":{"homeTeam":185,"awayTeam":236}},"401128100":{"id":"401128100","homeTeam":"ari","awayTeam":"lar","score":{"homeTeam":417,"awayTeam":124}},"401128101":{"id":"401128101","homeTeam":"hou","awayTeam":"jax","score":{"homeTeam":178,"awayTeam":137}},"401128102":{"id":"401128102","homeTeam":"no","awayTeam":"dal","score":{"homeTeam":212,"awayTeam":149}},"401128103":{"id":"401128103","homeTeam":"dal","awayTeam":"lar","score":{"homeTeam":267,"awayTeam":212}},"401128104":{"id":"401128104","homeTeam":"den","awayTeam":"lac","score":{"homeTeam":244,"awayTeam":134}},"401128105":{"id":"401128105","homeTeam":"bal","awayTeam":"cin","score":{"homeTeam":217,"awayTeam":228}},"401128106":{"id":"401128106","homeTeam":"nyg","awayTeam":"buf","score":{"homeTeam":237,"awayTeam":241}},"401128107":{"id":"401128107","homeTeam":"pit","awayTeam":"cle","score":{"homeTeam":173,"awayTeam":199}},"401128108":{"id":"401128108","homeTeam":"sf","awayTeam":"atl","score":{"homeTeam":201,"awayTeam":193}},"401128109":{"id":"401128109","homeTeam":"pit","awayTeam":"cin","score":{"homeTeam":102,"awayTeam":260}},"401128110":{"id":"401128110","homeTeam":"pit","awayTeam":"sea","score":{"homeTeam":274,"awayTeam":180}},"401128111":{"id":"401128111","homeTeam":"cle","awayTeam":"sea","score":{"homeTeam":284,"awayTeam":249}},"401128113":{"id":"401128113","homeTeam":"lac","awayTeam":"min","score":{"homeTeam":207,"awayTeam":283}},"401128114":{"id":"401128114","homeTeam":"ten","awayTeam":"ind","score":{"homeTeam":121,"awayTeam":119}},"401128115":{"id":"401128115","homeTeam":"wsh","awayTeam":"dal","score":{"homeTeam":261,"awayTeam":208}},"401128116":{"id":"401128116","homeTeam":"jax","awayTeam":"no","score":{"homeTeam":222,"awayTeam":151}},"401128117":{"id":"401128117","homeTeam":"no","awayTeam":"ind","score":{"homeTeam":159,"awayTeam":307}},"401128118":{"id":"401128118","homeTeam":"lv","awayTeam":"kc","score":{"homeTeam":436,"awayTeam":178}},"401128119":{"id":"401128119","homeTeam":"kc","awayTeam":"hou","score":{"homeTeam":280,"awayTeam":256}},"401128120":{"id":"401128120","homeTeam":"den","awayTeam":"chi","score":{"homeTeam":120,"awayTeam":282}},"401128121":{"id":"401128121","homeTeam":"mia","awayTeam":"wsh","score":{"homeTeam":166,"awayTeam":187}},"401128122":{"id":"401128122","homeTeam":"lar","awayTeam":"no","score":{"homeTeam":187,"awayTeam":265}},"401128123":{"id":"401128123","homeTeam":"min","awayTeam":"phi","score":{"homeTeam":292,"awayTeam":325}},"401128124":{"id":"401128124","homeTeam":"atl","awayTeam":"phi","score":{"homeTeam":237,"awayTeam":310}},"401128125":{"id":"401128125","homeTeam":"cle","awayTeam":"lar","score":{"homeTeam":254,"awayTeam":175}},"401128126":{"id":"401128126","homeTeam":"ari","awayTeam":"atl","score":{"homeTeam":341,"awayTeam":340}},"401128127":{"id":"401128127","homeTeam":"nyj","awayTeam":"cle","score":{"homeTeam":305,"awayTeam":169}},"401128128":{"id":"401128128","homeTeam":"lar","awayTeam":"sf","score":{"homeTeam":232,"awayTeam":48}},"401128129":{"id":"401128129","homeTeam":"den","awayTeam":"ten","score":{"homeTeam":165,"awayTeam":167}},"401128130":{"id":"401128130","homeTeam":"nyj","awayTeam":"dal","score":{"homeTeam":270,"awayTeam":326}},"401128131":{"id":"401128131","homeTeam":"lac","awayTeam":"pit","score":{"homeTeam":132,"awayTeam":316}},"401128132":{"id":"401128132","homeTeam":"gb","awayTeam":"det","score":{"homeTeam":243,"awayTeam":277}},"401128133":{"id":"401128133","homeTeam":"lar","awayTeam":"chi","score":{"homeTeam":193,"awayTeam":173}},"401128134":{"id":"401128134","homeTeam":"kc","awayTeam":"lac","score":{"homeTeam":180,"awayTeam":345}},"david-montgomery":{"id":"david-montgomery","homeTeam":"chi","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}},"joe-mixon":{"id":"joe-mixon","homeTeam":"_","awayTeam":"cin","score":{"homeTeam":null,"awayTeam":null}},"royce-freeman":{"id":"royce-freeman","homeTeam":"_","awayTeam":"den","score":{"homeTeam":null,"awayTeam":null}},"jd-mckissic":{"id":"jd-mckissic","homeTeam":"_","awayTeam":"det","score":{"homeTeam":null,"awayTeam":null}},"aaron-jones":{"id":"aaron-jones","homeTeam":"gb","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}},"carlos-hyde":{"id":"carlos-hyde","homeTeam":"hou","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}},"marlon-mack":{"id":"marlon-mack","homeTeam":"ind","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}},"leonard-fournette":{"id":"leonard-fournette","homeTeam":"_","awayTeam":"jax","score":{"homeTeam":null,"awayTeam":null}},"lesean-mccoy":{"id":"lesean-mccoy","homeTeam":"_","awayTeam":"kc","score":{"homeTeam":null,"awayTeam":null}},"melvin-gordon-iii":{"id":"melvin-gordon-iii","homeTeam":"_","awayTeam":"lac","score":{"homeTeam":null,"awayTeam":null}},"dalvin-cook":{"id":"dalvin-cook","homeTeam":"min","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}},"leveon-bell":{"id":"leveon-bell","homeTeam":"nyj","awayTeam":"_","score":{"homeTeam":null,"awayTeam":null}}}
+{
+    "401127859": {
+        "id": "401127859",
+        "homeTeam": "jax",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 249,
+            "awayTeam": 204
+        }
+    },
+    "401127860": {
+        "id": "401127860",
+        "homeTeam": "ne",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 276,
+            "awayTeam": 366
+        }
+    },
+    "401127861": {
+        "id": "401127861",
+        "homeTeam": "ne",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 69,
+            "awayTeam": 313
+        }
+    },
+    "401127862": {
+        "id": "401127862",
+        "homeTeam": "mia",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 255,
+            "awayTeam": 142
+        }
+    },
+    "401127863": {
+        "id": "401127863",
+        "homeTeam": "gb",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 160,
+            "awayTeam": 414
+        }
+    },
+    "401127864": {
+        "id": "401127864",
+        "homeTeam": "wsh",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 312,
+            "awayTeam": 78
+        }
+    },
+    "401127865": {
+        "id": "401127865",
+        "homeTeam": "hou",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 121,
+            "awayTeam": 297
+        }
+    },
+    "401127866": {
+        "id": "401127866",
+        "homeTeam": "buf",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 150,
+            "awayTeam": 240
+        }
+    },
+    "401127867": {
+        "id": "401127867",
+        "homeTeam": "cle",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 272,
+            "awayTeam": 187
+        }
+    },
+    "401127869": {
+        "id": "401127869",
+        "homeTeam": "atl",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 245,
+            "awayTeam": 302
+        }
+    },
+    "401127870": {
+        "id": "401127870",
+        "homeTeam": "atl",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 313,
+            "awayTeam": 280
+        }
+    },
+    "401127871": {
+        "id": "401127871",
+        "homeTeam": "chi",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 326,
+            "awayTeam": 231
+        }
+    },
+    "401127872": {
+        "id": "401127872",
+        "homeTeam": "buf",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 49,
+            "awayTeam": 180
+        }
+    },
+    "401127893": {
+        "id": "401127893",
+        "homeTeam": "den",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 95,
+            "awayTeam": 198
+        }
+    },
+    "401127894": {
+        "id": "401127894",
+        "homeTeam": "nyj",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 249,
+            "awayTeam": 73
+        }
+    },
+    "401127895": {
+        "id": "401127895",
+        "homeTeam": "ne",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 151,
+            "awayTeam": 239
+        }
+    },
+    "401127896": {
+        "id": "401127896",
+        "homeTeam": "lac",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 267,
+            "awayTeam": 265
+        }
+    },
+    "401127897": {
+        "id": "401127897",
+        "homeTeam": "phi",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 224,
+            "awayTeam": 174
+        }
+    },
+    "401127899": {
+        "id": "401127899",
+        "homeTeam": "bal",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 268,
+            "awayTeam": 162
+        }
+    },
+    "401127900": {
+        "id": "401127900",
+        "homeTeam": "sf",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 323,
+            "awayTeam": 215
+        }
+    },
+    "401127901": {
+        "id": "401127901",
+        "homeTeam": "tb",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 161,
+            "awayTeam": 329
+        }
+    },
+    "401127902": {
+        "id": "401127902",
+        "homeTeam": "den",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 191,
+            "awayTeam": 134
+        }
+    },
+    "401127903": {
+        "id": "401127903",
+        "homeTeam": "atl",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 173,
+            "awayTeam": 383
+        }
+    },
+    "401127904": {
+        "id": "401127904",
+        "homeTeam": "cle",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 238,
+            "awayTeam": 184
+        }
+    },
+    "401127905": {
+        "id": "401127905",
+        "homeTeam": "min",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 131,
+            "awayTeam": 273
+        }
+    },
+    "401127906": {
+        "id": "401127906",
+        "homeTeam": "ind",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 199,
+            "awayTeam": 106
+        }
+    },
+    "401127907": {
+        "id": "401127907",
+        "homeTeam": "lv",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 169,
+            "awayTeam": 200
+        }
+    },
+    "401127908": {
+        "id": "401127908",
+        "homeTeam": "ari",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 310,
+            "awayTeam": 204
+        }
+    },
+    "401127910": {
+        "id": "401127910",
+        "homeTeam": "mia",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 371,
+            "awayTeam": 406
+        }
+    },
+    "401127911": {
+        "id": "401127911",
+        "homeTeam": "chi",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 259,
+            "awayTeam": 145
+        }
+    },
+    "401127912": {
+        "id": "401127912",
+        "homeTeam": "cin",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 297,
+            "awayTeam": 372
+        }
+    },
+    "401127913": {
+        "id": "401127913",
+        "homeTeam": "chi",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 166,
+            "awayTeam": 208
+        }
+    },
+    "401127914": {
+        "id": "401127914",
+        "homeTeam": "chi",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 134,
+            "awayTeam": 270
+        }
+    },
+    "401127915": {
+        "id": "401127915",
+        "homeTeam": "buf",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 240,
+            "awayTeam": 241
+        }
+    },
+    "401127916": {
+        "id": "401127916",
+        "homeTeam": "gb",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 141,
+            "awayTeam": 167
+        }
+    },
+    "401127917": {
+        "id": "401127917",
+        "homeTeam": "ne",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 161,
+            "awayTeam": 313
+        }
+    },
+    "401127918": {
+        "id": "401127918",
+        "homeTeam": "cin",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 179,
+            "awayTeam": 158
+        }
+    },
+    "401127919": {
+        "id": "401127919",
+        "homeTeam": "cle",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 192,
+            "awayTeam": 320
+        }
+    },
+    "401127920": {
+        "id": "401127920",
+        "homeTeam": "hou",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 301,
+            "awayTeam": 280
+        }
+    },
+    "401127921": {
+        "id": "401127921",
+        "homeTeam": "dal",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 211,
+            "awayTeam": 241
+        }
+    },
+    "401127922": {
+        "id": "401127922",
+        "homeTeam": "no",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 230,
+            "awayTeam": 300
+        }
+    },
+    "401127923": {
+        "id": "401127923",
+        "homeTeam": "car",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 183,
+            "awayTeam": 216
+        }
+    },
+    "401127924": {
+        "id": "401127924",
+        "homeTeam": "nyj",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 140,
+            "awayTeam": 313
+        }
+    },
+    "401127925": {
+        "id": "401127925",
+        "homeTeam": "gb",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 161,
+            "awayTeam": 235
+        }
+    },
+    "401127926": {
+        "id": "401127926",
+        "homeTeam": "min",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 161,
+            "awayTeam": 234
+        }
+    },
+    "401127927": {
+        "id": "401127927",
+        "homeTeam": "sea",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 395,
+            "awayTeam": 262
+        }
+    },
+    "401127928": {
+        "id": "401127928",
+        "homeTeam": "cle",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 216,
+            "awayTeam": 244
+        }
+    },
+    "401127929": {
+        "id": "401127929",
+        "homeTeam": "ind",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 304,
+            "awayTeam": 300
+        }
+    },
+    "401127931": {
+        "id": "401127931",
+        "homeTeam": "jax",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 378,
+            "awayTeam": 347
+        }
+    },
+    "401127932": {
+        "id": "401127932",
+        "homeTeam": "car",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 358,
+            "awayTeam": 160
+        }
+    },
+    "401127933": {
+        "id": "401127933",
+        "homeTeam": "nyj",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 185,
+            "awayTeam": 174
+        }
+    },
+    "401127934": {
+        "id": "401127934",
+        "homeTeam": "cin",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 243,
+            "awayTeam": 150
+        }
+    },
+    "401127936": {
+        "id": "401127936",
+        "homeTeam": "hou",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 194,
+            "awayTeam": 282
+        }
+    },
+    "401127937": {
+        "id": "401127937",
+        "homeTeam": "wsh",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 346,
+            "awayTeam": 281
+        }
+    },
+    "401127938": {
+        "id": "401127938",
+        "homeTeam": "phi",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 257,
+            "awayTeam": 313
+        }
+    },
+    "401127939": {
+        "id": "401127939",
+        "homeTeam": "cle",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 260,
+            "awayTeam": 221
+        }
+    },
+    "401127940": {
+        "id": "401127940",
+        "homeTeam": "atl",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 291,
+            "awayTeam": 186
+        }
+    },
+    "401127942": {
+        "id": "401127942",
+        "homeTeam": "buf",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 272,
+            "awayTeam": 188
+        }
+    },
+    "401127943": {
+        "id": "401127943",
+        "homeTeam": "chi",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 244,
+            "awayTeam": 133
+        }
+    },
+    "401127944": {
+        "id": "401127944",
+        "homeTeam": "gb",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 281,
+            "awayTeam": 225
+        }
+    },
+    "401127945": {
+        "id": "401127945",
+        "homeTeam": "cin",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 244,
+            "awayTeam": 258
+        }
+    },
+    "401127947": {
+        "id": "401127947",
+        "homeTeam": "det",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 338,
+            "awayTeam": 352
+        }
+    },
+    "401127948": {
+        "id": "401127948",
+        "homeTeam": "no",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 174,
+            "awayTeam": 258
+        }
+    },
+    "401127949": {
+        "id": "401127949",
+        "homeTeam": "gb",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 329,
+            "awayTeam": 421
+        }
+    },
+    "401127951": {
+        "id": "401127951",
+        "homeTeam": "ind",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 291,
+            "awayTeam": 321
+        }
+    },
+    "401127952": {
+        "id": "401127952",
+        "homeTeam": "nyj",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 258,
+            "awayTeam": 218
+        }
+    },
+    "401127953": {
+        "id": "401127953",
+        "homeTeam": "kc",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 249,
+            "awayTeam": 363
+        }
+    },
+    "401127954": {
+        "id": "401127954",
+        "homeTeam": "mia",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 378,
+            "awayTeam": 179
+        }
+    },
+    "401127955": {
+        "id": "401127955",
+        "homeTeam": "cin",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 116,
+            "awayTeam": 151
+        }
+    },
+    "401127956": {
+        "id": "401127956",
+        "homeTeam": "min",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 214,
+            "awayTeam": 174
+        }
+    },
+    "401127957": {
+        "id": "401127957",
+        "homeTeam": "ne",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 212,
+            "awayTeam": 181
+        }
+    },
+    "401127958": {
+        "id": "401127958",
+        "homeTeam": "cin",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 248,
+            "awayTeam": 262
+        }
+    },
+    "401127959": {
+        "id": "401127959",
+        "homeTeam": "phi",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 201,
+            "awayTeam": 246
+        }
+    },
+    "401127960": {
+        "id": "401127960",
+        "homeTeam": "hou",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 316,
+            "awayTeam": 426
+        }
+    },
+    "401127961": {
+        "id": "401127961",
+        "homeTeam": "min",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 272,
+            "awayTeam": 97
+        }
+    },
+    "401127962": {
+        "id": "401127962",
+        "homeTeam": "ari",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 240,
+            "awayTeam": 127
+        }
+    },
+    "401127963": {
+        "id": "401127963",
+        "homeTeam": "nyj",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 242,
+            "awayTeam": 155
+        }
+    },
+    "401127965": {
+        "id": "401127965",
+        "homeTeam": "no",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 158,
+            "awayTeam": 345
+        }
+    },
+    "401127966": {
+        "id": "401127966",
+        "homeTeam": "tb",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 312,
+            "awayTeam": 355
+        }
+    },
+    "401127967": {
+        "id": "401127967",
+        "homeTeam": "hou",
+        "awayTeam": "ne",
+        "score": {
+            "homeTeam": 303,
+            "awayTeam": 224
+        }
+    },
+    "401127968": {
+        "id": "401127968",
+        "homeTeam": "phi",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 370,
+            "awayTeam": 313
+        }
+    },
+    "401127969": {
+        "id": "401127969",
+        "homeTeam": "nyj",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 240,
+            "awayTeam": 262
+        }
+    },
+    "401127970": {
+        "id": "401127970",
+        "homeTeam": "lac",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 337,
+            "awayTeam": 293
+        }
+    },
+    "401127971": {
+        "id": "401127971",
+        "homeTeam": "nyg",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 279,
+            "awayTeam": 147
+        }
+    },
+    "401127972": {
+        "id": "401127972",
+        "homeTeam": "lac",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 173,
+            "awayTeam": 310
+        }
+    },
+    "401127974": {
+        "id": "401127974",
+        "homeTeam": "nyg",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 89,
+            "awayTeam": 156
+        }
+    },
+    "401127976": {
+        "id": "401127976",
+        "homeTeam": "tb",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 342,
+            "awayTeam": 339
+        }
+    },
+    "401127977": {
+        "id": "401127977",
+        "homeTeam": "wsh",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 146,
+            "awayTeam": 50
+        }
+    },
+    "401127979": {
+        "id": "401127979",
+        "homeTeam": "ten",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 326,
+            "awayTeam": 306
+        }
+    },
+    "401127981": {
+        "id": "401127981",
+        "homeTeam": "ten",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 433,
+            "awayTeam": 146
+        }
+    },
+    "401127982": {
+        "id": "401127982",
+        "homeTeam": "chi",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 273,
+            "awayTeam": 235
+        }
+    },
+    "401127985": {
+        "id": "401127985",
+        "homeTeam": "sea",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 141,
+            "awayTeam": 241
+        }
+    },
+    "401127986": {
+        "id": "401127986",
+        "homeTeam": "ind",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 159,
+            "awayTeam": 191
+        }
+    },
+    "401127987": {
+        "id": "401127987",
+        "homeTeam": "dal",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 168,
+            "awayTeam": 213
+        }
+    },
+    "401127989": {
+        "id": "401127989",
+        "homeTeam": "pit",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 218,
+            "awayTeam": 231
+        }
+    },
+    "401127992": {
+        "id": "401127992",
+        "homeTeam": "sf",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 189,
+            "awayTeam": 215
+        }
+    },
+    "401127993": {
+        "id": "401127993",
+        "homeTeam": "sea",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 177,
+            "awayTeam": 406
+        }
+    },
+    "401127994": {
+        "id": "401127994",
+        "homeTeam": "tb",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 243,
+            "awayTeam": 467
+        }
+    },
+    "401127995": {
+        "id": "401127995",
+        "homeTeam": "sea",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 395,
+            "awayTeam": 160
+        }
+    },
+    "401127996": {
+        "id": "401127996",
+        "homeTeam": "wsh",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 189,
+            "awayTeam": 144
+        }
+    },
+    "401127997": {
+        "id": "401127997",
+        "homeTeam": "jax",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 330,
+            "awayTeam": 164
+        }
+    },
+    "401127998": {
+        "id": "401127998",
+        "homeTeam": "sf",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 160,
+            "awayTeam": 268
+        }
+    },
+    "401127999": {
+        "id": "401127999",
+        "homeTeam": "ari",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 361,
+            "awayTeam": 275
+        }
+    },
+    "401128000": {
+        "id": "401128000",
+        "homeTeam": "ten",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 252,
+            "awayTeam": 252
+        }
+    },
+    "401128001": {
+        "id": "401128001",
+        "homeTeam": "lv",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 194,
+            "awayTeam": 229
+        }
+    },
+    "401128002": {
+        "id": "401128002",
+        "homeTeam": "ari",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 135,
+            "awayTeam": 165
+        }
+    },
+    "401128003": {
+        "id": "401128003",
+        "homeTeam": "wsh",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 208,
+            "awayTeam": 287
+        }
+    },
+    "401128004": {
+        "id": "401128004",
+        "homeTeam": "sf",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 81,
+            "awayTeam": 227
+        }
+    },
+    "401128005": {
+        "id": "401128005",
+        "homeTeam": "lv",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 391,
+            "awayTeam": 258
+        }
+    },
+    "401128006": {
+        "id": "401128006",
+        "homeTeam": "phi",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 61,
+            "awayTeam": 181
+        }
+    },
+    "401128007": {
+        "id": "401128007",
+        "homeTeam": "dal",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 319,
+            "awayTeam": 405
+        }
+    },
+    "401128008": {
+        "id": "401128008",
+        "homeTeam": "phi",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 174,
+            "awayTeam": 238
+        }
+    },
+    "401128009": {
+        "id": "401128009",
+        "homeTeam": "lar",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 202,
+            "awayTeam": 293
+        }
+    },
+    "401128010": {
+        "id": "401128010",
+        "homeTeam": "tb",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 158,
+            "awayTeam": 174
+        }
+    },
+    "401128011": {
+        "id": "401128011",
+        "homeTeam": "pit",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 139,
+            "awayTeam": 192
+        }
+    },
+    "401128012": {
+        "id": "401128012",
+        "homeTeam": "lar",
+        "awayTeam": "bal",
+        "score": {
+            "homeTeam": 195,
+            "awayTeam": 199
+        }
+    },
+    "401128013": {
+        "id": "401128013",
+        "homeTeam": "phi",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 182,
+            "awayTeam": 300
+        }
+    },
+    "401128014": {
+        "id": "401128014",
+        "homeTeam": "ten",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 204,
+            "awayTeam": 150
+        }
+    },
+    "401128015": {
+        "id": "401128015",
+        "homeTeam": "det",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 331,
+            "awayTeam": 259
+        }
+    },
+    "401128016": {
+        "id": "401128016",
+        "homeTeam": "atl",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 227,
+            "awayTeam": 364
+        }
+    },
+    "401128017": {
+        "id": "401128017",
+        "homeTeam": "dal",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 232,
+            "awayTeam": 323
+        }
+    },
+    "401128018": {
+        "id": "401128018",
+        "homeTeam": "bal",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 337,
+            "awayTeam": 222
+        }
+    },
+    "401128019": {
+        "id": "401128019",
+        "homeTeam": "lac",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 159,
+            "awayTeam": 211
+        }
+    },
+    "401128020": {
+        "id": "401128020",
+        "homeTeam": "bal",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 207,
+            "awayTeam": 212
+        }
+    },
+    "401128021": {
+        "id": "401128021",
+        "homeTeam": "no",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 234,
+            "awayTeam": 362
+        }
+    },
+    "401128022": {
+        "id": "401128022",
+        "homeTeam": "atl",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 184,
+            "awayTeam": 259
+        }
+    },
+    "401128023": {
+        "id": "401128023",
+        "homeTeam": "det",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 315,
+            "awayTeam": 261
+        }
+    },
+    "401128024": {
+        "id": "401128024",
+        "homeTeam": "car",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 274,
+            "awayTeam": 269
+        }
+    },
+    "401128025": {
+        "id": "401128025",
+        "homeTeam": "lv",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 249,
+            "awayTeam": 259
+        }
+    },
+    "401128026": {
+        "id": "401128026",
+        "homeTeam": "hou",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 203,
+            "awayTeam": 128
+        }
+    },
+    "401128027": {
+        "id": "401128027",
+        "homeTeam": "bal",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 157,
+            "awayTeam": 105
+        }
+    },
+    "401128028": {
+        "id": "401128028",
+        "homeTeam": "det",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 446,
+            "awayTeam": 250
+        }
+    },
+    "401128029": {
+        "id": "401128029",
+        "homeTeam": "dal",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 215,
+            "awayTeam": 441
+        }
+    },
+    "401128030": {
+        "id": "401128030",
+        "homeTeam": "ind",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 189,
+            "awayTeam": 265
+        }
+    },
+    "401128031": {
+        "id": "401128031",
+        "homeTeam": "gb",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 319,
+            "awayTeam": 192
+        }
+    },
+    "401128032": {
+        "id": "401128032",
+        "homeTeam": "car",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 114,
+            "awayTeam": 213
+        }
+    },
+    "401128035": {
+        "id": "401128035",
+        "homeTeam": "atl",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 171,
+            "awayTeam": 441
+        }
+    },
+    "401128037": {
+        "id": "401128037",
+        "homeTeam": "buf",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 153,
+            "awayTeam": 155
+        }
+    },
+    "401128039": {
+        "id": "401128039",
+        "homeTeam": "chi",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 195,
+            "awayTeam": 226
+        }
+    },
+    "401128041": {
+        "id": "401128041",
+        "homeTeam": "dal",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 211,
+            "awayTeam": 393
+        }
+    },
+    "401128042": {
+        "id": "401128042",
+        "homeTeam": "det",
+        "awayTeam": "nyg",
+        "score": {
+            "homeTeam": 290,
+            "awayTeam": 316
+        }
+    },
+    "401128043": {
+        "id": "401128043",
+        "homeTeam": "hou",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 285,
+            "awayTeam": 258
+        }
+    },
+    "401128044": {
+        "id": "401128044",
+        "homeTeam": "cle",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 178,
+            "awayTeam": 189
+        }
+    },
+    "401128045": {
+        "id": "401128045",
+        "homeTeam": "jax",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 167,
+            "awayTeam": 278
+        }
+    },
+    "401128046": {
+        "id": "401128046",
+        "homeTeam": "no",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 197,
+            "awayTeam": 373
+        }
+    },
+    "401128047": {
+        "id": "401128047",
+        "homeTeam": "bal",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 110,
+            "awayTeam": 235
+        }
+    },
+    "401128048": {
+        "id": "401128048",
+        "homeTeam": "ten",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 283,
+            "awayTeam": 174
+        }
+    },
+    "401128049": {
+        "id": "401128049",
+        "homeTeam": "car",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 295,
+            "awayTeam": 270
+        }
+    },
+    "401128050": {
+        "id": "401128050",
+        "homeTeam": "sf",
+        "awayTeam": "car",
+        "score": {
+            "homeTeam": 100,
+            "awayTeam": 156
+        }
+    },
+    "401128051": {
+        "id": "401128051",
+        "homeTeam": "ind",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 166,
+            "awayTeam": 191
+        }
+    },
+    "401128052": {
+        "id": "401128052",
+        "homeTeam": "det",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 434,
+            "awayTeam": 191
+        }
+    },
+    "401128053": {
+        "id": "401128053",
+        "homeTeam": "kc",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 151,
+            "awayTeam": 288
+        }
+    },
+    "401128054": {
+        "id": "401128054",
+        "homeTeam": "car",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 189,
+            "awayTeam": 313
+        }
+    },
+    "401128055": {
+        "id": "401128055",
+        "homeTeam": "mia",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 311,
+            "awayTeam": 161
+        }
+    },
+    "401128056": {
+        "id": "401128056",
+        "homeTeam": "kc",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 199,
+            "awayTeam": 327
+        }
+    },
+    "401128057": {
+        "id": "401128057",
+        "homeTeam": "cin",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 209,
+            "awayTeam": 233
+        }
+    },
+    "401128058": {
+        "id": "401128058",
+        "homeTeam": "ind",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 138,
+            "awayTeam": 309
+        }
+    },
+    "401128059": {
+        "id": "401128059",
+        "homeTeam": "nyg",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 121,
+            "awayTeam": 225
+        }
+    },
+    "401128060": {
+        "id": "401128060",
+        "homeTeam": "nyg",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 262,
+            "awayTeam": 274
+        }
+    },
+    "401128061": {
+        "id": "401128061",
+        "homeTeam": "bal",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 329,
+            "awayTeam": 258
+        }
+    },
+    "401128062": {
+        "id": "401128062",
+        "homeTeam": "sf",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 78,
+            "awayTeam": 171
+        }
+    },
+    "401128063": {
+        "id": "401128063",
+        "homeTeam": "jax",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 241,
+            "awayTeam": 193
+        }
+    },
+    "401128064": {
+        "id": "401128064",
+        "homeTeam": "ari",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 225,
+            "awayTeam": 206
+        }
+    },
+    "401128065": {
+        "id": "401128065",
+        "homeTeam": "pit",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 131,
+            "awayTeam": 178
+        }
+    },
+    "401128066": {
+        "id": "401128066",
+        "homeTeam": "cin",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 312,
+            "awayTeam": 291
+        }
+    },
+    "401128067": {
+        "id": "401128067",
+        "homeTeam": "kc",
+        "awayTeam": "lv",
+        "score": {
+            "homeTeam": 210,
+            "awayTeam": 163
+        }
+    },
+    "401128069": {
+        "id": "401128069",
+        "homeTeam": "lar",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 376,
+            "awayTeam": 490
+        }
+    },
+    "401128070": {
+        "id": "401128070",
+        "homeTeam": "mia",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 294,
+            "awayTeam": 351
+        }
+    },
+    "401128071": {
+        "id": "401128071",
+        "homeTeam": "wsh",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 258,
+            "awayTeam": 251
+        }
+    },
+    "401128072": {
+        "id": "401128072",
+        "homeTeam": "det",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 287,
+            "awayTeam": 245
+        }
+    },
+    "401128073": {
+        "id": "401128073",
+        "homeTeam": "kc",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 256,
+            "awayTeam": 249
+        }
+    },
+    "401128074": {
+        "id": "401128074",
+        "homeTeam": "pit",
+        "awayTeam": "mia",
+        "score": {
+            "homeTeam": 170,
+            "awayTeam": 236
+        }
+    },
+    "401128075": {
+        "id": "401128075",
+        "homeTeam": "ind",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 279,
+            "awayTeam": 125
+        }
+    },
+    "401128076": {
+        "id": "401128076",
+        "homeTeam": "buf",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 116,
+            "awayTeam": 146
+        }
+    },
+    "401128077": {
+        "id": "401128077",
+        "homeTeam": "mia",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 256,
+            "awayTeam": 280
+        }
+    },
+    "401128078": {
+        "id": "401128078",
+        "homeTeam": "car",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 310,
+            "awayTeam": 214
+        }
+    },
+    "401128079": {
+        "id": "401128079",
+        "homeTeam": "kc",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 212,
+            "awayTeam": 230
+        }
+    },
+    "401128080": {
+        "id": "401128080",
+        "homeTeam": "mia",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 238,
+            "awayTeam": 266
+        }
+    },
+    "401128081": {
+        "id": "401128081",
+        "homeTeam": "min",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": 270,
+            "awayTeam": 284
+        }
+    },
+    "401128082": {
+        "id": "401128082",
+        "homeTeam": "phi",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 102,
+            "awayTeam": 227
+        }
+    },
+    "401128083": {
+        "id": "401128083",
+        "homeTeam": "pit",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 189,
+            "awayTeam": 183
+        }
+    },
+    "401128084": {
+        "id": "401128084",
+        "homeTeam": "tb",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 219,
+            "awayTeam": 298
+        }
+    },
+    "401128085": {
+        "id": "401128085",
+        "homeTeam": "lv",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 383,
+            "awayTeam": 279
+        }
+    },
+    "401128086": {
+        "id": "401128086",
+        "homeTeam": "wsh",
+        "awayTeam": "nyj",
+        "score": {
+            "homeTeam": 285,
+            "awayTeam": 171
+        }
+    },
+    "401128087": {
+        "id": "401128087",
+        "homeTeam": "sea",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 319,
+            "awayTeam": 347
+        }
+    },
+    "401128088": {
+        "id": "401128088",
+        "homeTeam": "den",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 261,
+            "awayTeam": 175
+        }
+    },
+    "401128089": {
+        "id": "401128089",
+        "homeTeam": "sf",
+        "awayTeam": "ari",
+        "score": {
+            "homeTeam": 131,
+            "awayTeam": 408
+        }
+    },
+    "401128090": {
+        "id": "401128090",
+        "homeTeam": "lac",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 139,
+            "awayTeam": 283
+        }
+    },
+    "401128091": {
+        "id": "401128091",
+        "homeTeam": "nyg",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 257,
+            "awayTeam": 171
+        }
+    },
+    "401128092": {
+        "id": "401128092",
+        "homeTeam": "lv",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 73,
+            "awayTeam": 273
+        }
+    },
+    "401128093": {
+        "id": "401128093",
+        "homeTeam": "chi",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 182,
+            "awayTeam": 197
+        }
+    },
+    "401128094": {
+        "id": "401128094",
+        "homeTeam": "ari",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 241,
+            "awayTeam": 219
+        }
+    },
+    "401128095": {
+        "id": "401128095",
+        "homeTeam": "nyg",
+        "awayTeam": "gb",
+        "score": {
+            "homeTeam": 243,
+            "awayTeam": 240
+        }
+    },
+    "401128096": {
+        "id": "401128096",
+        "homeTeam": "car",
+        "awayTeam": "tb",
+        "score": {
+            "homeTeam": 209,
+            "awayTeam": 365
+        }
+    },
+    "401128097": {
+        "id": "401128097",
+        "homeTeam": "den",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 186,
+            "awayTeam": 303
+        }
+    },
+    "401128098": {
+        "id": "401128098",
+        "homeTeam": "gb",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 223,
+            "awayTeam": 191
+        }
+    },
+    "401128099": {
+        "id": "401128099",
+        "homeTeam": "lv",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 185,
+            "awayTeam": 236
+        }
+    },
+    "401128100": {
+        "id": "401128100",
+        "homeTeam": "ari",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 417,
+            "awayTeam": 124
+        }
+    },
+    "401128101": {
+        "id": "401128101",
+        "homeTeam": "hou",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": 178,
+            "awayTeam": 137
+        }
+    },
+    "401128102": {
+        "id": "401128102",
+        "homeTeam": "no",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 212,
+            "awayTeam": 149
+        }
+    },
+    "401128103": {
+        "id": "401128103",
+        "homeTeam": "dal",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 267,
+            "awayTeam": 212
+        }
+    },
+    "401128104": {
+        "id": "401128104",
+        "homeTeam": "den",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 244,
+            "awayTeam": 134
+        }
+    },
+    "401128105": {
+        "id": "401128105",
+        "homeTeam": "bal",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 217,
+            "awayTeam": 228
+        }
+    },
+    "401128106": {
+        "id": "401128106",
+        "homeTeam": "nyg",
+        "awayTeam": "buf",
+        "score": {
+            "homeTeam": 237,
+            "awayTeam": 241
+        }
+    },
+    "401128107": {
+        "id": "401128107",
+        "homeTeam": "pit",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 173,
+            "awayTeam": 199
+        }
+    },
+    "401128108": {
+        "id": "401128108",
+        "homeTeam": "sf",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 201,
+            "awayTeam": 193
+        }
+    },
+    "401128109": {
+        "id": "401128109",
+        "homeTeam": "pit",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": 102,
+            "awayTeam": 260
+        }
+    },
+    "401128110": {
+        "id": "401128110",
+        "homeTeam": "pit",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 274,
+            "awayTeam": 180
+        }
+    },
+    "401128111": {
+        "id": "401128111",
+        "homeTeam": "cle",
+        "awayTeam": "sea",
+        "score": {
+            "homeTeam": 284,
+            "awayTeam": 249
+        }
+    },
+    "401128113": {
+        "id": "401128113",
+        "homeTeam": "lac",
+        "awayTeam": "min",
+        "score": {
+            "homeTeam": 207,
+            "awayTeam": 283
+        }
+    },
+    "401128114": {
+        "id": "401128114",
+        "homeTeam": "ten",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 121,
+            "awayTeam": 119
+        }
+    },
+    "401128115": {
+        "id": "401128115",
+        "homeTeam": "wsh",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 261,
+            "awayTeam": 208
+        }
+    },
+    "401128116": {
+        "id": "401128116",
+        "homeTeam": "jax",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 222,
+            "awayTeam": 151
+        }
+    },
+    "401128117": {
+        "id": "401128117",
+        "homeTeam": "no",
+        "awayTeam": "ind",
+        "score": {
+            "homeTeam": 159,
+            "awayTeam": 307
+        }
+    },
+    "401128118": {
+        "id": "401128118",
+        "homeTeam": "lv",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": 436,
+            "awayTeam": 178
+        }
+    },
+    "401128119": {
+        "id": "401128119",
+        "homeTeam": "kc",
+        "awayTeam": "hou",
+        "score": {
+            "homeTeam": 280,
+            "awayTeam": 256
+        }
+    },
+    "401128120": {
+        "id": "401128120",
+        "homeTeam": "den",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 120,
+            "awayTeam": 282
+        }
+    },
+    "401128121": {
+        "id": "401128121",
+        "homeTeam": "mia",
+        "awayTeam": "wsh",
+        "score": {
+            "homeTeam": 166,
+            "awayTeam": 187
+        }
+    },
+    "401128122": {
+        "id": "401128122",
+        "homeTeam": "lar",
+        "awayTeam": "no",
+        "score": {
+            "homeTeam": 187,
+            "awayTeam": 265
+        }
+    },
+    "401128123": {
+        "id": "401128123",
+        "homeTeam": "min",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 292,
+            "awayTeam": 325
+        }
+    },
+    "401128124": {
+        "id": "401128124",
+        "homeTeam": "atl",
+        "awayTeam": "phi",
+        "score": {
+            "homeTeam": 237,
+            "awayTeam": 310
+        }
+    },
+    "401128125": {
+        "id": "401128125",
+        "homeTeam": "cle",
+        "awayTeam": "lar",
+        "score": {
+            "homeTeam": 254,
+            "awayTeam": 175
+        }
+    },
+    "401128126": {
+        "id": "401128126",
+        "homeTeam": "ari",
+        "awayTeam": "atl",
+        "score": {
+            "homeTeam": 341,
+            "awayTeam": 340
+        }
+    },
+    "401128127": {
+        "id": "401128127",
+        "homeTeam": "nyj",
+        "awayTeam": "cle",
+        "score": {
+            "homeTeam": 305,
+            "awayTeam": 169
+        }
+    },
+    "401128128": {
+        "id": "401128128",
+        "homeTeam": "lar",
+        "awayTeam": "sf",
+        "score": {
+            "homeTeam": 232,
+            "awayTeam": 48
+        }
+    },
+    "401128129": {
+        "id": "401128129",
+        "homeTeam": "den",
+        "awayTeam": "ten",
+        "score": {
+            "homeTeam": 165,
+            "awayTeam": 167
+        }
+    },
+    "401128130": {
+        "id": "401128130",
+        "homeTeam": "nyj",
+        "awayTeam": "dal",
+        "score": {
+            "homeTeam": 270,
+            "awayTeam": 326
+        }
+    },
+    "401128131": {
+        "id": "401128131",
+        "homeTeam": "lac",
+        "awayTeam": "pit",
+        "score": {
+            "homeTeam": 132,
+            "awayTeam": 316
+        }
+    },
+    "401128132": {
+        "id": "401128132",
+        "homeTeam": "gb",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": 243,
+            "awayTeam": 277
+        }
+    },
+    "401128133": {
+        "id": "401128133",
+        "homeTeam": "lar",
+        "awayTeam": "chi",
+        "score": {
+            "homeTeam": 193,
+            "awayTeam": 173
+        }
+    },
+    "401128134": {
+        "id": "401128134",
+        "homeTeam": "kc",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": 180,
+            "awayTeam": 345
+        }
+    },
+    "david-montgomery": {
+        "id": "david-montgomery",
+        "homeTeam": "chi",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "joe-mixon": {
+        "id": "joe-mixon",
+        "homeTeam": "_",
+        "awayTeam": "cin",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "royce-freeman": {
+        "id": "royce-freeman",
+        "homeTeam": "_",
+        "awayTeam": "den",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "jd-mckissic": {
+        "id": "jd-mckissic",
+        "homeTeam": "_",
+        "awayTeam": "det",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "aaron-jones": {
+        "id": "aaron-jones",
+        "homeTeam": "gb",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "carlos-hyde": {
+        "id": "carlos-hyde",
+        "homeTeam": "hou",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "marlon-mack": {
+        "id": "marlon-mack",
+        "homeTeam": "ind",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "leonard-fournette": {
+        "id": "leonard-fournette",
+        "homeTeam": "_",
+        "awayTeam": "jax",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "lesean-mccoy": {
+        "id": "lesean-mccoy",
+        "homeTeam": "_",
+        "awayTeam": "kc",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "melvin-gordon-iii": {
+        "id": "melvin-gordon-iii",
+        "homeTeam": "_",
+        "awayTeam": "lac",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "dalvin-cook": {
+        "id": "dalvin-cook",
+        "homeTeam": "min",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    },
+    "leveon-bell": {
+        "id": "leveon-bell",
+        "homeTeam": "nyj",
+        "awayTeam": "_",
+        "score": {
+            "homeTeam": null,
+            "awayTeam": null
+        }
+    }
+}
