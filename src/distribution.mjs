@@ -94,3 +94,34 @@ export const sigma = function sigma(start, end, modifier) {
 
     return Array.from({ length }, map).reduce(sum);
 }
+
+export const mean = (sample, modifier = x => x) => {
+	if (!sample.length) {
+		return 0;
+	}
+	if (sample.length === 1) {
+		return sample[0];
+	}
+	let total = sample.reduce((p, x) => {
+		return p + modifier(x);
+	}, 0);
+	return total / sample.length;
+}
+
+const calcMeans = (sample) => {
+	let m = [
+		mean(sample),
+		mean(sample, x => (x ** 2)),
+	];
+	m.push(Math.pow(m[0], 2));
+
+	return m;
+}
+export const alphaFromHistory = (sample) => {
+	const [m1, m2, mSqrd] = calcMeans(sample);
+	return mSqrd/(m2 - mSqrd);
+}
+export const betaFromHistory = (sample) => {
+	const [m1, m2, mSqrd] = calcMeans(sample);
+	return (m2 - mSqrd) / m1;
+}
