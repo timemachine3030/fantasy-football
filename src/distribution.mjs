@@ -86,3 +86,11 @@ export const compute = function compute(X, A, B) {
 	prob = Math.round(prob * 100000) / 100000;
     return prob;
 }
+
+export const sigma = function sigma(start, end, modifier) {
+    const length = end - start + 1;
+    const map = (v, k) => modifier ? modifier(k + start) : k + start;
+    const sum = (a, b) => a + b;
+
+    return Array.from({ length }, map).reduce(sum);
+}
