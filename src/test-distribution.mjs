@@ -44,8 +44,10 @@ describe('calculate', () => {
     });
     describe('beta', () => {
         it('returns the beta for a data sample', () => {
+            // https://www.wolframalpha.com/input/?i=%28mean+%7B18%5E2%2C16%5E2%2C13%5E2%2C32%5E2%2C22%5E2%2C16%5E2%2C28%5E2%2C37%5E2%7D+-+%28mean+%7B18%2C16%2C13%2C32%2C22%2C16%2C28%2C37%7D+%5E+2%29%29+%2F+%28mean+%7B18%2C16%2C13%2C32%2C22%2C16%2C28%2C37%7D%29
             const sample = [18,16,13,32,22,16,28,37];
-            expect(betaFromHistory(sample)).to.eql(583.25);
+            const beta = betaFromHistory(sample);
+            expect(Math.round(beta * 100000) / 100000).to.eql(2.88736);
         });
     });
 })
