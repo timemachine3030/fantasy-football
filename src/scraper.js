@@ -130,6 +130,7 @@ export const predictStats = async function(playerId, year){
     }) 
     product.alpha = alphaFromHistory(product.gameYards)
     product.beta = betaFromHistory(product.gameYards)
+    
     return product; 
 }
 
