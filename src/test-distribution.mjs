@@ -15,7 +15,6 @@ describe('compute gamma', () => {
         const alpha = round(alphaFromHistory(sample));
         const beta = round(betaFromHistory(sample));
         const cfd = compute(12, alpha, beta);
-        console.log({alpha, beta});
         expect(cfd).to.eql(0.06702)
     })
 });
@@ -33,7 +32,10 @@ describe('calculate', () => {
             expect(sigma(3,5, i => i * 2)).to.eql(24);
         });
         it('dividend', () =>{
-            expect(Math.round(sigma(3,5, i => i / (i + 1)) * 1000) / 1000).to.eql(2.383);
+            expect(round(
+                sigma(3,5, i => i / (i + 1)),
+                1000)
+            ).to.eql(2.383);
         });
     });
     describe('mean', () => {
