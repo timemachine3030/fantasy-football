@@ -50,27 +50,28 @@ const getYearStatSummary = async function (playerId, year) {
     });
 
     const $ = cheerio.load(response.data);
-    const tblHeading = [
-        'date',
-        'opponent',
-        'game_result',
-        'passing_completions',
-        'passing_attempts',
-        'passing_yards',
-        'passing_completion_percent',
-        'seasonAvgPassYardsPG',
-        'passing_touchdowns',
-        'passing_interceptions',
-        'passing_longest',
-        'total_sacks',
-        'rating',
-        'adjusted_rating',
-        'rushing_attempts',
-        'rushing_yards',
-        'rushing_avg_yards',
-        'rushing_touchdowns',
-        'longest_rush'
-    ];
+    const tblTypes = {
+        'date': 'string',
+        'opponent': 'string',
+        'game_result': 'string',
+        'passing_completions': 'number',
+        'passing_attempts': 'number',
+        'passing_yards': 'number',
+        'passing_completion_percent': 'number',
+        'seasonAvgPassYardsPG': 'number',
+        'passing_touchdowns': 'number',
+        'passing_interceptions': 'number',
+        'passing_longest': 'number',
+        'total_sacks': 'number',
+        'rating': 'number',
+        'adjusted_rating': 'number',
+        'rushing_attempts': 'number',
+        'rushing_yards': 'number',
+        'rushing_avg_yards': 'number',
+        'rushing_touchdowns': 'number',
+        'longest_rush': 'number'
+    };
+    const tblHeading = Object.keys(tblTypes);
 
     const nameSelector = '#fittPageContainer > div.StickyContainer > div.ResponsiveWrapper > div > div > div.PlayerHeader__Left.flex.items-center.justify-start.overflow-hidden.brdr-clr-gray-09 > div.PlayerHeader__Main.flex.items-center > div.PlayerHeader__Main_Aside.min-w-0.flex-grow.flex-basis-0 > h1 > span:nth-child(2)'
     const selector = '#fittPageContainer > div.StickyContainer > div:nth-child(5) > div > div.PageLayout__Main > div.ResponsiveWrapper > div > div > div > div > div > div > div > div.Table__Scroller > table > tbody';            
@@ -92,14 +93,18 @@ const getYearStatSummary = async function (playerId, year) {
                 return;
             }
             $(tr).find("td").each((i, d) => {
-                statLine[tblHeading[i]] = $(d).text();
+                let val = $(d).text();
+                if (tblTypes[tblHeading[i]] === 'number') {
+                    val = parseFloat(val);
+                }
+                statLine[tblHeading[i]] = val;
             });
             data.stats.push(statLine);
         })
     });
 
     let totalYards = data.stats.reduce((total, game) => {
-        total += parseInt(game.passing_yards, 10);
+        total += game.passing_yards;
         return total;
     }, 0);
 
