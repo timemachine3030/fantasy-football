@@ -117,6 +117,7 @@ const predictStats = async function(playerId, year){
     previousYearStats.stats.forEach(() => {
         gameYards[i] = previousYearStats.stats[i].passing_yards;
         i += 1;
+        
     }) 
     return gameYards; 
 }
