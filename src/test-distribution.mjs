@@ -1,9 +1,6 @@
 import chai from 'chai';
-import { mean, alphaFromHistory, betaFromHistory, sigma, compute } from './distribution.mjs';
-
+import { mean, alphaFromHistory, betaFromHistory, sigma, compute, round } from './distribution.mjs';
 const expect = chai.expect;
-
-const round = (x, p = 100000) => Math.round(x * p) / p;
 
 describe('compute gamma', () => {
     it('cdf', () => {
@@ -17,6 +14,21 @@ describe('compute gamma', () => {
         const cfd = compute(12, alpha, beta);
         expect(cfd).to.eql(0.06702)
     })
+});
+
+describe('next game', () => {
+    it('calculates mean', () => {
+        const gameyds =[ 233, 169, 286, 245, 240, 200, 232, 378, 182, 241, 295, 268, 240, 406, 300, 195,];
+        let meanYds = mean(gameyds);
+        let alpha = alphaFromHistory(gameyds);
+        let beta = betaFromHistory(gameyds);
+        let avgYrd = (alpha * beta);
+        let mode = (alpha - 1) * beta;
+        expect(avgYrd).eql(meanYds);
+        let modeProb = compute(mode, alpha, beta);
+        let meanProb = compute(meanYds, alpha, beta)
+        expect(round(meanProb + modeProb, 1)).eql(1);
+    });
 });
 
 describe('calculate', () => {

@@ -83,9 +83,11 @@ export const compute = function compute(X, A, B) {
 	} else {
 		prob = Gammacdf(X/B, A)
 	}
-	prob = Math.round(prob * 100000) / 100000;
+	prob = round(prob);
     return prob;
 }
+
+export const round = (x, p = 100000) => Math.round(x * p) / p;
 
 export const sigma = function sigma(start, end, modifier) {
     const length = end - start + 1;
