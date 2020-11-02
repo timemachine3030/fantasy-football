@@ -128,8 +128,9 @@ const predictStats = async function(playerId, year){
         i += 1;
 
     }) 
-    product.alpha = alphaFromHistory(gameYards)
-    product.beta = betaFromHistory(gameYards)
+    product.alpha = alphaFromHistory(product.gameYards)
+    product.beta = betaFromHistory(product.gameYards)
+    
     return product; 
 }
 
