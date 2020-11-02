@@ -1,13 +1,13 @@
 import axios from 'axios';
 import cheerio from 'cheerio';
 import URL from 'url';
-import fs from 'fs';
+import {alphaFromHistory, betaFromHistory} from '../src/distribution.js'
 
 const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 const SEASON_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/season/{year}/seasontype/2/table/passing/sort/passingYards/dir/desc';
 const CURRENT_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/table/passing/sort/passingYards/dir/desc';
 
-const buildUrl = function (url, replacements) {
+export const buildUrl = function (url, replacements) {
     const reFind = /\{([^\}]+)\}/g
 
     return url.replace(reFind, (match, found) => {
@@ -17,7 +17,7 @@ const buildUrl = function (url, replacements) {
     });
 } 
 
-const getPayerIds = async (year = 2019) => {
+export const getPayerIds = async (year = 2019) => {
     const url = buildUrl(SEASON_PASSING_STATS, {year});
     return axios({
         method: 'GET',
@@ -40,7 +40,7 @@ const getPayerIds = async (year = 2019) => {
         });
 }
 
-const getYearStatSummary = async function (playerId, year) {
+export const getYearStatSummary = async function (playerId, year) {
 
     const url = buildUrl(PLAYER_STAT_PAGE, {playerId, year});
 
@@ -112,7 +112,7 @@ const getYearStatSummary = async function (playerId, year) {
     
     return data;
 }
-const predictStats = async function(playerId, year){
+export const predictStats = async function(playerId, year){
     const previousYear = (year-1).toString();
     const previousYearStats = await getYearStatSummary(playerId, previousYear)
     const predictedSeasonAvPassYPG = previousYearStats.seasonAvgPassYardsPG;
@@ -128,94 +128,8 @@ const predictStats = async function(playerId, year){
         i += 1;
 
     }) 
-    product.alpha = alphaFromHistory(gameYards)
-    product.beta = betaFromHistory(gameYards)
+    product.alpha = alphaFromHistory(product.gameYards)
+    product.beta = betaFromHistory(product.gameYards)
     return product; 
 }
-
-// Test
-import chai from 'chai';
-import { alphaFromHistory } from './distribution.mjs';
-import { betaFromHistory } from './distribution.mjs';
-const expect = chai.expect;
-
-describe('Scraper', () => {
-    describe('predict 2020 stats', () => {
-        it('get Wilson stats 2020', async () =>{
-            const wilsonNow = await predictStats('14881', 2020)
-            expect(wilsonNow.gameYards).to.be.an('array')
-            expect(wilsonNow.alpha).to.be.an('number')
-        })
-
-
-    })
-    describe('getYearStatSummary', () => {
-        it('find Lamar reg season', async () => {
-            const result = await getYearStatSummary('3916387', '2019');
-            expect(result.playerId).to.eql('3916387');
-            expect(result.year).to.eql('2019');
-            expect(result.stats).to.be.an('array');
-            expect(result.stats[0].opponent).to.eql('@CLE')
-            expect(result.playerName).to.eql('Jackson')
-        });
-        it('find Dak reg season', async () => {
-            const result = await getYearStatSummary('2577417', '2019');
-            expect(result.playerId).to.eql('2577417');
-            expect(result.year).to.eql('2019');
-            expect(result.stats).to.be.an('array');
-            expect(result.stats[0].opponent).to.eql('vsWSH')
-            expect(result.stats.length).to.eql(16);
-        });
-    });
-    describe('buildUrl', () => {
-        it('replaces year and id', () => {
-            let a = buildUrl("https://{playerId}/something/{year}", {playerId: 1000, year: 2023});
-
-            expect(a).to.eql("https://1000/something/2023")
-        });
-    });
-    describe('All Players', () => {
-        it('get all the data', async () => {
-            const ids = await getPayerIds(2019);
-
-            const playerData = await Promise.all(ids.map((id) => {
-                return getYearStatSummary(id, '2019');
-            }));
-            fs.writeFileSync('./qb-data-sample.json', JSON.stringify(playerData));
-            
-            expect(playerData).to.be.an('array');
-            expect(playerData.length).to.eql(41);
-            //expect(playerData[0].playerId).to.eql('2969939');
-            //expect(playerData[playerData.length - 1].playerId).to.eql('12477');
-            
-            playerData.forEach((d) => {
-                try {
-                    expect(d.stats).to.be.an('array');
-                    expect(d.stats.length).to.be.greaterThan(0);
-                } catch (error) {
-                    console.error(error.message);
-                    console.log('problem with: ' + buildUrl(PLAYER_STAT_PAGE, {playerId: d.playerId, year: d.year}));
-                }
-            });
-            fs.writeFileSync('./qb-data.json', JSON.stringify(playerData));
-
-        });
-    });
-
-    describe.skip('Check Data', () => {
-        it('players have stats', () => {
-            const data = JSON.parse(fs.readFileSync('./qb-data.json'));
-            data.forEach((d) => {
-                try {
-                    expect(d.stats).to.be.an('array');
-                    expect(d.stats.length).to.be.greaterThan(0);
-                } catch (ignore) {
-                    console.error(ignore.message);
-                    console.log('problem with:' + buildUrl(PLAYER_STAT_PAGE, {playerId: d.playerId, year: d.year}));
-                }
-            });
-        })
-    });
-
-});
 

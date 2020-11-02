@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scraper": "mocha --inspect src/scraper.js",
+    "test": "mocha --inspect tests/*.spec.js",
     "parser": "mocha --inspect src/parser.js",
     "defense-Scraper": "mocha --inspect --no-timeout src/defense-Scraper.js",
     "test-distribution": "mocha --inspect src/test-distribution.mjs"

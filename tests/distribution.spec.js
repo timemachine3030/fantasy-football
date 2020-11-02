@@ -1,5 +1,5 @@
 import chai from 'chai';
-import { mean, alphaFromHistory, betaFromHistory, sigma, compute, round } from './distribution.mjs';
+import { mean, alphaFromHistory, betaFromHistory, sigma, compute, round } from '../src/distribution.js';
 const expect = chai.expect;
 
 describe('compute gamma', () => {
