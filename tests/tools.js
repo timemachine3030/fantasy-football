@@ -1,4 +1,5 @@
 import { getPayerIds, getYearStatSummary } from '../src/scraper.js';
+import {buildDataModel, getAllTeamsSchedules} from '../src/defense-Scraper';
 import fs from 'fs';
 import chai from 'chai';
 const expect = chai.expect;
@@ -23,4 +24,21 @@ describe('scripts', () => {
         expect(playerData.length).to.eql(41);
         fs.writeFileSync('./datafiles/qb-data.json', JSON.stringify(playerData, null, 2));
     });
+
+    describe('game-scores ', () => {
+        it('2019', async () => {
+            const text = fs.readFileSync('./datafiles/schedules-data-2019.json', 'utf-8')
+            const season = JSON.parse(text)
+            const scores = await buildDataModel(season)
+            const json = JSON.stringify(scores);
+            fs.writeFileSync('./season-defense.json', json);
+        })
+    })
+    describe('team-schedules', () => {
+        it('2019', async () => {
+            const schedules = await getAllTeamsSchedules(2019);
+            const text = JSON.stringify(schedules, null, 2);
+            fs.writeFileSync('./datafiles/schedules-data-2019.json', text);
+        })
+    })
 });
