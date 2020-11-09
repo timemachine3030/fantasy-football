@@ -12,6 +12,7 @@ import cheerio from 'cheerio';
 import fs, { writevSync } from 'fs';
 import rateLimit from 'axios-rate-limit';
 import asciichart from 'asciichart';
+import {alphaFromHistory, betaFromHistory} from './distribution.js';
 
 const plot = asciichart.plot;
 
@@ -44,7 +45,7 @@ const buildUrl = function (url, replacements) {
 
     });
 }
-const buildDataModel = async function (season) {
+export const buildDataModel = async function (season) {
     let scores = {}
     for (let i=0; i < season.length; i++){
         if (i % 64 === 0) {
@@ -62,7 +63,7 @@ const buildDataModel = async function (season) {
     // TO DO: plug in away team scores
     return scores;
 };
-const getGameScore = async function (gameID) {
+export const getGameScore = async function (gameID) {
     const gameScore = buildUrl(GAME_BOX_SCORE, { gameID })
     const response = await axios({
         method: 'GET',
@@ -152,7 +153,7 @@ async function getTeamShortID(year) {
     })
     return teams;
 }
-async function getAllTeamsSchedules(year) {
+export async function getAllTeamsSchedules(year) {
     const teams = await getTeamShortID(year);
     let schedules = []
     for (let t = 0; t < teams.length; t += 1) {
@@ -269,6 +270,17 @@ const getYearStatSummary = async function (playerId, year) {
 
 }
 
+export function getDefGames(shortid) {
+    const defBuf = fs.readFileSync('./season-defense.json', 'utf-8');
+    const season = JSON.parse(defBuf);
+    let games = Object.values(season);
+    return games.filter((game) => {
+        if (game.homeTeam === shortid || game.awayTeam === shortid) {
+            return true;
+        }
+    });
+}
+
 export function getDefAvg(shortid) {
 
     const defBuf = fs.readFileSync('./season-defense.json', 'utf-8');
@@ -302,9 +314,6 @@ export function getQbAvg(name) {
         return qb;
 }
 
-// Test
-import chai from 'chai';
-const expect = chai.expect;
 /*
 Possible changes:
 Factor in time of possession
@@ -316,3 +325,23 @@ TOP
 */
 //Total yards is an erlang distribution with k plays and theta mathematical yards per play
 
+export const predictDefenseStats = (shortid, games) => {
+    if (!games) throw new Error('games are required.');
+    const product = {
+       gameYards: [],
+       alpha: 0,
+       beta: 0,
+    }
+    product.gameYards = games.map(game => {
+        if (game.awayTeam === shortid) {
+            return game.score.awayTeam;
+        } else {
+            return game.score.homeTeam;
+        }
+    });
+
+    product.alpha = alphaFromHistory(product.gameYards)
+    product.beta = betaFromHistory(product.gameYards)
+    
+    return product; 
+}

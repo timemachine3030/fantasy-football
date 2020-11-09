@@ -6,8 +6,9 @@
   "scripts": {
     "test": "mocha --inspect tests/*.spec.js",
     "parser": "mocha --inspect src/parser.js",
-    "defense-Scraper": "mocha --inspect --no-timeout src/defense-Scraper.js",
-    "test-distribution": "mocha --inspect src/test-distribution.mjs"
+    "defense-scraper": "mocha --inspect tests/defence.spec.js",
+    "test-distribution": "mocha --inspect src/test-distribution.mjs",
+    "tools": "mocha --inspect tests/tools.js --grep compare-teams "
   },
   "repository": {
     "type": "git",
