@@ -8,7 +8,8 @@
     "parser": "mocha --inspect src/parser.js",
     "defense-scraper": "mocha --inspect tests/defence.spec.js",
     "test-distribution": "mocha --inspect src/test-distribution.mjs",
-    "tools": "mocha --inspect tests/tools.js --grep compare-teams "
+    "tools": "mocha --inspect tests/tools.js --grep compare-teams ",
+    "predict": "mocha --inspect src/loop.js --grep week-09"
   },
   "repository": {
     "type": "git",

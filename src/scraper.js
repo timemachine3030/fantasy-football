@@ -114,7 +114,10 @@ export const getYearStatSummary = async function (playerId, year) {
 }
 export const predictStats = async function(playerId, year){
     const previousYear = (year-1).toString();
-    const previousYearStats = await getYearStatSummary(playerId, previousYear)
+    let previousYearStats = await getYearStatSummary(playerId, previousYear);
+    if (!previousYearStats) {
+        previousYearStats = await getYearStatSummary(playerId, year);
+    }
     const predictedSeasonAvPassYPG = previousYearStats.seasonAvgPassYardsPG;
    // return predictedSeasonAvPassYPG;
    const product = {

@@ -1,5 +1,6 @@
 import { getPayerIds, getYearStatSummary, predictStats } from '../src/scraper.js';
 import {buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats} from '../src/defense-Scraper.js';
+import { compareTeams } from '../src/loop.js';
 import fs from 'fs';
 import chai from 'chai';
 const expect = chai.expect;
@@ -49,25 +50,11 @@ describe('scripts', () => {
             shortid: 'dal',
             qb: 2577417
         }];
-        async function compareTeams(a, b) {
-            let games = getDefGames(a.shortid);
-            let defenseDistribution = predictDefenseStats(a.shortid, games);
-            
-            let qbDistribution = await predictStats(b.qb, 2020);
-            
-            let comparisionAlpha = (defenseDistribution.alpha + qbDistribution.alpha) / 2;
-            
-            let comparisionBeta = (defenseDistribution.beta + qbDistribution.beta) / 2;
-            return {
-                avg: comparisionBeta * comparisionAlpha,
-                alpha: comparisionAlpha, 
-                beta: comparisionBeta
-            };
-        }
+
         // console.log(comparision);
         it('avg the qb-alpha and def-alpha', async () => {
-            let PitVsDak = await compareTeams(teams[0], teams[1]);
-            let DalVsBen = await compareTeams(teams[1], teams[0]);
+            let PitVsDak = await compareTeams(teams[0].shortid, teams[1].shortid);
+            let DalVsBen = await compareTeams(teams[1].shortid, teams[0].shortid);
   
             console.log({PitVsDak, DalVsBen});
         });
