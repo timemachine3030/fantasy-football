@@ -1,4 +1,4 @@
-import { getPayerIds, getYearStatSummary, predictStats } from '../src/scraper.js';
+import QuarterBack from './quarter-back.js';
 import { buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import fs from 'fs';
 import chai from 'chai';
@@ -155,26 +155,8 @@ let week09 = [{
 describe('week-09', () => {
     
     it('compares-all-teams', async () => {
-        let results = await Promise.all(week09.map(async (game) => {
-            let prediction1 = await compareTeams(game.home, game.away);
-            let prediction2 = await compareTeams(game.away, game.home);
-            return {
-                ...game,
-                home: {
-                    qb: NFL[game.home][0],
-                    def: game.away,
-                    ...prediction1
-                },
-                away: {
-                    qb: NFL[game.away][0],
-                    def: game.home,
-                    ...prediction2
-                }
-            };
-        }));
-
-        // expect(results.length).eql(14);
-        fs.writeFileSync('./datafiles/week-09.json', JSON.stringify(results, null, 2));
+        let results = await runWeekPregictions(week09);
+        fs.writeFileSync('./datafiles/week-09-rerun.json', JSON.stringify(results, null, 2));
     });
 });
 
@@ -183,42 +165,40 @@ describe('week-10', () => {
         expect(week10.length).eql(14);
     });
     it('compares-all-teams', async () => {
-        let results = await Promise.all(week10.map(async (game) => {
-            let prediction1 = await compareTeams(game.home, game.away);
-            let prediction2 = await compareTeams(game.away, game.home);
-            return {
-                ...game,
-                home: {
-                    qb: NFL[game.home][0],
-                    def: game.away,
-                    ...prediction1
-                },
-                away: {
-                    qb: NFL[game.away][0],
-                    def: game.home,
-                    ...prediction2
-                }
-            };
-        }));
-
+        let results = await runWeekPregictions(week10);
         expect(results.length).eql(14);
         fs.writeFileSync('./datafiles/week-10.json', JSON.stringify(results, null, 2));
     });
 });
 
+const runWeekPregictions = async (matchups) => {
+    return Promise.all(matchups.map(async (game) => {
+        let qb_home = new QuarterBack(NFL[game.home][0]);
+        let qb_away = new QuarterBack(NFL[game.away][0]);
+        let prediction1 = await compareTeams(qb_home, game.away);
+        let prediction2 = await compareTeams(qb_away, game.home);
+        return {
+            ...game,
+            home: {
+                qb: qb_home.playerName,
+                def: game.away,
+                ...prediction1
+            },
+            away: {
+                qb: qb_away.playerName,
+                def: game.home,
+                ...prediction2
+            }
+        };
+    }));
+}
 
-export const compareTeams = async function compareTeams(a, b) {
-    let aqb, bqb;
-    try {
-        aqb = NFL[a][0];
-        bqb = NFL[b][0];
-    } catch (err) {
-        throw new Error('team missing: ' + a + ' or ' + b);
-    }
-    let games = getDefGames(a);
-    let defenseDistribution = predictDefenseStats(a, games);
+export const compareTeams = async function compareTeams(qb, def) {
+    let games = getDefGames(def);
+    let defenseDistribution = predictDefenseStats(def, games);
+    await qb.populateYearStatSummary(2019);
 
-    let qbDistribution = await predictStats(bqb, 2020);
+    let qbDistribution = qb.predictStats(2019);
 
     let comparisionAlpha = (defenseDistribution.alpha + qbDistribution.alpha) / 2;
 
