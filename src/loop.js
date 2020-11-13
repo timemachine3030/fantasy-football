@@ -2,7 +2,8 @@ import QuarterBack from './quarter-back.js';
 import { buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import fs from 'fs';
 import chai from 'chai';
-import {getAllResults, getAllGames} from '../src/results.js';
+import { getAllResults, getAllGames } from '../src/results.js';
+import { compute } from './distribution.js';
 const expect = chai.expect;
 let NFL = {
     ari: ['2577189', '3917315'],
@@ -16,26 +17,26 @@ let NFL = {
     dal: ['3895785', '16809'],
     den: ['2574630', '3924327'],
     det: ['3116188', '12471'],
-    gb:  ['8439', '3045169'],
+    gb: ['8439', '3045169'],
     hou: ['3122840', '16810'],
     ind: ['5529', '2578570', '4035003'],
     jax: ['4038524', '3124900'],
-    kc:  ['3139477', '11291'],
-    lv:  ['16757', '2576980', '2972236'],
+    kc: ['3139477', '11291'],
+    lv: ['16757', '2576980', '2972236'],
     lac: ['4038941', '14163'],
     lar: ['3046779'],
     mia: ['8664', '4241479'],
     min: ['14880', '2517017'],
-    ne:  ['13994', '12477', '3892775'],
-    no:  ['2580', '2468609'],
+    ne: ['13994', '12477', '3892775'],
+    no: ['2580', '2468609'],
     nyg: ['3917792', '13199'],
     nyj: ['11252', '3912547', '3914395'],
-    phi: ['2573079', '4040715', ],
-    pit: ['5536', '3044720', ],
-    sf:  ['3059989', '2979520'],
+    phi: ['2573079', '4040715',],
+    pit: ['5536', '3044720',],
+    sf: ['3059989', '2979520'],
     sea: ['14881', '15864'],
-    tb:  ['2330', '16140'],
-    ten: ['14876', ],
+    tb: ['2330', '16140'],
+    ten: ['14876',],
     wsh: ['4040616', '3115293'],
 }
 let week10 = [{
@@ -77,7 +78,7 @@ let week10 = [{
 }, {
     home: 'ne',
     away: 'bal',
-},{
+}, {
     home: 'chi',
     away: 'min',
 
@@ -86,7 +87,7 @@ let week10 = [{
 let week09 = [{
     home: 'nyj',
     away: 'ne',
-},{
+}, {
     home: 'ari',
     away: 'mia',
     mia: 248,
@@ -105,7 +106,7 @@ let week09 = [{
     home: 'lac',
     away: 'lv',
     lac: 326,
-    lv:  165
+    lv: 165
 }, {
     home: 'jax',
     away: 'hou',
@@ -121,64 +122,85 @@ let week09 = [{
     away: 'det',
     det: 211,
     min: 220,
-},{
+}, {
     home: 'kc',
     away: 'car',
     car: 310,
-    kc:  372,
-},{
+    kc: 372,
+}, {
     home: 'ind',
     away: 'bal',
     bal: 170,
     ind: 227
-},{
+}, {
     home: 'ten',
     away: 'chi',
     ten: 158,
     chi: 335,
-},{
+}, {
     home: 'buf',
     away: 'sea',
     sea: 390,
     buf: 415
-},{
+}, {
     home: 'atl',
     away: 'den',
     atl: 284,
     den: 313
-},{
+}, {
     home: 'gb',
     away: 'sf',
     gb: 305,
     sf: 291
 }];
 
+describe('predict', () => {
+
+    describe('week-09', () => {
+
+        it('compares-all-teams', async () => {
+            let results = await runWeekPregictions(9);
+            fs.writeFileSync('./datafiles/week-09-rerun.json', JSON.stringify(results, null, 2));
+        });
+    });
+
+    describe('week-10', () => {
+
+        it('compares-all-teams', async () => {
+            let results = await runWeekPregictions(10);
+            expect(results.length).eql(14);
+            fs.writeFileSync('./datafiles/week-10.json', JSON.stringify(results, null, 2));
+        });
+    });
+});
+
 describe('results', () => {
     it('week-09', async () => {
         let results = await getAllResults(9);
-        fs.writeFileSync('./datafiles/results-09.json', JSON.stringify(results, null, 2));
-
-        // Merge results into week.
-
+        let prediction = JSON.parse(fs.readFileSync('./datafiles/week-09-rerun.json', 'utf-8'));
+        let difference = prediction.map((matchup) => {
+            let result = results.find(g => g.game === matchup.game.id);
+            if (!result) {
+                console.log('no game result for: ', {matchup});
+            }
+            if (!matchup.home.alpha || !matchup.home.beta) {
+                console.log('no qb stats', {home: matchup.home});
+            } else {
+                matchup.home.gamma = compute(result.home, matchup.home.alpha, matchup.home.beta);
+                matchup.home.actual = result.home;
+            }
+            if (!matchup.away.alpha || !matchup.away.beta) {
+                console.log('no qb stats', {away: matchup.away});
+            } else {
+                matchup.away.gamma = compute(result.away, matchup.away.alpha, matchup.away.beta);
+                matchup.away.actual = result.away;
+            }
+            return matchup;
+        });
+        fs.writeFileSync('./datafiles/week-09-with-gama.json', JSON.stringify(difference, null, 2));
     })
 })
 
-describe('week-09', () => {
-    
-    it('compares-all-teams', async () => {
-        let results = await runWeekPregictions(week09);
-        fs.writeFileSync('./datafiles/week-09-rerun.json', JSON.stringify(results, null, 2));
-    });
-});
-
-describe('week-10', () => {
-
-    it('compares-all-teams', async () => {
-        let results = await runWeekPregictions(10);
-        expect(results.length).eql(14);
-        fs.writeFileSync('./datafiles/week-10.json', JSON.stringify(results, null, 2));
-    });
-});
 
 const runWeekPregictions = async (week) => {
     let matchups = await getAllGames(week);
@@ -188,7 +210,7 @@ const runWeekPregictions = async (week) => {
         let prediction1 = await compareTeams(qb_home, game.away);
         let prediction2 = await compareTeams(qb_away, game.home);
         return {
-            ...game,
+            game,
             home: {
                 datapoints: qb_home.datapoints,
                 qb: qb_home.playerName,

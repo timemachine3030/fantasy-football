@@ -1,77 +1,11 @@
 [
   {
-    "home": {
-      "datapoints": 10,
-      "qb": "Keenum",
-      "def": "hou",
-      "avg": 261.8130933073905,
-      "alpha": 4.714274683168817,
-      "beta": 55.53624065269915
+    "game": {
+      "id": 401220203,
+      "gameUrl": "/nfl/game/_/gameId/401220203",
+      "home": "ten",
+      "away": "ind"
     },
-    "away": {
-      "datapoints": 15,
-      "qb": "Watson",
-      "def": "cle",
-      "avg": 322.65074761935625,
-      "alpha": 23.963303082699007,
-      "beta": 13.464368685146049
-    }
-  },
-  {
-    "home": {
-      "datapoints": 5,
-      "qb": "Blough",
-      "def": "wsh",
-      "avg": 228.23564941208588,
-      "alpha": 11.67504781643499,
-      "beta": 19.54901196128705
-    },
-    "away": {
-      "datapoints": 9,
-      "qb": "Haskins Jr.",
-      "def": "det",
-      "avg": 208.7486963652929,
-      "alpha": 6.28285665707522,
-      "beta": 33.22512477349262
-    }
-  },
-  {
-    "home": {
-      "datapoints": 16,
-      "qb": "Rodgers",
-      "def": "jax",
-      "avg": 250.30353582843932,
-      "alpha": 7.453357027396661,
-      "beta": 33.58265743991421
-    },
-    "away": {
-      "datapoints": 14,
-      "qb": "Minshew II",
-      "def": "gb",
-      "avg": 276.3348998743836,
-      "alpha": 9.699258029300912,
-      "beta": 28.490313283716286
-    }
-  },
-  {
-    "home": {
-      "datapoints": 13,
-      "qb": "Jones",
-      "def": "phi",
-      "avg": 236.75812880082105,
-      "alpha": 6.412278054589301,
-      "beta": 36.92262356454927
-    },
-    "away": {
-      "datapoints": 16,
-      "qb": "Wentz",
-      "def": "nyg",
-      "avg": 287.4872895212057,
-      "alpha": 16.867961280037907,
-      "beta": 17.043392781641458
-    }
-  },
-  {
     "home": {
       "datapoints": 12,
       "qb": "Tannehill",
@@ -90,6 +24,108 @@
     }
   },
   {
+    "game": {
+      "id": 401220165,
+      "gameUrl": "/nfl/game/_/gameId/401220165",
+      "home": "cle",
+      "away": "hou"
+    },
+    "home": {
+      "datapoints": 10,
+      "qb": "Keenum",
+      "def": "hou",
+      "avg": 261.8130933073905,
+      "alpha": 4.714274683168817,
+      "beta": 55.53624065269915
+    },
+    "away": {
+      "datapoints": 15,
+      "qb": "Watson",
+      "def": "cle",
+      "avg": 322.65074761935625,
+      "alpha": 23.963303082699007,
+      "beta": 13.464368685146049
+    }
+  },
+  {
+    "game": {
+      "id": 401220289,
+      "gameUrl": "/nfl/game/_/gameId/401220289",
+      "home": "det",
+      "away": "wsh"
+    },
+    "home": {
+      "datapoints": 5,
+      "qb": "Blough",
+      "def": "wsh",
+      "avg": 228.23564941208588,
+      "alpha": 11.67504781643499,
+      "beta": 19.54901196128705
+    },
+    "away": {
+      "datapoints": 9,
+      "qb": "Haskins Jr.",
+      "def": "det",
+      "avg": 208.7486963652929,
+      "alpha": 6.28285665707522,
+      "beta": 33.22512477349262
+    }
+  },
+  {
+    "game": {
+      "id": 401220295,
+      "gameUrl": "/nfl/game/_/gameId/401220295",
+      "home": "gb",
+      "away": "jax"
+    },
+    "home": {
+      "datapoints": 16,
+      "qb": "Rodgers",
+      "def": "jax",
+      "avg": 250.30353582843932,
+      "alpha": 7.453357027396661,
+      "beta": 33.58265743991421
+    },
+    "away": {
+      "datapoints": 14,
+      "qb": "Minshew II",
+      "def": "gb",
+      "avg": 276.3348998743836,
+      "alpha": 9.699258029300912,
+      "beta": 28.490313283716286
+    }
+  },
+  {
+    "game": {
+      "id": 401220251,
+      "gameUrl": "/nfl/game/_/gameId/401220251",
+      "home": "nyg",
+      "away": "phi"
+    },
+    "home": {
+      "datapoints": 13,
+      "qb": "Jones",
+      "def": "phi",
+      "avg": 236.75812880082105,
+      "alpha": 6.412278054589301,
+      "beta": 36.92262356454927
+    },
+    "away": {
+      "datapoints": 16,
+      "qb": "Wentz",
+      "def": "nyg",
+      "avg": 287.4872895212057,
+      "alpha": 16.867961280037907,
+      "beta": 17.043392781641458
+    }
+  },
+  {
+    "game": {
+      "id": 401220368,
+      "gameUrl": "/nfl/game/_/gameId/401220368",
+      "home": "car",
+      "away": "tb"
+    },
     "home": {
       "datapoints": 9,
       "qb": "Bridgewater",
@@ -108,6 +144,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220226,
+      "gameUrl": "/nfl/game/_/gameId/401220226",
+      "home": "lv",
+      "away": "den"
+    },
     "home": {
       "datapoints": 16,
       "qb": "Carr",
@@ -126,6 +168,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220126,
+      "gameUrl": "/nfl/game/_/gameId/401220126",
+      "home": "mia",
+      "away": "lac"
+    },
     "home": {
       "datapoints": 15,
       "qb": "Fitzpatrick",
@@ -144,6 +192,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220341,
+      "gameUrl": "/nfl/game/_/gameId/401220341",
+      "home": "ari",
+      "away": "buf"
+    },
     "home": {
       "datapoints": 3,
       "qb": "Hundley",
@@ -162,6 +216,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220346,
+      "gameUrl": "/nfl/game/_/gameId/401220346",
+      "home": "lar",
+      "away": "sea"
+    },
     "home": {
       "datapoints": 16,
       "qb": "Goff",
@@ -180,24 +240,36 @@
     }
   },
   {
+    "game": {
+      "id": 401220327,
+      "gameUrl": "/nfl/game/_/gameId/401220327",
+      "home": "no",
+      "away": "sf"
+    },
     "home": {
-      "datapoints": 2,
-      "qb": "Newton",
+      "datapoints": 11,
+      "qb": "Brees",
       "def": "sf",
-      "avg": 518.2227213929182,
-      "alpha": 20.270935307256188,
-      "beta": 25.564815512356503
+      "avg": 227.0043714352099,
+      "alpha": 6.0692957361862705,
+      "beta": 37.40209429600993
     },
     "away": {
       "datapoints": 1,
       "qb": "Mullens",
-      "def": "ne",
+      "def": "no",
       "avg": null,
       "alpha": null,
       "beta": null
     }
   },
   {
+    "game": {
+      "id": 401220171,
+      "gameUrl": "/nfl/game/_/gameId/401220171",
+      "home": "pit",
+      "away": "cin"
+    },
     "home": {
       "datapoints": 2,
       "qb": "Roethlisberger",
@@ -216,6 +288,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220137,
+      "gameUrl": "/nfl/game/_/gameId/401220137",
+      "home": "ne",
+      "away": "bal"
+    },
     "home": {
       "datapoints": 2,
       "qb": "Newton",
@@ -234,6 +312,12 @@
     }
   },
   {
+    "game": {
+      "id": 401220276,
+      "gameUrl": "/nfl/game/_/gameId/401220276",
+      "home": "chi",
+      "away": "min"
+    },
     "home": {
       "datapoints": 0,
       "qb": "Bray",

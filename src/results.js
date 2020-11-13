@@ -46,6 +46,7 @@ export const getAllGames = async function (week) {
         }
 
         games.push({
+            id: getGameIdFromUrl(gameUrl),
             gameUrl,
             home: getShortIdFromUrl(home),
             away: getShortIdFromUrl(away),

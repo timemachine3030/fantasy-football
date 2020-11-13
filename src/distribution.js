@@ -76,10 +76,9 @@ function Gammacdf(x, a) {
 export const compute = function compute(X, A, B) {
     let prob;
 	if (A<=0) {
-		throw new Error('')
-		console.log({A, B, X}, "alpha must be positive");
+		throw new Error('alpha must be positive: ' + A)
 	} else if (B<=0) {
-		console.log({A, B, X}, "beta must be positive")
+		throw new Error('beta must be positive: ' + B)
 	} else {
 		prob = Gammacdf(X/B, A)
 	}
