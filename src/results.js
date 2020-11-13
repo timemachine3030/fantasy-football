@@ -31,15 +31,15 @@ export const getAllGames = async function (week) {
     for (let i of idx) {
 
         
-        let awaySel = `#sched-container > div:nth-child(${i[0]}) > div > div.scrollable > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(1) > a`;
-        let anchor = $gl(awaySel);
-        let away = anchor.attr('href');
+        let awaySel =      `#sched-container > div:nth-child(${i[0]}) > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(1) > a`;
+        let away = $gl(awaySel).attr('href');
         
-        let homeSel = `#sched-container > div:nth-child(${i[0]}) > div > div.scrollable > table > tbody > tr:nth-child(${i[1]}) > td.home > div > a`;
+        let homeSel =      `#sched-container > div:nth-child(${i[0]}) > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(2) > div > a`;
         let home = $gl(homeSel).attr('href');
         
         let gameSelector = `#sched-container > div:nth-child(${i[0]}) > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(3) > a`;
-        let gameUrl = $gl(gameSelector).attr('href');
+        let gameA = $gl(gameSelector);
+        let gameUrl = gameA.attr('href');
 
         if (!gameUrl) {
             continue;
@@ -47,8 +47,8 @@ export const getAllGames = async function (week) {
 
         games.push({
             gameUrl,
-            home,
-            away,
+            home: getShortIdFromUrl(home),
+            away: getShortIdFromUrl(away),
         });
     }
     return games;
@@ -73,9 +73,16 @@ export const getAllResults = async function (week) {
 
         results.push(result);
 
-        return results;
     }
+    return results;
 }
+
+// /nfl/team/_/name/atl/atlanta-falcons"
+export const getShortIdFromUrl = (url) => {
+    let segments = url.split('/');
+    return segments[5];
+}
+
 // /nfl/game/_/gameId/401220203
 export const getGameIdFromUrl = (url) => {
     let segments = url.split('/');
