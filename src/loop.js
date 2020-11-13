@@ -2,7 +2,7 @@ import QuarterBack from './quarter-back.js';
 import { buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import fs from 'fs';
 import chai from 'chai';
-import {getAllResults} from '../src/results.js';
+import {getAllResults, getAllGames} from '../src/results.js';
 const expect = chai.expect;
 let NFL = {
     ari: ['2577189', '3917315'],
@@ -18,7 +18,7 @@ let NFL = {
     det: ['3116188', '12471'],
     gb:  ['8439', '3045169'],
     hou: ['3122840', '16810'],
-    ind: ['2578570', '4035003', '5529'],
+    ind: ['5529', '2578570', '4035003'],
     jax: ['4038524', '3124900'],
     kc:  ['3139477', '11291'],
     lv:  ['16757', '2576980', '2972236'],
@@ -154,9 +154,12 @@ let week09 = [{
 }];
 
 describe('results', () => {
-    it('week 9', async () => {
+    it('week-09', async () => {
         let results = await getAllResults(9);
         fs.writeFileSync('./datafiles/results-09.json', JSON.stringify(results, null, 2));
+
+        // Merge results into week.
+
     })
 })
 
@@ -169,17 +172,16 @@ describe('week-09', () => {
 });
 
 describe('week-10', () => {
-    it('has 14 games', () => {
-        expect(week10.length).eql(14);
-    });
+
     it('compares-all-teams', async () => {
-        let results = await runWeekPregictions(week10);
+        let results = await runWeekPregictions(10);
         expect(results.length).eql(14);
         fs.writeFileSync('./datafiles/week-10.json', JSON.stringify(results, null, 2));
     });
 });
 
-const runWeekPregictions = async (matchups) => {
+const runWeekPregictions = async (week) => {
+    let matchups = await getAllGames(week);
     return Promise.all(matchups.map(async (game) => {
         let qb_home = new QuarterBack(NFL[game.home][0]);
         let qb_away = new QuarterBack(NFL[game.away][0]);
@@ -188,11 +190,13 @@ const runWeekPregictions = async (matchups) => {
         return {
             ...game,
             home: {
+                datapoints: qb_home.datapoints,
                 qb: qb_home.playerName,
                 def: game.away,
                 ...prediction1
             },
             away: {
+                datapoints: qb_away.datapoints,
                 qb: qb_away.playerName,
                 def: game.home,
                 ...prediction2

@@ -1,4 +1,4 @@
-import {buildUrl} from './utils.js';
+import { buildUrl } from './utils.js';
 import http from 'axios';
 import cheerio from 'cheerio';
 import fs from 'fs';
@@ -9,54 +9,77 @@ const axios = rateLimit(http.create(), {
 });
 const RESULTS_PAGE = 'https://www.espn.com/nfl/schedule/_/week/{week}';
 
-export const getAllResults = async function (week) {
-    const url = buildUrl(RESULTS_PAGE, {week});
+export const getAllGames = async function (week) {
+
+    const url = buildUrl(RESULTS_PAGE, { week });
     let gameListing = await axios({
         method: 'GET',
         url,
     });
 
     let $gl = cheerio.load(gameListing.data);
-    let results = [];
-    // #sched-container > div:nth-child(3)
-    // #sched-container > div:nth-child(7) > table > tbody > tr > td:nth-child(3) > a
-    // #sched-container > div:nth-child(7) > table > tbody > tr > td:nth-child(3) > a
-    // #sched-container > div:nth-child(5) > table > tbody > tr:nth-child(1) > td:nth-child(3) > a
-    let t2 = Array.from({length: 12}, (x, i) => [5, i + 1]);
-    
+
+    let t2 = Array.from({ length: 12 }, (x, i) => [5, i + 1]);
+
     let idx = [
         [3, 1],
         ...t2,
         [7, 1]
     ];
 
+    let games = [];
     for (let i of idx) {
 
-        let gameSelector = `#sched-container > div:nth-child(${i[0]}) > table> tbody > tr:nth-child(${i[1]}) > td:nth-child(3) > a`;
         
+        let awaySel = `#sched-container > div:nth-child(${i[0]}) > div > div.scrollable > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(1) > a`;
+        let anchor = $gl(awaySel);
+        let away = anchor.attr('href');
+        
+        let homeSel = `#sched-container > div:nth-child(${i[0]}) > div > div.scrollable > table > tbody > tr:nth-child(${i[1]}) > td.home > div > a`;
+        let home = $gl(homeSel).attr('href');
+        
+        let gameSelector = `#sched-container > div:nth-child(${i[0]}) > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(3) > a`;
         let gameUrl = $gl(gameSelector).attr('href');
+
         if (!gameUrl) {
             continue;
         }
 
+        games.push({
+            gameUrl,
+            home,
+            away,
+        });
+    }
+    return games;
+};
+
+export const getAllResults = async function (week) {
+    let matchups = await getAllGames(week);
+    let results = [];
+    for (let game of matchups) {
         let gamePage = await axios({
             method: 'GET',
-            url: 'https://www.espn.com' + gameUrl,
+            url: 'https://www.espn.com' + game.gameUrl,
         });
         let $ = cheerio.load(gamePage.data);
         let homeQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-stats`).text();
         let awayQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-stats`).text();
         let result = {
+            game: getGameIdFromUrl(game.gameUrl),
             home: parseStatLine(homeQbYrds),
             away: parseStatLine(awayQbYrds),
         };
 
         results.push(result);
+
+        return results;
     }
-
-    return results;
-
-
+}
+// /nfl/game/_/gameId/401220203
+export const getGameIdFromUrl = (url) => {
+    let segments = url.split('/');
+    return parseInt(segments[segments.length - 1], 10);
 }
 
 export const parseStatLine = function (txt) {
@@ -64,7 +87,7 @@ export const parseStatLine = function (txt) {
     let match = txt.match(reStatLine);
     if (match) {
         return parseInt(match[2], 10);
-    } 
+    }
 
     throw new Error('Regex bug (' + JSON.stringify(txt) + ')');
 }

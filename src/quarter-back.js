@@ -135,7 +135,8 @@ export default class QuarterBack {
             product.gameYards[i] = this.years[year].stats[i].passing_yards;
             i += 1;
             
-        }) 
+        });
+        this.datapoints = product.gameYards.length;
         product.alpha = alphaFromHistory(product.gameYards)
         product.beta = betaFromHistory(product.gameYards)
         

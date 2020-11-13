@@ -1,4 +1,4 @@
-import {getAllResults, parseStatLine} from '../src/results.js';
+import {getAllResults, getGameIdFromUrl, parseStatLine} from '../src/results.js';
 
 import chai from 'chai';
 const expect = chai.expect;
@@ -19,5 +19,10 @@ describe('results', () => {
             expect(r).to.be.a('number');
             expect(r).to.eql(305);
         })
+    });
+    describe('getGameIdFromUrl', () => {
+        it('finds url', () => {
+            expect(getGameIdFromUrl('/nfl/game/_/gameId/401220203')).eql(401220203);
+        });
     });
 });

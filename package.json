@@ -9,7 +9,8 @@
     "defense-scraper": "mocha --inspect tests/defence.spec.js",
     "test-distribution": "mocha --inspect src/test-distribution.mjs",
     "tools": "mocha --inspect tests/tools.js --grep compare-teams ",
-    "predict": "mocha --inspect src/loop.js --grep results"
+    "predict": "mocha --inspect src/loop.js --grep week-10",
+    "results": "mocha --inspect src/loop.js --grep results.week-09"
   },
   "repository": {
     "type": "git",
