@@ -9,7 +9,7 @@ year -> [teamid -> gameid:{
 import createRequire from 'module';
 import http from 'axios';
 import cheerio from 'cheerio';
-import fs, { writevSync } from 'fs';
+import fs from 'fs';
 import rateLimit from 'axios-rate-limit';
 import asciichart from 'asciichart';
 import {alphaFromHistory, betaFromHistory} from './distribution.js';

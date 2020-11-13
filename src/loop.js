@@ -2,6 +2,7 @@ import QuarterBack from './quarter-back.js';
 import { buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import fs from 'fs';
 import chai from 'chai';
+import {getAllResults} from '../src/results.js';
 const expect = chai.expect;
 let NFL = {
     ari: ['2577189', '3917315'],
@@ -151,6 +152,13 @@ let week09 = [{
     gb: 305,
     sf: 291
 }];
+
+describe('results', () => {
+    it('week 9', async () => {
+        let results = await getAllResults(9);
+        fs.writeFileSync('./datafiles/results-09.json', JSON.stringify(results, null, 2));
+    })
+})
 
 describe('week-09', () => {
     
