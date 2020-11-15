@@ -8,8 +8,8 @@ describe('results', () => {
     describe('getAllResults', () => {
         it('', async () => {
             let results = await getAllResults(9);
-            expect(results[0].home).to.eql(305);
-            expect(results[0].away).to.eql(291);
+            expect(results[0].home.yards).to.eql(305);
+            expect(results[0].away.yards).to.eql(291);
             expect(results.length).eql(14);
         });
     });
