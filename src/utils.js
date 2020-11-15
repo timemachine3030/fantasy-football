@@ -23,3 +23,15 @@ export const getAxiosInstance = () => {
     }
     return axios;
 };
+
+export const getLinkIndex = (text, idx) => {
+    let parts = text.split('/');
+    return parts[idx];
+};
+export const getLinkIndexAsInt = (text, idx) => {
+    return parseInt(getLinkIndex(text, idx), 10);
+}
+export const playerIdFromLink = (text) => {
+    let parts = text.split('/');
+    return parseInt(parts[5], 10);
+}
