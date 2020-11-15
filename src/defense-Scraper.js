@@ -6,19 +6,15 @@ year -> [teamid -> gameid:{
 }] 
 */
 
-import createRequire from 'module';
-import http from 'axios';
 import cheerio from 'cheerio';
 import fs from 'fs';
-import rateLimit from 'axios-rate-limit';
 import asciichart from 'asciichart';
 import {alphaFromHistory, betaFromHistory} from './distribution.js';
+import {getAxiosInstance} from './utils.js';
 
 const plot = asciichart.plot;
 
-const axios = rateLimit(http.create(), {
-    maxRPS: 4
-});
+const axios = getAxiosInstance();
 
 //const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 //const SEASON_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/season/{year}/seasontype/2/table/passing/sort/passingYards/dir/desc';

@@ -1,8 +1,9 @@
-import axios from 'axios';
 import cheerio from 'cheerio';
 import URL from 'url';
 import {alphaFromHistory, betaFromHistory} from './distribution.js';
-import {buildUrl} from './utils.js';
+import {buildUrl, getAxiosInstance} from './utils.js';
+
+const axios = getAxiosInstance();
 
 const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 const SEASON_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/season/{year}/seasontype/2/table/passing/sort/passingYards/dir/desc';

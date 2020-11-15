@@ -1,12 +1,7 @@
-import { buildUrl } from './utils.js';
-import http from 'axios';
+import { buildUrl, getAxiosInstance } from './utils.js';
 import cheerio from 'cheerio';
-import fs from 'fs';
-import rateLimit from 'axios-rate-limit';
 
-const axios = rateLimit(http.create(), {
-    maxRPS: 4
-});
+const axios = getAxiosInstance();
 const RESULTS_PAGE = 'https://www.espn.com/nfl/schedule/_/week/{week}';
 
 export const getAllGames = async function (week) {
@@ -39,7 +34,7 @@ export const getAllGames = async function (week) {
         
         let gameSelector = `#sched-container > div:nth-child(${i[0]}) > table > tbody > tr:nth-child(${i[1]}) > td:nth-child(3) > a`;
         let gameA = $gl(gameSelector);
-        let gameUrl = gameA.attr('href');
+        let gameUrl = 'https://www.espn.com' + gameA.attr('href');
 
         if (!gameUrl) {
             continue;
@@ -61,15 +56,23 @@ export const getAllResults = async function (week) {
     for (let game of matchups) {
         let gamePage = await axios({
             method: 'GET',
-            url: 'https://www.espn.com' + game.gameUrl,
+            url: game.gameUrl,
         });
         let $ = cheerio.load(gamePage.data);
+        let awayQb = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-name > a').attr('href');
+        let homeQb = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-name > a').attr('href');
         let homeQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-stats`).text();
         let awayQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-stats`).text();
         let result = {
             game: getGameIdFromUrl(game.gameUrl),
-            home: parseStatLine(homeQbYrds),
-            away: parseStatLine(awayQbYrds),
+            home: {
+                qb: homeQb,
+                yards: parseStatLine(homeQbYrds),
+            },
+            away: {
+                qb: awayQb,
+                yards: parseStatLine(awayQbYrds),
+            }
         };
 
         results.push(result);

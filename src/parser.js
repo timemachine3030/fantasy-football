@@ -1,13 +1,6 @@
-import axios from 'axios';
-import cheerio from 'cheerio';
-import URL from 'url';
 import fs from 'fs';
 
-// Test
-import chai from 'chai';
-const expect = chai.expect;
 /*
-
 - QB
     - Every 25 passing yards = 1 point
     - TD pass = 4 points
