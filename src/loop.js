@@ -180,20 +180,15 @@ describe('results', () => {
         let prediction = JSON.parse(fs.readFileSync('./datafiles/week-09-rerun.json', 'utf-8'));
         let difference = prediction.map((matchup) => {
             let result = results.find(g => g.game === matchup.game.id);
-            if (!result) {
-                console.log('no game result for: ', {matchup});
-            }
-            if (!matchup.home.alpha || !matchup.home.beta) {
-                console.log('no qb stats', {home: matchup.home});
-            } else {
-                matchup.home.gamma = compute(result.home, matchup.home.alpha, matchup.home.beta);
-                matchup.home.actual = result.home;
-            }
-            if (!matchup.away.alpha || !matchup.away.beta) {
-                console.log('no qb stats', {away: matchup.away});
-            } else {
-                matchup.away.gamma = compute(result.away, matchup.away.alpha, matchup.away.beta);
-                matchup.away.actual = result.away;
+            if (result) {
+                if (matchup.home.alpha && matchup.home.beta) {
+                    matchup.home.gamma = compute(result.home.yards, matchup.home.alpha, matchup.home.beta);
+                    matchup.home.actual = result.home;
+                }
+                if (matchup.away.alpha && matchup.away.beta) {
+                    matchup.away.gamma = compute(result.away.yards, matchup.away.alpha, matchup.away.beta);
+                    matchup.away.actual = result.away;
+                }
             }
             return matchup;
         });
