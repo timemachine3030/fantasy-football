@@ -2,7 +2,7 @@
   {
     "game": {
       "id": 401220359,
-      "gameUrl": "/nfl/game/_/gameId/401220359",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220359",
       "home": "sf",
       "away": "gb"
     },
@@ -26,7 +26,7 @@
   {
     "game": {
       "id": 401220311,
-      "gameUrl": "/nfl/game/_/gameId/401220311",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220311",
       "home": "atl",
       "away": "den"
     },
@@ -50,7 +50,7 @@
   {
     "game": {
       "id": 401220120,
-      "gameUrl": "/nfl/game/_/gameId/401220120",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220120",
       "home": "buf",
       "away": "sea"
     },
@@ -74,7 +74,7 @@
   {
     "game": {
       "id": 401220207,
-      "gameUrl": "/nfl/game/_/gameId/401220207",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220207",
       "home": "ten",
       "away": "chi"
     },
@@ -98,7 +98,7 @@
   {
     "game": {
       "id": 401220189,
-      "gameUrl": "/nfl/game/_/gameId/401220189",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220189",
       "home": "ind",
       "away": "bal"
     },
@@ -122,7 +122,7 @@
   {
     "game": {
       "id": 401220224,
-      "gameUrl": "/nfl/game/_/gameId/401220224",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220224",
       "home": "kc",
       "away": "car"
     },
@@ -146,7 +146,7 @@
   {
     "game": {
       "id": 401220299,
-      "gameUrl": "/nfl/game/_/gameId/401220299",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220299",
       "home": "min",
       "away": "det"
     },
@@ -170,7 +170,7 @@
   {
     "game": {
       "id": 401220267,
-      "gameUrl": "/nfl/game/_/gameId/401220267",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220267",
       "home": "wsh",
       "away": "nyg"
     },
@@ -194,7 +194,7 @@
   {
     "game": {
       "id": 401220194,
-      "gameUrl": "/nfl/game/_/gameId/401220194",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220194",
       "home": "jax",
       "away": "hou"
     },
@@ -218,7 +218,7 @@
   {
     "game": {
       "id": 401220236,
-      "gameUrl": "/nfl/game/_/gameId/401220236",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220236",
       "home": "lac",
       "away": "lv"
     },
@@ -242,7 +242,7 @@
   {
     "game": {
       "id": 401220248,
-      "gameUrl": "/nfl/game/_/gameId/401220248",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220248",
       "home": "dal",
       "away": "pit"
     },
@@ -266,7 +266,7 @@
   {
     "game": {
       "id": 401220342,
-      "gameUrl": "/nfl/game/_/gameId/401220342",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220342",
       "home": "ari",
       "away": "mia"
     },
@@ -290,7 +290,7 @@
   {
     "game": {
       "id": 401220330,
-      "gameUrl": "/nfl/game/_/gameId/401220330",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220330",
       "home": "tb",
       "away": "no"
     },
@@ -314,7 +314,7 @@
   {
     "game": {
       "id": 401220140,
-      "gameUrl": "/nfl/game/_/gameId/401220140",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220140",
       "home": "nyj",
       "away": "ne"
     },

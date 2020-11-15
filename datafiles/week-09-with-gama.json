@@ -2,7 +2,7 @@
   {
     "game": {
       "id": 401220359,
-      "gameUrl": "/nfl/game/_/gameId/401220359",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220359",
       "home": "sf",
       "away": "gb"
     },
@@ -22,13 +22,16 @@
       "alpha": 6.253865279824315,
       "beta": 35.60744389222251,
       "gamma": 0.79703,
-      "actual": 291
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/8439/aaron-rodgers",
+        "yards": 291
+      }
     }
   },
   {
     "game": {
       "id": 401220311,
-      "gameUrl": "/nfl/game/_/gameId/401220311",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220311",
       "home": "atl",
       "away": "den"
     },
@@ -40,7 +43,10 @@
       "alpha": 13.632069400960553,
       "beta": 22.58373848924307,
       "gamma": 0.56024,
-      "actual": 313
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/11237/matt-ryan",
+        "yards": 313
+      }
     },
     "away": {
       "datapoints": 3,
@@ -50,13 +56,16 @@
       "alpha": 36.55188461225584,
       "beta": 14.101471937817365,
       "gamma": 0.00064,
-      "actual": 284
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/3924327/drew-lock",
+        "yards": 284
+      }
     }
   },
   {
     "game": {
       "id": 401220120,
-      "gameUrl": "/nfl/game/_/gameId/401220120",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220120",
       "home": "buf",
       "away": "sea"
     },
@@ -68,7 +77,10 @@
       "alpha": 9.079929698545564,
       "beta": 25.55583212250994,
       "gamma": 0.96548,
-      "actual": 390
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/3918298/josh-allen",
+        "yards": 390
+      }
     },
     "away": {
       "datapoints": 16,
@@ -78,13 +90,16 @@
       "alpha": 11.813063206707364,
       "beta": 21.522028245284858,
       "gamma": 0.97298,
-      "actual": 415
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/14881/russell-wilson",
+        "yards": 415
+      }
     }
   },
   {
     "game": {
       "id": 401220207,
-      "gameUrl": "/nfl/game/_/gameId/401220207",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220207",
       "home": "ten",
       "away": "chi"
     },
@@ -96,7 +111,10 @@
       "alpha": 6.827929077853181,
       "beta": 34.04547258301864,
       "gamma": 0.87298,
-      "actual": 335
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/14876/ryan-tannehill",
+        "yards": 335
+      }
     },
     "away": {
       "datapoints": 0,
@@ -110,7 +128,7 @@
   {
     "game": {
       "id": 401220189,
-      "gameUrl": "/nfl/game/_/gameId/401220189",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220189",
       "home": "ind",
       "away": "bal"
     },
@@ -122,7 +140,10 @@
       "alpha": 25.443678652646206,
       "beta": 15.27919679343216,
       "gamma": 0.00016,
-      "actual": 170
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/5529/philip-rivers",
+        "yards": 170
+      }
     },
     "away": {
       "datapoints": 6,
@@ -132,13 +153,16 @@
       "alpha": 3.1400351962575663,
       "beta": 36.97733405483406,
       "gamma": 0.93509,
-      "actual": 227
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson",
+        "yards": 227
+      }
     }
   },
   {
     "game": {
       "id": 401220224,
-      "gameUrl": "/nfl/game/_/gameId/401220224",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220224",
       "home": "kc",
       "away": "car"
     },
@@ -150,7 +174,10 @@
       "alpha": 7.503557319176171,
       "beta": 33.681659356107346,
       "gamma": 0.75776,
-      "actual": 310
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/3139477/patrick-mahomes",
+        "yards": 310
+      }
     },
     "away": {
       "datapoints": 9,
@@ -160,13 +187,16 @@
       "alpha": 4.01289914270296,
       "beta": 58.46449334901361,
       "gamma": 0.87711,
-      "actual": 372
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/16728/teddy-bridgewater",
+        "yards": 372
+      }
     }
   },
   {
     "game": {
       "id": 401220299,
-      "gameUrl": "/nfl/game/_/gameId/401220299",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220299",
       "home": "min",
       "away": "det"
     },
@@ -178,7 +208,10 @@
       "alpha": 9.073044741808737,
       "beta": 31.329867158501457,
       "gamma": 0.22912,
-      "actual": 211
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/14880/kirk-cousins",
+        "yards": 211
+      }
     },
     "away": {
       "datapoints": 5,
@@ -188,13 +221,16 @@
       "alpha": 6.955193298130952,
       "beta": 32.11102177264762,
       "gamma": 0.5348,
-      "actual": 220
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/12483/matthew-stafford",
+        "yards": 220
+      }
     }
   },
   {
     "game": {
       "id": 401220267,
-      "gameUrl": "/nfl/game/_/gameId/401220267",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220267",
       "home": "wsh",
       "away": "nyg"
     },
@@ -206,7 +242,10 @@
       "alpha": 8.963905809243268,
       "beta": 23.32025884235718,
       "gamma": 0.56107,
-      "actual": 212
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/8416/alex-smith",
+        "yards": 212
+      }
     },
     "away": {
       "datapoints": 13,
@@ -216,13 +255,16 @@
       "alpha": 10.811416362393395,
       "beta": 25.23488880391232,
       "gamma": 0.75577,
-      "actual": 325
+      "actual": {
+        "qb": "http://www.espn.com/nfl/player/_/id/3917792/daniel-jones",
+        "yards": 325
+      }
     }
   },
   {
     "game": {
       "id": 401220194,
-      "gameUrl": "/nfl/game/_/gameId/401220194",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220194",
       "home": "jax",
       "away": "hou"
     },
@@ -234,7 +276,10 @@
       "alpha": 10.359542155273399,
       "beta": 25.74272938081778,
       "gamma": 0.60762,
-      "actual": 281
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/3124900/jake-luton",
+        "yards": 281
+      }
     },
     "away": {
       "datapoints": 15,
@@ -244,13 +289,16 @@
       "alpha": 9.139833023578227,
       "beta": 30.060332017734332,
       "gamma": 0.66302,
-      "actual": 304
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/3122840/deshaun-watson",
+        "yards": 304
+      }
     }
   },
   {
     "game": {
       "id": 401220236,
-      "gameUrl": "/nfl/game/_/gameId/401220236",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220236",
       "home": "lac",
       "away": "lv"
     },
@@ -270,13 +318,16 @@
       "alpha": 12.599440941431373,
       "beta": 24.612137739692557,
       "gamma": 0.60745,
-      "actual": 326
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/16757/derek-carr",
+        "yards": 326
+      }
     }
   },
   {
     "game": {
       "id": 401220248,
-      "gameUrl": "/nfl/game/_/gameId/401220248",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220248",
       "home": "dal",
       "away": "pit"
     },
@@ -296,13 +347,16 @@
       "alpha": 10.163348616982173,
       "beta": 35.32182434423815,
       "gamma": 0.14452,
-      "actual": 243
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/5536/ben-roethlisberger",
+        "yards": 243
+      }
     }
   },
   {
     "game": {
       "id": 401220342,
-      "gameUrl": "/nfl/game/_/gameId/401220342",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220342",
       "home": "ari",
       "away": "mia"
     },
@@ -314,7 +368,10 @@
       "alpha": 10.10454860877932,
       "beta": 23.06626475759862,
       "gamma": 0.61941,
-      "actual": 248
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/3917315/kyler-murray",
+        "yards": 248
+      }
     },
     "away": {
       "datapoints": 15,
@@ -324,13 +381,16 @@
       "alpha": 8.54014113739816,
       "beta": 34.50155810962083,
       "gamma": 0.49906,
-      "actual": 283
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/4241479/tua-tagovailoa",
+        "yards": 283
+      }
     }
   },
   {
     "game": {
       "id": 401220330,
-      "gameUrl": "/nfl/game/_/gameId/401220330",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220330",
       "home": "tb",
       "away": "no"
     },
@@ -342,7 +402,10 @@
       "alpha": 12.890972374385527,
       "beta": 18.809368976887832,
       "gamma": 0.41355,
-      "actual": 222
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/2330/tom-brady",
+        "yards": 222
+      }
     },
     "away": {
       "datapoints": 11,
@@ -352,13 +415,16 @@
       "alpha": 9.200825736450199,
       "beta": 29.99207402022349,
       "gamma": 0.24413,
-      "actual": 209
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/2580/drew-brees",
+        "yards": 209
+      }
     }
   },
   {
     "game": {
       "id": 401220140,
-      "gameUrl": "/nfl/game/_/gameId/401220140",
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220140",
       "home": "nyj",
       "away": "ne"
     },
@@ -370,7 +436,10 @@
       "alpha": 14.13886030893933,
       "beta": 17.11683696108643,
       "gamma": 0.7138,
-      "actual": 274
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/11252/joe-flacco",
+        "yards": 274
+      }
     },
     "away": {
       "datapoints": 2,
@@ -380,7 +449,10 @@
       "alpha": 23.014395357251683,
       "beta": 16.16360099644922,
       "gamma": 0.06458,
-      "actual": 262
+      "actual": {
+        "qb": "https://www.espn.com/nfl/player/_/id/13994/cam-newton",
+        "yards": 262
+      }
     }
   }
 ]
