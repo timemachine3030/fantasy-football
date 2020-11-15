@@ -28,19 +28,19 @@ describe('scripts', () => {
 
     describe('game-scores ', () => {
         it('2019', async () => {
-            const text = fs.readFileSync('./datafiles/schedules-data-2019.json', 'utf-8')
-            const season = JSON.parse(text)
-            const scores = await buildDataModel(season)
+            const text = fs.readFileSync('./datafiles/schedules-data-2019.json', 'utf-8');
+            const season = JSON.parse(text);
+            const scores = await buildDataModel(season);
             const json = JSON.stringify(scores);
             fs.writeFileSync('./season-defense.json', json);
-        })
-    })
+        });
+    });
     describe('team-schedules', () => {
         it('2019', async () => {
             const schedules = await getAllTeamsSchedules(2019);
             const text = JSON.stringify(schedules, null, 2);
             fs.writeFileSync('./datafiles/schedules-data-2019.json', text);
-        })
+        });
     });
     describe('compare-teams', () => {
         let teams = [{

@@ -44,7 +44,7 @@ export function sumPlayerPts(player) {
 export function sumAllPlayers(playerData) {
     const players = playerData.map((p) => {
         calculatePlayerPts(p);
-        sumPlayerPts(p)
+        sumPlayerPts(p);
         return p;
     });
     return players;

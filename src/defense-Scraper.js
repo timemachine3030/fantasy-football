@@ -25,32 +25,32 @@ const axios = getAxiosInstance();
 //https://www.espn.com/nfl/matchup?gameId=401128034
 //https://www.espn.com/nfl/team/schedule/_/name/ari
 
-const TEAM_SEASON = 'https://www.espn.com/nfl/team/schedule/_/name/{shortid}/season/{year}'
+const TEAM_SEASON = 'https://www.espn.com/nfl/team/schedule/_/name/{shortid}/season/{year}';
 
 const TOTAL_TEAM_DEFENSE = 'https://www.espn.com/nfl/stats/team/_/view/defense/season/{year}/seasontype/2/table/passing/sort/netYardsPerGame/dir/asc';
 const PASSING_DEFENSE = 'https://www.espn.com/nfl/stats/team/_/view/defense/stat/passing/season/{year}/seasontype/2/table/passing/sort/sacks/dir/desc';
 const TURNOVER_STATS = 'https://www.espn.com/nfl/stats/team/_/view/turnovers/season/{year}/seasontype/2/table/miscellaneous/sort/turnOverDifferential/dir/desc';
-const GAME_BOX_SCORE = 'https://www.espn.com/nfl/boxscore?gameId={gameID}'
+const GAME_BOX_SCORE = 'https://www.espn.com/nfl/boxscore?gameId={gameID}';
 
 const buildUrl = function (url, replacements) {
-    const reFind = /\{([^\}]+)\}/g
+    const reFind = /\{([^\}]+)\}/g;
 
     return url.replace(reFind, (match, found) => {
         return replacements[found];
 
 
     });
-}
+};
 export const buildDataModel = async function (season) {
-    let scores = {}
+    let scores = {};
     for (let i=0; i < season.length; i++){
         if (i % 64 === 0) {
             process.stdout.write('\n');
         }
-        let id = season[i].id
+        let id = season[i].id;
         if (!scores[id]){
-            scores[id] = season[i]
-            scores[id].score = await getGameScore(id) 
+            scores[id] = season[i];
+            scores[id].score = await getGameScore(id); 
             process.stdout.write('f');
         } else {
             process.stdout.write('c');
@@ -60,48 +60,48 @@ export const buildDataModel = async function (season) {
     return scores;
 };
 export const getGameScore = async function (gameID) {
-    const gameScore = buildUrl(GAME_BOX_SCORE, { gameID })
+    const gameScore = buildUrl(GAME_BOX_SCORE, { gameID });
     const response = await axios({
         method: 'GET',
         url: gameScore,
     });
-    const $ = cheerio.load(response.data)
-    const basicStatSelector = '#gamepackage-{type} > div > .gamepackage-{otherTeam}-wrap > div > div > table > tbody > tr.highlight > td.{collumn}'
+    const $ = cheerio.load(response.data);
+    const basicStatSelector = '#gamepackage-{type} > div > .gamepackage-{otherTeam}-wrap > div > div > table > tbody > tr.highlight > td.{collumn}';
     let statSelector = buildUrl(basicStatSelector, {
         type: 'passing',
         otherTeam: 'away',
         collumn: 'yds',
 
     });
-    const awayPassingyards = $(statSelector).text()
+    const awayPassingyards = $(statSelector).text();
     statSelector = buildUrl(basicStatSelector, {
         type: 'rushing',
         otherTeam: 'away',
         collumn: 'yds',
 
-    })
-    const awayRushingingyards = $(statSelector).text()
+    });
+    const awayRushingingyards = $(statSelector).text();
 
     statSelector = buildUrl(basicStatSelector, {
         type: 'passing',
         otherTeam: 'home',
         collumn: 'yds',
 
-    })
-    const homePassingyards = $(statSelector).text()
+    });
+    const homePassingyards = $(statSelector).text();
     statSelector = buildUrl(basicStatSelector, {
         type: 'rushing',
         otherTeam: 'home',
         collumn: 'yds',
 
-    })
-    const homeRushingingyards = $(statSelector).text()
+    });
+    const homeRushingingyards = $(statSelector).text();
     const defensiveStats = {
         homeTeam: parseInt(awayPassingyards, 10), // + parseInt(awayRushingingyards, 10),
         awayTeam: parseInt(homePassingyards, 10),  // + parseInt(homeRushingingyards, 10),
-    }
+    };
     return defensiveStats;
-}
+};
 
 function linkToTeamId(url) {
     const locations = url.split('/');
@@ -115,7 +115,7 @@ async function getPlayerIds(year = 2019) {
         url
     });
 
-    const teamCellSelector = '#fittPageContainer > div.page-container.cf > div > div > section > div > div.ResponsiveTable.ResponsiveTable--fixed-left.mt4.Table2__title--remove-capitalization > div.flex > table > tbody > tr:nth-child(1) > td'
+    const teamCellSelector = '#fittPageContainer > div.page-container.cf > div > div > section > div > div.ResponsiveTable.ResponsiveTable--fixed-left.mt4.Table2__title--remove-capitalization > div.flex > table > tbody > tr:nth-child(1) > td';
 
     const $ = cheerio.load(response.data);
 
@@ -139,19 +139,19 @@ async function getTeamShortID(year) {
         url
     });
     const $ = cheerio.load(response.data);
-    const options = '#fittPageContainer > div.StickyContainer > div.page-container.cf > div > div.layout__column.layout__column--1 > section > div > section > div.flex.justify-between.mt3.mb3.items-center > div > select:nth-child(2) option'
-    const teams = []
+    const options = '#fittPageContainer > div.StickyContainer > div.page-container.cf > div > div.layout__column.layout__column--1 > section > div > section > div.flex.justify-between.mt3.mb3.items-center > div > select:nth-child(2) option';
+    const teams = [];
     $(options).each((i, team) => {
         let shortid = $(team).data('param-value');
         if (shortid) {
-            teams.push(shortid)
+            teams.push(shortid);
         }
-    })
+    });
     return teams;
 }
 export async function getAllTeamsSchedules(year) {
     const teams = await getTeamShortID(year);
-    let schedules = []
+    let schedules = [];
     for (let t = 0; t < teams.length; t += 1) {
         let schedule = await getTeamSchedules(teams[t], year);
         schedules = schedules.concat(schedule);
@@ -204,13 +204,13 @@ async function getTeamSchedules(shortid, year) {
             const gameOpp = {
                 id: oppHref.split('/')[6],
                 shortid: oppHref.split('/')[5],
-            }
+            };
             const href = $($(rowLinks).get(2)).attr('href');
             const gameId = href.split('/').slice(-1)[0]; // http://www.espn.com/nfl/game/_/gameId/401131043
             const location = $(row).find('.opponent-logo .pr2:nth-child(1)').text();
             let homeTeam = gameOpp.shortid;
             let awayTeam = shortid;
-            if (location === "vs") {
+            if (location === 'vs') {
                 homeTeam = shortid;
                 awayTeam = gameOpp.shortid;
             }
@@ -232,7 +232,7 @@ async function getPageCache(year) {
         totalDefense: '',
         passingDefense: '',
         turnoverStats: '',
-    }
+    };
 
     const totalDefenseUrl = buildUrl(TOTAL_TEAM_DEFENSE, { year });
     const passingDefenseUrl = buildUrl(PASSING_DEFENSE, { year });
@@ -260,11 +260,11 @@ const getYearStatSummary = async function (playerId, year) {
 
     // Get all the pages first, so we have some level of cache when in a looping context.
 
-    getTotalTeamDefense()
+    getTotalTeamDefense();
 
     const url = buildUrl(PLAYER_STAT_PAGE, { playerId, year });
 
-}
+};
 
 export function getDefGames(shortid) {
     const defBuf = fs.readFileSync('./season-defense.json', 'utf-8');
@@ -327,7 +327,7 @@ export const predictDefenseStats = (shortid, games) => {
        gameYards: [],
        alpha: 0,
        beta: 0,
-    }
+    };
     product.gameYards = games.map(game => {
         if (game.awayTeam === shortid) {
             return game.score.awayTeam;
@@ -336,8 +336,8 @@ export const predictDefenseStats = (shortid, games) => {
         }
     });
 
-    product.alpha = alphaFromHistory(product.gameYards)
-    product.beta = betaFromHistory(product.gameYards)
+    product.alpha = alphaFromHistory(product.gameYards);
+    product.beta = betaFromHistory(product.gameYards);
     
     return product; 
-}
+};

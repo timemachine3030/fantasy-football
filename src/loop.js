@@ -38,7 +38,7 @@ let NFL = {
     tb: ['2330', '16140'],
     ten: ['14876',],
     wsh: ['4040616', '3115293'],
-}
+};
 let week10 = [{
     home: 'cle',
     away: 'hou',
@@ -193,8 +193,8 @@ describe('results', () => {
             return matchup;
         });
         fs.writeFileSync('./datafiles/week-09-with-gama.json', JSON.stringify(difference, null, 2));
-    })
-})
+    });
+});
 
 
 const runWeekPregictions = async (week) => {
@@ -220,7 +220,7 @@ const runWeekPregictions = async (week) => {
             }
         };
     }));
-}
+};
 
 export const compareTeams = async function compareTeams(qb, def) {
     let games = getDefGames(def);
@@ -237,4 +237,4 @@ export const compareTeams = async function compareTeams(qb, def) {
         alpha: comparisionAlpha,
         beta: comparisionBeta
     };
-}
+};

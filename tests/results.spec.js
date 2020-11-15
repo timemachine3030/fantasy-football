@@ -18,7 +18,7 @@ describe('results', () => {
             let r = parseStatLine(s);
             expect(r).to.be.a('number');
             expect(r).to.eql(305);
-        })
+        });
     });
     describe('getGameIdFromUrl', () => {
         it('finds url', () => {

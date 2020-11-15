@@ -61,8 +61,8 @@ export const getAllResults = async function (week) {
         let $ = cheerio.load(gamePage.data);
         let awayQb = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-name > a').attr('href');
         let homeQb = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-name > a').attr('href');
-        let homeQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-stats`).text();
-        let awayQbYrds = $(`#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-stats`).text();
+        let homeQbYrds = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.away-leader > div > div.player-detail > span.player-stats').text();
+        let awayQbYrds = $('#gamepackage-team-leaders > article > div > div > div > div:nth-child(1) > div > div.home-leader > div > div.player-detail > span.player-stats').text();
         let result = {
             game: getGameIdFromUrl(game.gameUrl),
             home: {
@@ -79,19 +79,19 @@ export const getAllResults = async function (week) {
 
     }
     return results;
-}
+};
 
 // /nfl/team/_/name/atl/atlanta-falcons"
 export const getShortIdFromUrl = (url) => {
     let segments = url.split('/');
     return segments[5];
-}
+};
 
 // /nfl/game/_/gameId/401220203
 export const getGameIdFromUrl = (url) => {
     let segments = url.split('/');
     return parseInt(segments[segments.length - 1], 10);
-}
+};
 
 export const parseStatLine = function (txt) {
     let reStatLine = /([^,]+,\s*)(\d+)\sYDS.*/;
@@ -101,4 +101,4 @@ export const parseStatLine = function (txt) {
     }
 
     throw new Error('Regex bug (' + JSON.stringify(txt) + ')');
-}
+};

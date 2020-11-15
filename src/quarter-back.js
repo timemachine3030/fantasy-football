@@ -27,7 +27,7 @@ export default class QuarterBack {
             })
             .then((response) => {
                 const $ = cheerio.load(response.data);
-                let playerIds = []
+                let playerIds = [];
                 const last = 41;
                 for (let i = 1; i <= last; i += 1) {
                     const pllink = $(`#fittPageContainer > div.page-container.cf > div > div > section > div > div:nth-child(4) > div > div.flex > table > tbody > tr:nth-child(${i}) > td:nth-child(2) > div > a`);
@@ -79,7 +79,7 @@ export default class QuarterBack {
         };
         const tblHeading = Object.keys(tblTypes);
         
-        const nameSelector = '#fittPageContainer > div.StickyContainer > div.ResponsiveWrapper > div > div > div.PlayerHeader__Left.flex.items-center.justify-start.overflow-hidden.brdr-clr-gray-09 > div.PlayerHeader__Main.flex.items-center > div.PlayerHeader__Main_Aside.min-w-0.flex-grow.flex-basis-0 > h1 > span:nth-child(2)'
+        const nameSelector = '#fittPageContainer > div.StickyContainer > div.ResponsiveWrapper > div > div > div.PlayerHeader__Left.flex.items-center.justify-start.overflow-hidden.brdr-clr-gray-09 > div.PlayerHeader__Main.flex.items-center > div.PlayerHeader__Main_Aside.min-w-0.flex-grow.flex-basis-0 > h1 > span:nth-child(2)';
         const selector = '#fittPageContainer > div.StickyContainer > div:nth-child(5) > div > div.PageLayout__Main > div.ResponsiveWrapper > div > div > div > div > div > div > div > div.Table__Scroller > table > tbody';            
         const tables = $(selector);
         this.playerName = $(nameSelector).text().trim();
@@ -95,7 +95,7 @@ export default class QuarterBack {
                 if ($(tr).hasClass('totals_row')) {
                     return;
                 }
-                $(tr).find("td").each((i, d) => {
+                $(tr).find('td').each((i, d) => {
                     let val = $(d).text();
                     if (tblTypes[tblHeading[i]] === 'number') {
                         val = parseFloat(val);
@@ -103,7 +103,7 @@ export default class QuarterBack {
                     statLine[tblHeading[i]] = val;
                 });
                 data.stats.push(statLine);
-            })
+            });
         });
         
         let totalYards = data.stats.reduce((total, game) => {
@@ -130,7 +130,7 @@ export default class QuarterBack {
             gameYards: [],
             alpha: 0,
             beta: 0,
-        }
+        };
         let i=0;
         this.years[year].stats.forEach(() => {
             product.gameYards[i] = this.years[year].stats[i].passing_yards;
@@ -138,8 +138,8 @@ export default class QuarterBack {
             
         });
         this.datapoints = product.gameYards.length;
-        product.alpha = alphaFromHistory(product.gameYards)
-        product.beta = betaFromHistory(product.gameYards)
+        product.alpha = alphaFromHistory(product.gameYards);
+        product.beta = betaFromHistory(product.gameYards);
         
         return product; 
     }

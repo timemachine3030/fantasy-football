@@ -12,8 +12,8 @@ describe('compute gamma', () => {
         const alpha = round(alphaFromHistory(sample));
         const beta = round(betaFromHistory(sample));
         const cfd = compute(12, alpha, beta);
-        expect(cfd).to.eql(0.06702)
-    })
+        expect(cfd).to.eql(0.06702);
+    });
 });
 
 describe('next game', () => {
@@ -26,7 +26,7 @@ describe('next game', () => {
         let mode = (alpha - 1) * beta;
         expect(avgYrd).eql(meanYds);
         let modeProb = compute(mode, alpha, beta);
-        let meanProb = compute(meanYds, alpha, beta)
+        let meanProb = compute(meanYds, alpha, beta);
         expect(round(meanProb + modeProb, 1)).eql(1);
     });
 });
@@ -54,7 +54,7 @@ describe('calculate', () => {
         describe('finds sample mean', () => {
             it('returns 0 if no input', () => {
                 expect(mean([])).to.eql(0);
-            })
+            });
             it('return the zeroth element if only one', () => {
                 expect(mean([24])).to.eql(24);
             });
@@ -63,7 +63,7 @@ describe('calculate', () => {
                 const sample = [18,16,13,32,22,16,28,37];
                 expect(mean(sample)).to.eql(22.75);
             });
-        })
+        });
     });
     describe('alpha', () => {
         it('returns the alpha for the data sample', () => {
@@ -81,4 +81,4 @@ describe('calculate', () => {
             expect(round(beta)).to.eql(2.88736);
         });
     });
-})
+});
