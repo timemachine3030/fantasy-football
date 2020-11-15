@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --inspect tests/*.spec.js",
+    "lint": "eslint src/**/*.js tests/**/*.js",
     "parser": "mocha --inspect src/parser.js",
     "defense-scraper": "mocha --inspect tests/defence.spec.js",
     "test-distribution": "mocha --inspect src/test-distribution.mjs",

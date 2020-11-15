@@ -1,5 +1,6 @@
+/*globals describe, it */
 import QuarterBack from './quarter-back.js';
-import { buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
+import { getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import fs from 'fs';
 import chai from 'chai';
 import { getAllResults, getAllGames } from '../src/results.js';
@@ -39,120 +40,6 @@ let NFL = {
     ten: ['14876',],
     wsh: ['4040616', '3115293'],
 };
-let week10 = [{
-    home: 'cle',
-    away: 'hou',
-}, {
-    home: 'det',
-    away: 'wsh',
-}, {
-    home: 'gb',
-    away: 'jax',
-}, {
-    home: 'nyg',
-    away: 'phi',
-}, {
-    home: 'ten',
-    away: 'ind',
-}, {
-    home: 'car',
-    away: 'tb',
-}, {
-    home: 'lv',
-    away: 'den',
-}, {
-    home: 'mia',
-    away: 'lac',
-}, {
-    home: 'ari',
-    away: 'buf',
-}, {
-    home: 'lar',
-    away: 'sea',
-}, {
-    home: 'ne',
-    away: 'sf',
-}, {
-    home: 'pit',
-    away: 'cin',
-}, {
-    home: 'ne',
-    away: 'bal',
-}, {
-    home: 'chi',
-    away: 'min',
-
-}];
-
-let week09 = [{
-    home: 'nyj',
-    away: 'ne',
-}, {
-    home: 'ari',
-    away: 'mia',
-    mia: 248,
-    ari: 283,
-}, {
-    home: 'tb',
-    away: 'no',
-    no: 222,
-    tb: 209,
-}, {
-    home: 'dal',
-    away: 'pit',
-    pit: 306,
-    dal: 243,
-}, {
-    home: 'lac',
-    away: 'lv',
-    lac: 326,
-    lv: 165
-}, {
-    home: 'jax',
-    away: 'hou',
-    hou: 281,
-    jax: 304
-}, {
-    home: 'wsh',
-    away: 'nyg',
-    nyg: 212,
-    wsh: 325,
-}, {
-    home: 'min',
-    away: 'det',
-    det: 211,
-    min: 220,
-}, {
-    home: 'kc',
-    away: 'car',
-    car: 310,
-    kc: 372,
-}, {
-    home: 'ind',
-    away: 'bal',
-    bal: 170,
-    ind: 227
-}, {
-    home: 'ten',
-    away: 'chi',
-    ten: 158,
-    chi: 335,
-}, {
-    home: 'buf',
-    away: 'sea',
-    sea: 390,
-    buf: 415
-}, {
-    home: 'atl',
-    away: 'den',
-    atl: 284,
-    den: 313
-}, {
-    home: 'gb',
-    away: 'sf',
-    gb: 305,
-    sf: 291
-}];
 
 describe('predict', () => {
 

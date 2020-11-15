@@ -1,3 +1,4 @@
+/*globals describe, it */
 import {getAllResults, getGameIdFromUrl, parseStatLine} from '../src/results.js';
 
 import chai from 'chai';

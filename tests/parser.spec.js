@@ -1,3 +1,4 @@
+/*globals describe, it */
 import {calculatePlayerPts, findKey, sumPlayerPts, sumAllPlayers, rankPlayers, getPlayer, passPts, touchdownPts, interceptionPts} from '../src/parser.js';
 import fs from 'fs';
 import chai from 'chai';

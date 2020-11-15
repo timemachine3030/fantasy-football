@@ -7,7 +7,7 @@ const axios = getAxiosInstance();
 
 const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 const SEASON_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/season/{year}/seasontype/2/table/passing/sort/passingYards/dir/desc';
-const CURRENT_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/table/passing/sort/passingYards/dir/desc';
+// const CURRENT_PASSING_STATS = 'https://www.espn.com/nfl/stats/player/_/table/passing/sort/passingYards/dir/desc';
 
 export default class QuarterBack {
     constructor(playerId) {
@@ -124,8 +124,6 @@ export default class QuarterBack {
         if (!this.years[year]) {
             throw new Error('Must populate year stats: ' + year);
         }
-        const predictedSeasonAvPassYPG = this.years[year].seasonAvgPassYardsPG;
-
         const product = {
             gameYards: [],
             alpha: 0,

@@ -1,3 +1,4 @@
+/*globals describe, it */
 import { mean, alphaFromHistory, betaFromHistory, sigma, compute, round } from '../src/distribution.js';
 import chai from 'chai';
 const expect = chai.expect;

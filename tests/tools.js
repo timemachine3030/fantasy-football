@@ -1,9 +1,12 @@
-import { getPayerIds, getYearStatSummary, predictStats } from '../src/scraper.js';
-import {buildDataModel, getAllTeamsSchedules, getDefGames, predictDefenseStats} from '../src/defense-Scraper.js';
+/*globals describe, it */
+import { getPayerIds, getYearStatSummary } from '../src/scraper.js';
+import {buildDataModel, getAllTeamsSchedules} from '../src/defense-Scraper.js';
 import { compareTeams } from '../src/loop.js';
+import { buildUrl } from '../src/utils.js';
 import fs from 'fs';
 import chai from 'chai';
 const expect = chai.expect;
+const PLAYER_STAT_PAGE = 'https://www.espn.com/nfl/player/gamelog/_/id/{playerId}/type/nfl/year/{year}';
 
 describe('scripts', () => {
     it('qb-data', async () => {

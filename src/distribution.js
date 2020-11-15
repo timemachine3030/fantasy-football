@@ -119,7 +119,8 @@ const calcMeans = (sample) => {
 	return m;
 };
 export const alphaFromHistory = (sample) => {
-	const [m1, m2, mSqrd] = calcMeans(sample);
+	const m = calcMeans(sample);
+	let m2 = m[1], mSqrd = m[2];
 	return mSqrd/(m2 - mSqrd);
 };
 export const betaFromHistory = (sample) => {

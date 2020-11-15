@@ -1,10 +1,7 @@
-import { getDefAvg, getQbAvg, getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
+/*globals describe, it, beforeEach */
+import {  getDefGames, predictDefenseStats } from '../src/defense-Scraper.js';
 import chai from 'chai';
-import asciichart from 'asciichart';
 const expect = chai.expect;
-const plot = asciichart.plot;
-
-
 
 // describe('Compare QB and Defense', () => {
 

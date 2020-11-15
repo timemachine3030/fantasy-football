@@ -1,5 +1,5 @@
+/*globals describe, it, beforeEach */
 import QuarterBack from '../src/quarter-back.js';
-import {alphaFromHistory, betaFromHistory} from '../src/distribution.js';
 import {buildUrl} from '../src/utils.js';
 import chai from 'chai';
 const expect = chai.expect;
