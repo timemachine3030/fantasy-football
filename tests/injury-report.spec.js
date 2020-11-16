@@ -3,7 +3,7 @@ import {getReport} from '../src/injury-report.js';
 import chai from 'chai';
 const { expect } = chai;
 
-describe('getReport', () => {
+describe.skip('getReport', () => {
     it('finds all rows', async () => {
         let injuries =  await getReport();
         expect(injuries.length).greaterThan(0);

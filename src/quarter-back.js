@@ -16,8 +16,8 @@ export default class QuarterBack {
     }
 
     /**
-     * @param year: number
-     * @returns Promise<Array<string>>
+     * @param {number} year
+     * @returns {Promise<Array<string>>}
      */
     static getPayerIds(year = 2019) {
          const url = buildUrl(SEASON_PASSING_STATS, {year});
@@ -44,8 +44,8 @@ export default class QuarterBack {
     
     /**
      * 
-     * @param year: number
-     * @returns Promise<{}>
+     * @param {number} year: number
+     * @returns {Promise<void>}
      */
     async populateYearStatSummary(year) {
         const url = buildUrl(PLAYER_STAT_PAGE, {playerId: this.playerId, year});
@@ -117,7 +117,7 @@ export default class QuarterBack {
     }
     /**
      * 
-     * @param year: string
+     * @param {number} year
      * @returns Promise<{}> 
      */
     predictStats(year) {
@@ -140,5 +140,62 @@ export default class QuarterBack {
         product.beta = betaFromHistory(product.gameYards);
         
         return product; 
+    }
+
+
+    passingStats() {
+        let pass_yds = this.sumAll('passing_yards');
+        let pass_td  = this.sumAll('passing_touchdowns');
+        let pass_att = this.sumAll('passing_attempts');
+        let pass_cmp = this.sumAll('passing_completions');
+        let pass_int = this.sumAll('passing_interceptions');
+
+        return {pass_yds, pass_td, pass_att, pass_cmp, pass_int};
+    }
+    /**
+     * https://en.wikipedia.org/wiki/Passer_rating
+     * https://www.pro-football-reference.com/about/qb-rating.htm
+     * 
+     * @param {PassingStats} s
+     * @returns {number} the QBR for this player.
+     */
+    calculateRating(s) {
+        
+        // Validate:
+        if (s.pass_cmp > s.pass_att) {
+            throw new Error('Completions cannot exceed attempts, please try again.');
+        } else if (s.pass_td > s.pass_att) {
+            throw new Error('Touchdowns cannot exceed attempts, please try again.');
+        } else if (s.pass_td > s.pass_cmp) {
+            throw new Error('Touchdowns cannot exceed completions, please try again.');
+        } else if (s.pass_int > s.pass_att) {
+            throw new Error('Interceptions cannot exceed attempts, please try again.');
+        } 
+
+        const MAX_RATING = 2.375;
+        const MIN_RATING = 0;
+
+        // Force a value to be between MIN_RATING and MAX_RATING
+        function clamp(v) {
+            return Math.max(MIN_RATING, Math.min(MAX_RATING, v));
+        }
+        
+        let a = clamp(((s.pass_cmp / s.pass_att) - 0.3) * 5);
+        let b = clamp(((s.pass_yds / s.pass_att) - 3) * .25);
+        let c = clamp((s.pass_td / s.pass_att) * 20);
+        let d = clamp(MAX_RATING - ((s.pass_int / s.pass_att) * 25));
+        let rating = (a + b + c + d) / 6 * 100;
+        return Math.round(rating * 100) / 100;
+    }
+
+    /**
+     * 
+     * @param {string} stat The player stat to sum.
+     * @returns {number}
+     */
+    sumAll(stat) {
+        return this.years.reduce((total, year) => {
+            return total += year.stats.reduce((t, game) => t += game[stat], 0);
+        }, 0);
     }
 }

@@ -5,7 +5,7 @@ import chai from 'chai';
 const expect = chai.expect;
 
 describe('results', () => {
-    describe('getAllResults', () => {
+    describe.skip('getAllResults', () => {
         it('', async () => {
             let results = await getAllResults(9);
             expect(results[0].home.yards).to.eql(305);
