@@ -59,6 +59,7 @@ describe('predict', () => {
             fs.writeFileSync('./datafiles/week-10.json', JSON.stringify(results, null, 2));
         });
     });
+
 });
 
 describe('results', () => {
@@ -80,6 +81,26 @@ describe('results', () => {
             return matchup;
         });
         fs.writeFileSync('./datafiles/week-09-with-gama.json', JSON.stringify(difference, null, 2));
+    });
+
+    it('week-10', async () => {
+        let results = await getAllResults(10);
+        let prediction = JSON.parse(fs.readFileSync('./datafiles/week-10.json', 'utf-8'));
+        let difference = prediction.map((matchup) => {
+            let result = results.find(g => g.game === matchup.game.id);
+            if (result) {
+                if (matchup.home.alpha && matchup.home.beta) {
+                    matchup.home.gamma = compute(result.home.yards, matchup.home.alpha, matchup.home.beta);
+                    matchup.home.actual = result.home;
+                }
+                if (matchup.away.alpha && matchup.away.beta) {
+                    matchup.away.gamma = compute(result.away.yards, matchup.away.alpha, matchup.away.beta);
+                    matchup.away.actual = result.away;
+                }
+            }
+            return matchup;
+        });
+        fs.writeFileSync('./datafiles/week-10-with-gama.json', JSON.stringify(difference, null, 2));
     });
 });
 
