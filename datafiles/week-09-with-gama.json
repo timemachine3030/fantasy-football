@@ -23,7 +23,7 @@
       "beta": 35.60744389222251,
       "gamma": 0.79703,
       "actual": {
-        "qb": "https://www.espn.com/nfl/player/_/id/8439/aaron-rodgers",
+        "qb": "http://www.espn.com/nfl/player/_/id/8439/aaron-rodgers",
         "yards": 291
       }
     }
@@ -44,7 +44,7 @@
       "beta": 22.58373848924307,
       "gamma": 0.56024,
       "actual": {
-        "qb": "http://www.espn.com/nfl/player/_/id/11237/matt-ryan",
+        "qb": "https://www.espn.com/nfl/player/_/id/11237/matt-ryan",
         "yards": 313
       }
     },
@@ -57,7 +57,7 @@
       "beta": 14.101471937817365,
       "gamma": 0.00064,
       "actual": {
-        "qb": "http://www.espn.com/nfl/player/_/id/3924327/drew-lock",
+        "qb": "https://www.espn.com/nfl/player/_/id/3924327/drew-lock",
         "yards": 284
       }
     }
@@ -141,7 +141,7 @@
       "beta": 15.27919679343216,
       "gamma": 0.00016,
       "actual": {
-        "qb": "http://www.espn.com/nfl/player/_/id/5529/philip-rivers",
+        "qb": "https://www.espn.com/nfl/player/_/id/5529/philip-rivers",
         "yards": 170
       }
     },
@@ -175,7 +175,7 @@
       "beta": 33.681659356107346,
       "gamma": 0.75776,
       "actual": {
-        "qb": "http://www.espn.com/nfl/player/_/id/3139477/patrick-mahomes",
+        "qb": "https://www.espn.com/nfl/player/_/id/3139477/patrick-mahomes",
         "yards": 310
       }
     },
@@ -188,7 +188,7 @@
       "beta": 58.46449334901361,
       "gamma": 0.87711,
       "actual": {
-        "qb": "http://www.espn.com/nfl/player/_/id/16728/teddy-bridgewater",
+        "qb": "https://www.espn.com/nfl/player/_/id/16728/teddy-bridgewater",
         "yards": 372
       }
     }
@@ -222,7 +222,7 @@
       "beta": 32.11102177264762,
       "gamma": 0.5348,
       "actual": {
-        "qb": "https://www.espn.com/nfl/player/_/id/12483/matthew-stafford",
+        "qb": "http://www.espn.com/nfl/player/_/id/12483/matthew-stafford",
         "yards": 220
       }
     }
@@ -277,7 +277,7 @@
       "beta": 25.74272938081778,
       "gamma": 0.60762,
       "actual": {
-        "qb": "https://www.espn.com/nfl/player/_/id/3124900/jake-luton",
+        "qb": "http://www.espn.com/nfl/player/_/id/3124900/jake-luton",
         "yards": 281
       }
     },
@@ -348,7 +348,7 @@
       "beta": 35.32182434423815,
       "gamma": 0.14452,
       "actual": {
-        "qb": "https://www.espn.com/nfl/player/_/id/5536/ben-roethlisberger",
+        "qb": "http://www.espn.com/nfl/player/_/id/5536/ben-roethlisberger",
         "yards": 243
       }
     }
