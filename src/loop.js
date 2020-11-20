@@ -41,6 +41,38 @@ let NFL = {
     wsh: ['4040616', '3115293'],
 };
 
+async function runWeek(week) {
+    let str = week.toString().padStart(2, '0');
+    let files = {
+        prediction: `./datafiles/week-${str}.json`,
+        results: `./datafiles/week-${str}-results.json`,
+    };
+    let prediction = await runWeekPregictions(week);
+    fs.writeFileSync(files.prediction, JSON.stringify(prediction, null, 2));
+    let results = await getAllResults(week);
+    let difference = prediction.map((matchup) => {
+        let result = results.find(g => g.game === matchup.game.id);
+        if (result) {
+            if (matchup.home.alpha && matchup.home.beta) {
+                matchup.home.gamma = compute(result.home.yards, matchup.home.alpha, matchup.home.beta);
+                matchup.home.actual = result.home;
+            }
+            if (matchup.away.alpha && matchup.away.beta) {
+                matchup.away.gamma = compute(result.away.yards, matchup.away.alpha, matchup.away.beta);
+                matchup.away.actual = result.away;
+            }
+        }
+        return matchup;
+    });
+    fs.writeFileSync(files.results, JSON.stringify(difference, null, 2));
+}
+
+describe('week-11', () => {
+    it('', async () => {
+        await runWeek(11);
+        expect(true).to.be.ok;
+    });
+});
 describe('predict', () => {
 
     describe('week-09', () => {
@@ -52,7 +84,6 @@ describe('predict', () => {
     });
 
     describe('week-10', () => {
-
         it('compares-all-teams', async () => {
             let results = await runWeekPregictions(10);
             expect(results.length).eql(14);

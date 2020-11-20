@@ -1,0 +1,338 @@
+[
+  {
+    "game": {
+      "id": 401220360,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220360",
+      "home": "sea",
+      "away": "ari"
+    },
+    "home": {
+      "datapoints": 16,
+      "qb": "Wilson",
+      "def": "ari",
+      "avg": 284.6207315945016,
+      "alpha": 14.168936149966918,
+      "beta": 20.087657152380217
+    },
+    "away": {
+      "datapoints": 3,
+      "qb": "Hundley",
+      "def": "sea",
+      "avg": 149.25217655868494,
+      "alpha": 4.766543927129947,
+      "beta": 31.312451713531853
+    }
+  },
+  {
+    "game": {
+      "id": 401220167,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220167",
+      "home": "cle",
+      "away": "phi"
+    },
+    "home": {
+      "datapoints": 10,
+      "qb": "Keenum",
+      "def": "phi",
+      "avg": 241.72762388219437,
+      "alpha": 4.166512970738251,
+      "beta": 58.016769797638105
+    },
+    "away": {
+      "datapoints": 16,
+      "qb": "Wentz",
+      "def": "cle",
+      "avg": 253.39225657018926,
+      "alpha": 28.849212616335592,
+      "beta": 8.783333532878062
+    }
+  },
+  {
+    "game": {
+      "id": 401220321,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220321",
+      "home": "no",
+      "away": "atl"
+    },
+    "home": {
+      "datapoints": 11,
+      "qb": "Brees",
+      "def": "atl",
+      "avg": 262.09631685910443,
+      "alpha": 9.364437755153805,
+      "beta": 27.988473383237267
+    },
+    "away": {
+      "datapoints": 15,
+      "qb": "Ryan",
+      "def": "no",
+      "avg": 275.5373980077274,
+      "alpha": 16.164690482443522,
+      "beta": 17.045634019840264
+    }
+  },
+  {
+    "game": {
+      "id": 401220272,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220272",
+      "home": "wsh",
+      "away": "cin"
+    },
+    "home": {
+      "datapoints": 9,
+      "qb": "Haskins Jr.",
+      "def": "cin",
+      "avg": 187.53350370922155,
+      "alpha": 6.516312946678649,
+      "beta": 28.779081858676996
+    },
+    "away": {
+      "datapoints": 0,
+      "qb": "Burrow",
+      "def": "wsh",
+      "avg": null,
+      "alpha": null,
+      "beta": null
+    }
+  },
+  {
+    "game": {
+      "id": 401220318,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220318",
+      "home": "car",
+      "away": "det"
+    },
+    "home": {
+      "datapoints": 9,
+      "qb": "Bridgewater",
+      "def": "det",
+      "avg": 257.0478852353009,
+      "alpha": 4.0166558071828975,
+      "beta": 63.99549714357596
+    },
+    "away": {
+      "datapoints": 5,
+      "qb": "Blough",
+      "def": "car",
+      "avg": 209.20926217095763,
+      "alpha": 7.919517856078665,
+      "beta": 26.416919056553176
+    }
+  },
+  {
+    "game": {
+      "id": 401220198,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220198",
+      "home": "jax",
+      "away": "pit"
+    },
+    "home": {
+      "datapoints": 14,
+      "qb": "Minshew II",
+      "def": "pit",
+      "avg": 227.81687585131365,
+      "alpha": 10.841787495880117,
+      "beta": 21.012851980163248
+    },
+    "away": {
+      "datapoints": 2,
+      "qb": "Roethlisberger",
+      "def": "jax",
+      "avg": 217.11627640273048,
+      "alpha": 4.480894319459416,
+      "beta": 48.453781973801114
+    }
+  },
+  {
+    "game": {
+      "id": 401220150,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220150",
+      "home": "bal",
+      "away": "ten"
+    },
+    "home": {
+      "datapoints": 6,
+      "qb": "Griffin III",
+      "def": "ten",
+      "avg": 151.78080411533688,
+      "alpha": 5.892954441061823,
+      "beta": 25.756317248566447
+    },
+    "away": {
+      "datapoints": 12,
+      "qb": "Tannehill",
+      "def": "bal",
+      "avg": 244.7923077124058,
+      "alpha": 7.461858562982421,
+      "beta": 32.805809121978996
+    }
+  },
+  {
+    "game": {
+      "id": 401220185,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220185",
+      "home": "hou",
+      "away": "ne"
+    },
+    "home": {
+      "datapoints": 15,
+      "qb": "Watson",
+      "def": "ne",
+      "avg": 213.52906816303548,
+      "alpha": 9.629597013045775,
+      "beta": 22.174247569628847
+    },
+    "away": {
+      "datapoints": 2,
+      "qb": "Newton",
+      "def": "hou",
+      "avg": 463.5598744037651,
+      "alpha": 22.118362325534626,
+      "beta": 20.95814633927968
+    }
+  },
+  {
+    "game": {
+      "id": 401220214,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220214",
+      "home": "den",
+      "away": "mia"
+    },
+    "home": {
+      "datapoints": 3,
+      "qb": "Driskel",
+      "def": "mia",
+      "avg": 353.3791977089993,
+      "alpha": 41.35461574089563,
+      "beta": 8.545096874386918
+    },
+    "away": {
+      "datapoints": 15,
+      "qb": "Fitzpatrick",
+      "def": "den",
+      "avg": 222.76475822342326,
+      "alpha": 5.930362326737101,
+      "beta": 37.56343136389593
+    }
+  },
+  {
+    "game": {
+      "id": 401220238,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220238",
+      "home": "lac",
+      "away": "nyj"
+    },
+    "home": {
+      "datapoints": 0,
+      "qb": "Herbert",
+      "def": "nyj",
+      "avg": null,
+      "alpha": null,
+      "beta": null
+    },
+    "away": {
+      "datapoints": 8,
+      "qb": "Flacco",
+      "def": "lac",
+      "avg": 315.91761098682167,
+      "alpha": 13.438310410660156,
+      "beta": 23.508729991548265
+    }
+  },
+  {
+    "game": {
+      "id": 401220191,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220191",
+      "home": "ind",
+      "away": "gb"
+    },
+    "home": {
+      "datapoints": 16,
+      "qb": "Rivers",
+      "def": "gb",
+      "avg": 551.563195067883,
+      "alpha": 23.64457802775884,
+      "beta": 23.32725897752734
+    },
+    "away": {
+      "datapoints": 16,
+      "qb": "Rodgers",
+      "def": "ind",
+      "avg": 260.91856701418186,
+      "alpha": 6.928131813800555,
+      "beta": 37.66073943547707
+    }
+  },
+  {
+    "game": {
+      "id": 401220305,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220305",
+      "home": "min",
+      "away": "dal"
+    },
+    "home": {
+      "datapoints": 15,
+      "qb": "Cousins",
+      "def": "dal",
+      "avg": 242.6883411830617,
+      "alpha": 14.594329468676447,
+      "beta": 16.628947681627952
+    },
+    "away": {
+      "datapoints": 0,
+      "qb": "DiNucci",
+      "def": "min",
+      "avg": null,
+      "alpha": null,
+      "beta": null
+    }
+  },
+  {
+    "game": {
+      "id": 401220227,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220227",
+      "home": "lv",
+      "away": "kc"
+    },
+    "home": {
+      "datapoints": 16,
+      "qb": "Carr",
+      "def": "kc",
+      "avg": 287.1591392030315,
+      "alpha": 12.967639756418107,
+      "beta": 22.1442872100844
+    },
+    "away": {
+      "datapoints": 14,
+      "qb": "Mahomes",
+      "def": "lv",
+      "avg": 276.27739770802134,
+      "alpha": 6.994063685580274,
+      "beta": 39.50169888753301
+    }
+  },
+  {
+    "game": {
+      "id": 401220335,
+      "gameUrl": "https://www.espn.com/nfl/game/_/gameId/401220335",
+      "home": "tb",
+      "away": "lar"
+    },
+    "home": {
+      "datapoints": 16,
+      "qb": "Brady",
+      "def": "lar",
+      "avg": 240.0478373493889,
+      "alpha": 12.993687485642406,
+      "beta": 18.47418891785983
+    },
+    "away": {
+      "datapoints": 16,
+      "qb": "Goff",
+      "def": "tb",
+      "avg": 288.05129330029627,
+      "alpha": 8.890283985438295,
+      "beta": 32.400685261810025
+    }
+  }
+]
