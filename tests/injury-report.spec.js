@@ -11,6 +11,6 @@ describe('getReport', () => {
         expect(injuries[0].status).ok;
         expect(injuries[0].desc).ok;
         expect(injuries[0].pos).ok;
-
+        expect(injuries[0].team).ok;
     });
 });
