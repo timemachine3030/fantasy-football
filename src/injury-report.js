@@ -19,12 +19,16 @@ export const getReport = async () => {
         let desc = $(row).find('.col-desc').text().trim();
         let r = {
             id: getLinkIndexAsInt(playerUrl, 7),
-            pos, status, desc,
+            pos, status, desc, defense: false,
         };
         players.push(r); 
-        players.forEach(() => {
-
-        })
+        players.forEach(element  => {
+           if ((element.pos === 'S')||(element.pos === 'CB')||(element.pos === 'DE')||(element.pos === 'DT')||(element.pos === 'LB')){
+               element.defense = true;
+           } else {
+               element.defense = false;
+           }
+        });
     });
     fs.writeFileSync('./injuryReport.json', JSON.stringify(players, null, 2));
     return players;
