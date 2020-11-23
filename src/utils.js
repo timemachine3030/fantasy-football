@@ -18,7 +18,7 @@ let axios;
 export const getAxiosInstance = () => {
     if (!axios) {
         axios = rateLimit(http.create(), {
-            maxRPS: 4
+            maxRPS: 8
         });
     }
     return axios;
