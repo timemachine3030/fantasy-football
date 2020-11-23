@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "name": "Charles Washington",
     "href": "http://www.espn.com/nfl/player/_/id/2579163/charles-washington",
     "uid": "",
@@ -1958,5 +1959,936 @@
     "team": "wsh",
     "status": "out",
     "description": ""
+=======
+    "id": 2579163,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2576585,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3052166,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4043089,
+    "pos": "S",
+    "status": "Questionable",
+    "desc": "Coach Kliff Kingsbury said Friday that Thompson (ankle) aggravated the same ankle injury that landed him on injured reserve earlier this season in Thursday's loss to Seattle, Kyle Odegard of the Cardinals' official site reports.",
+    "defense": true
+  },
+  {
+    "id": 3917315,
+    "pos": "QB",
+    "status": "Questionable",
+    "desc": "Murray suffered an AC joint injury in his throwing shoulder during Thursday's loss to Seattle, but the Cardinals expect him to be fine for their next game, a Week 12 matchup with the Patriots on Nov. 29, NFL Network's Ian Rapoport reports.",
+    "defense": false
+  },
+  {
+    "id": 4243009,
+    "pos": "LB",
+    "status": "Questionable",
+    "desc": "Walker (hamstring) is questionable to return to Sunday's matchup against New Orleans.",
+    "defense": true
+  },
+  {
+    "id": 4241985,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "Dobbins (illness) will be placed on the reserve/COVID-19 list after testing positive Monday, Mike Garafolo of NFL Network reports.",
+    "defense": false
+  },
+  {
+    "id": 13981,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "Ingram tested positive for COVID-19 on Monday and will be placed on the reserve/COVID-19 list, Mike Garafolo of NFL Network reports.",
+    "defense": false
+  },
+  {
+    "id": 11284,
+    "pos": "DE",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 15875,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 14167,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3707061,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 16804,
+    "pos": "WR",
+    "status": "Questionable",
+    "desc": "Coach Sean McDermott said Monday that Brown tweaked his ankle during Sunday's 32-30 loss to the Cardinals, Maddy Glab of the Bills' official site reports.",
+    "defense": false
+  },
+  {
+    "id": 4240585,
+    "pos": "DE",
+    "status": "Questionable",
+    "desc": "Epenesa was ruled out for the rest of Sunday's game versus the Cardinals after suffering a concussion.",
+    "defense": true
+  },
+  {
+    "id": 3117251,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 13242,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2576639,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4044133,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 16728,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3843769,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 4259480,
+    "pos": "G",
+    "status": "Questionable",
+    "desc": "Daley suffered a concussion during Sunday's game against the Lions, Alaina Getzenberg of The Charlotte Observer reports.",
+    "defense": false
+  },
+  {
+    "id": 3039707,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "Coach Matt Nagy said Monday that he's not yet ready to name Trubisky (shoulder) or Nick Foles (hip) the starter for Sunday's game against the Packers, Jeff Dickerson of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 14877,
+    "pos": "QB",
+    "status": "Questionable",
+    "desc": "Coach Matt Nagy said Monday that it's \"too soon\" to announce whether Foles (hip) or Mitchell Trubisky (shoulder) will start Sunday's game against the Packers, Jeff Dickerson of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 14984,
+    "pos": "DT",
+    "status": "Questionable",
+    "desc": "Hicks suffered a strained right hamstring in Monday's loss to the Vikings, Adam Jahns of The Athletic reports.",
+    "defense": true
+  },
+  {
+    "id": 3129307,
+    "pos": "C",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 13419,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 15846,
+    "pos": "NT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4035538,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3915511,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "Burrow suffered a torn ACL and MCL in his left knee, in addition to other structural damage, Adam Schefter of ESPN reports.",
+    "defense": false
+  },
+  {
+    "id": 3123986,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3915106,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3915535,
+    "pos": "CB",
+    "status": "Questionable",
+    "desc": "Coach Kevin Stefanski said Ward will undergo an MRI on Monday to determine the extent of his calf injury, Mary Kay Cabot of The Cleveland Plain Dealer reports.",
+    "defense": true
+  },
+  {
+    "id": 3859006,
+    "pos": "S",
+    "status": "Questionable",
+    "desc": "Harrison suffered a bone bruse on his knee during Sunday's win over the Eagles, Jeremy Fowler of ESPN.com reports.",
+    "defense": true
+  },
+  {
+    "id": 2576245,
+    "pos": "G",
+    "status": "Questionable",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2974344,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2517074,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3116602,
+    "pos": "S",
+    "status": "Questionable",
+    "desc": "Marshall was forced out of Sunday's game against the Dolphins with a lower leg injury, Patrick Smyth of the Broncos' official site reports.",
+    "defense": true
+  },
+  {
+    "id": 2974858,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3126352,
+    "pos": "DE",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 4259545,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3728253,
+    "pos": "DE",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 11674,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4241984,
+    "pos": "CB",
+    "status": "Questionable",
+    "desc": "Okudah exited Sunday's game against the Panthers with shoulder injury.",
+    "defense": true
+  },
+  {
+    "id": 3050916,
+    "pos": "CB",
+    "status": "Questionable",
+    "desc": "Ford exited Sunday's game against the Panthers to be evaluated for a concussion.",
+    "defense": true
+  },
+  {
+    "id": 3916676,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3051894,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2573974,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 16864,
+    "pos": "C",
+    "status": "Questionable",
+    "desc": "Linsley (back) is ruled out to return to Sunday's game against the Colts.",
+    "defense": false
+  },
+  {
+    "id": 3051890,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3122143,
+    "pos": "FB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 15123,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 14053,
+    "pos": "WR",
+    "status": "Doubtful",
+    "desc": "Cobb (toe) is in danger of being placed on injured reserve, Aaron Wilson of the Houston Chronicle reports.",
+    "defense": false
+  },
+  {
+    "id": 16016,
+    "pos": "WR",
+    "status": "Questionable",
+    "desc": "Stills (quadriceps) hasn't been ruled out for Thursday's game against the Lions after getting the results of Sunday's MRI back, Aaron Wilson of the Houston Chronicle reports.",
+    "defense": false
+  },
+  {
+    "id": 3050754,
+    "pos": "DT",
+    "status": "Questionable",
+    "desc": "Hall was forced out of Sunday's game against the Patriots with a chest injury.",
+    "defense": true
+  },
+  {
+    "id": 4044540,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3930298,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3121595,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 15794,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "Coach Doug Marrone said Monday that Hayden (knee) will miss \"considerable time,\" Mike Garafolo of NFL Network reports.",
+    "defense": true
+  },
+  {
+    "id": 3915239,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "Coach Doug Marrone said Monday that Allen avoided ligament damage in his knee but will miss \"considerable time,\" John Oehser of the Jaguars' official site reports.",
+    "defense": true
+  },
+  {
+    "id": 4035505,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 17388,
+    "pos": "G",
+    "status": "Doubtful",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2508079,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4038524,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3127299,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 4243160,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4371737,
+    "pos": "CB",
+    "status": "Questionable",
+    "desc": "Claybrooks suffered a groin injury during Sunday's loss to the Steelers.",
+    "defense": true
+  },
+  {
+    "id": 16725,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4036416,
+    "pos": "WR",
+    "status": "Questionable",
+    "desc": "Pringle (ankle) is questionable to return to Sunday's game against the Raiders.",
+    "defense": false
+  },
+  {
+    "id": 13496,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2972091,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3045220,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3120358,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "Nwosu sprained the AC join in his shoulder during Sunday's win over the Jets and is expected to miss about three weeks, Aaron Wilson of the Houston Chronicle reports.",
+    "defense": true
+  },
+  {
+    "id": 14966,
+    "pos": "CB",
+    "status": "Questionable",
+    "desc": "Hayward suffered a groin injury during Sunday's game against the Jets.",
+    "defense": true
+  },
+  {
+    "id": 3134666,
+    "pos": "C",
+    "status": "Doubtful",
+    "desc": "Allen (knee) is doubtful for Monday's game against the Buccaneers.",
+    "defense": false
+  },
+  {
+    "id": 4035008,
+    "pos": "G",
+    "status": "Questionable",
+    "desc": "Kindley was forced out of Sunday's game against the Broncos with a foot injury, Travis Wingfield of the Dolphins' official site reports.",
+    "defense": false
+  },
+  {
+    "id": 4048231,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4039607,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2972342,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 15971,
+    "pos": "RB",
+    "status": "Questionable",
+    "desc": "Burkhead was forced outof Sunday's game against the Texans with a knee injury.",
+    "defense": false
+  },
+  {
+    "id": 16143,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3121421,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3002265,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4411193,
+    "pos": "WR",
+    "status": "Questionable",
+    "desc": "Harris has a stinger as is questionable to return to Sunday's matchup against the Falcons, Nick Underhill of NewOrleans.Football reports.",
+    "defense": false
+  },
+  {
+    "id": 2978278,
+    "pos": "OT",
+    "status": "Questionable",
+    "desc": "Peat (concussion) has been ruled out for the remainder of Sunday's matchup against the Falcons, John DeShazier of the Saints' official site reports.",
+    "defense": false
+  },
+  {
+    "id": 2511109,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "reserve-cel",
+    "defense": false
+  },
+  {
+    "id": 14931,
+    "pos": "G",
+    "status": "Questionable",
+    "desc": "Zeitler (concussion) has been ruled out for the remainder of Sunday's matchup against the Eagles, Dan Salomone of the Giants' official site reports.",
+    "defense": false
+  },
+  {
+    "id": 3912547,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3728281,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2583951,
+    "pos": "OT",
+    "status": "Questionable",
+    "desc": "Fant (ankle) will undergo an MRI on Monday, Rich Cimini of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 4034952,
+    "pos": "RB",
+    "status": "Questionable",
+    "desc": "Perine suffered an ankle injury during Sunday's game at Denver, Al Iannazzone of Newsday reports.",
+    "defense": false
+  },
+  {
+    "id": 2976295,
+    "pos": "G",
+    "status": "Out",
+    "desc": "reserve-cel",
+    "defense": false
+  },
+  {
+    "id": 2982870,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "LeBlanc suffered a high-ankle sprain during Sunday's loss to the Browns and is expected to land on injured reserve, Tom Pelissero of NFL Network reports.",
+    "defense": true
+  },
+  {
+    "id": 4050373,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4044438,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2979501,
+    "pos": "QB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3129116,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4040790,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3051901,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 6012,
+    "pos": "OT",
+    "status": "Questionable",
+    "desc": "Peters exited Sunday's game against the Browns with an undisclosed injury, Eliot Shorr-Parks of Sports Radio 94 WIP Philadelphia reports.",
+    "defense": false
+  },
+  {
+    "id": 15797,
+    "pos": "OT",
+    "status": "Questionable",
+    "desc": "Johnson left Sunday's game against the Browns with a shoulder injury.",
+    "defense": false
+  },
+  {
+    "id": 3116721,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 16991,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2970090,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3120348,
+    "pos": "WR",
+    "status": "Questionable",
+    "desc": "Smith-Schuster suffered a toe injury during Sunday's game against the Jaguars, Brooke Pryor of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 3929924,
+    "pos": "TE",
+    "status": "Questionable",
+    "desc": "Gentry won't return to Sunday's game against the Jaguars due to a knee injury.",
+    "defense": false
+  },
+  {
+    "id": 3894915,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "Jones was placed on the reserve/COVID-19 list Sunday, Jennifer Lee Chan of NBC Sports Bay Area reports.",
+    "defense": true
+  },
+  {
+    "id": 3052434,
+    "pos": "DE",
+    "status": "Out",
+    "desc": "Willis was placed on the reserve/COVID-19 list Sunday, Jennifer Lee Chan of NBC Sports Bay Area reports.",
+    "defense": true
+  },
+  {
+    "id": 3126486,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "Coach Kyle Shanahan is hopeful Samuel (hamstring) will be available for the 49ers' next game Sunday, Nov. 29 against the Rams, Nick Wagoner of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 2979477,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "Coach Kyle Shanahan hopes Coleman (knee) will be available for the 49ers' next game Sunday, Nov. 29 against the Rams, Nick Wagoner of ESPN.com reports.",
+    "defense": false
+  },
+  {
+    "id": 3931424,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 17444,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 16782,
+    "pos": "RB",
+    "status": "Questionable",
+    "desc": "Coach Kyle Shanahan said after Sunday's 27-13 loss to the Saints that McKinnon suffered a stinger late in the game, Jennifer Lee Chan of NBC Sports reports.",
+    "defense": false
+  },
+  {
+    "id": 3919596,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3042738,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2971614,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4037457,
+    "pos": "RB",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 3054026,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 10475,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "Olsen (foot), who suffered a ruptured plantar fascia to his left foot in Thursday's 28-21 win over the Cardinals, is expected to miss about six weeks to two months, Ian Rapoport of NFL Network reports.",
+    "defense": false
+  },
+  {
+    "id": 2577690,
+    "pos": "OT",
+    "status": "Questionable",
+    "desc": "Coach Pete Carroll said Thursday that Shell suffered an ankle sprain, Bob Condotta of The Seattle Times reports.",
+    "defense": false
+  },
+  {
+    "id": 3165702,
+    "pos": "G",
+    "status": "Out",
+    "desc": "Marpet (concussion) has been ruled out for Tampa Bay's Monday night matchup against the Rams.",
+    "defense": false
+  },
+  {
+    "id": 3050481,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "Hudson (personal) has been ruled out for Monday's game against the Rams, Greg Auman of The Athletic reports.",
+    "defense": false
+  },
+  {
+    "id": 15813,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3120347,
+    "pos": "CB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2576491,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 13294,
+    "pos": "G",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 2508256,
+    "pos": "TE",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 4240123,
+    "pos": "DT",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 3047559,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "Brown suffered a dislocated and fractured elbow during Sunday's win over Baltimore and has been ruled out for the rest of the season, Ian Rapoport of NFL Network reports.",
+    "defense": true
+  },
+  {
+    "id": 2575997,
+    "pos": "LB",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2976495,
+    "pos": "DE",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 2578692,
+    "pos": "S",
+    "status": "Out",
+    "desc": "",
+    "defense": true
+  },
+  {
+    "id": 17202,
+    "pos": "OT",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+  },
+  {
+    "id": 14269,
+    "pos": "WR",
+    "status": "Out",
+    "desc": "",
+    "defense": false
+>>>>>>> 451672b5d3287605db6c6e621d93d0a07c8a159f
   }
 ]
